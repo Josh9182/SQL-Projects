@@ -599,3 +599,102 @@ Age,Gender,Time_Spent,Dominant Platform,Interests,Location,Demographics,Professi
 35,Male,1 Hours,YouTube,Sports,Australia,Suburban,Interior-Designer,49566,FALSE,92989,FALSE,TRUE
 64,Non-Binary,8 Hours,YouTube,Sports,United States,Urban,Paramedic,26318,TRUE,142723,TRUE,TRUE
 29,Female,3 Hours,Instagram,Sports,United Kingdom,Suburban,Account-Executive,83205,FALSE,31798,TRUE,TRUE
+26,Male,6 Hours,YouTube,Travel,United Kingdom,Suburban,Social-Worker,79119,TRUE,127126,TRUE,FALSE
+27,Non-Binary,3 Hours,Facebook,Sports,United States,Rural,Data-Entry Clerk,57134,TRUE,79894,TRUE,TRUE
+61,Male,7 Hours,Facebook,Lifestlye,United Kingdom,Suburban,Environmental-Scientist,137853,TRUE,132174,FALSE,FALSE
+34,Female,7 Hours,YouTube,Lifestlye,United Kingdom,Urban,Musician,79657,FALSE,73141,TRUE,TRUE
+55,Female,9 Hours,YouTube,Travel,United Kingdom,Suburban,Veterinarian,52676,FALSE,172522,TRUE,TRUE
+24,Non-Binary,5 Hours,Instagram,Sports,Australia,Urban,Marketing-Manager,85050,TRUE,138972,FALSE,FALSE
+63,Female,8 Hours,YouTube,Lifestlye,Australia,Rural,Doctor,124523,FALSE,196313,TRUE,TRUE
+30,Male,8 Hours,Instagram,Travel,United States,Urban,Customer-Service Representative,52038,FALSE,197696,FALSE,FALSE
+57,Female,1 Hours,Facebook,Sports,Australia,Suburban,Web-Developer,147946,FALSE,153857,FALSE,FALSE
+59,Male,5 Hours,YouTube,Lifestlye,United Kingdom,Rural,Construction-Worker,68874,FALSE,42785,FALSE,FALSE
+26,Male,3 Hours,Instagram,Lifestlye,Australia,Suburban,Financial-Analyst,93310,TRUE,121364,FALSE,TRUE
+44,Female,1 Hours,Instagram,Travel,United States,Rural,Administrative-Assistant,84150,FALSE,119032,FALSE,TRUE
+19,Non-Binary,4 Hours,Facebook,Sports,Australia,Rural,Plumber,117479,FALSE,131447,TRUE,TRUE
+22,Female,8 Hours,YouTube,Sports,United Kingdom,Suburban,Social-Worker,149906,TRUE,67718,TRUE,TRUE
+46,Male,3 Hours,Facebook,Lifestlye,United Kingdom,Suburban,Police-Officer,79276,FALSE,171791,TRUE,FALSE
+54,Male,2 Hours,Instagram,Lifestlye,United States,Rural,Pharmacist,126152,FALSE,194443,FALSE,TRUE
+55,Female,9 Hours,Instagram,Lifestlye,Australia,Rural,Retail-Manager,111156,FALSE,194289,TRUE,TRUE
+36,Non-Binary,5 Hours,YouTube,Sports,Australia,Suburban,Mechanical-Engineer,131985,TRUE,26890,TRUE,FALSE
+25,Non-Binary,7 Hours,Instagram,Travel,Australia,Urban,Artist,122766,TRUE,37818,TRUE,FALSE
+62,Male,2 Hours,YouTube,Travel,United Kingdom,Suburban,HR-Manager,105127,FALSE,158271,TRUE,TRUE
+18,Male,9 Hours,Facebook,Sports,United States,Rural,Archaeologist,31750,FALSE,37050,FALSE,FALSE
+39,Non-Binary,9 Hours,YouTube,Travel,Australia,Suburban,Zoologist,44702,TRUE,142618,TRUE,FALSE
+34,Female,4 Hours,YouTube,Lifestlye,United Kingdom,Urban,Fashion-Stylist,78021,TRUE,37495,FALSE,FALSE
+24,Male,4 Hours,Instagram,Travel,United Kingdom,Suburban,Financial-Consultant,123989,TRUE,75200,FALSE,FALSE
+42,Male,6 Hours,Instagram,Travel,United Kingdom,Rural,Graphic-Designer,84160,FALSE,144243,TRUE,FALSE
+62,Non-Binary,6 Hours,YouTube,Travel,Australia,Suburban,Electrician,63928,FALSE,60378,FALSE,TRUE
+21,Female,1 Hours,Instagram,Lifestlye,Australia,Rural,Lawyer,26220,TRUE,174319,FALSE,TRUE
+53,Non-Binary,9 Hours,Instagram,Sports,Australia,Rural,Chef,97217,FALSE,126897,FALSE,TRUE
+23,Female,2 Hours,Instagram,Lifestlye,Australia,Suburban,Sales-Representative,35442,FALSE,80462,FALSE,TRUE
+48,Female,5 Hours,YouTube,Sports,Australia,Rural,Marketing-Manager,149946,FALSE,139128,FALSE,TRUE
+36,Female,9 Hours,Instagram,Sports,Australia,Rural,Doctor,141666,FALSE,184428,FALSE,TRUE
+61,Male,4 Hours,YouTube,Sports,Australia,Urban,Customer-Service Representative,124939,FALSE,97041,FALSE,TRUE
+56,Non-Binary,3 Hours,Instagram,Travel,Australia,Urban,Web-Developer,147422,FALSE,135470,TRUE,FALSE
+44,Non-Binary,7 Hours,Facebook,Travel,Australia,Urban,Construction-Worker,113801,FALSE,66669,TRUE,TRUE
+27,Female,6 Hours,Instagram,Sports,United Kingdom,Urban,Financial-Analyst,85664,TRUE,192397,FALSE,TRUE
+43,Male,8 Hours,Instagram,Sports,Australia,Rural,Administrative-Assistant,146390,TRUE,79971,FALSE,TRUE
+36,Male,3 Hours,YouTube,Travel,United States,Suburban,Plumber,52161,TRUE,95176,TRUE,FALSE
+56,Non-Binary,5 Hours,YouTube,Lifestlye,United Kingdom,Rural,Social-Worker,148874,TRUE,124062,TRUE,TRUE
+20,Male,4 Hours,Instagram,Sports,Australia,Rural,Police-Officer,72282,TRUE,36648,TRUE,TRUE
+62,Male,4 Hours,Facebook,Lifestlye,United States,Rural,Pharmacist,138967,TRUE,34804,TRUE,FALSE
+30,Female,4 Hours,Instagram,Travel,Australia,Suburban,Retail-Manager,59766,TRUE,17890,FALSE,TRUE
+45,Male,8 Hours,Instagram,Sports,United States,Urban,Mechanical-Engineer,65996,TRUE,42540,FALSE,TRUE
+37,Female,6 Hours,Facebook,Lifestlye,United States,Rural,Artist,134246,TRUE,194609,TRUE,FALSE
+45,Non-Binary,3 Hours,YouTube,Lifestlye,United States,Rural,HR-Manager,95205,FALSE,166555,TRUE,TRUE
+25,Male,5 Hours,Instagram,Lifestlye,United States,Urban,Data-Analyst,114175,FALSE,46667,TRUE,FALSE
+58,Non-Binary,6 Hours,YouTube,Travel,United Kingdom,Rural,Carpenter,65299,TRUE,72177,TRUE,TRUE
+56,Non-Binary,5 Hours,YouTube,Travel,United Kingdom,Suburban,Biologist,110687,FALSE,84006,FALSE,TRUE
+18,Male,6 Hours,Facebook,Lifestlye,United States,Rural,Librarian,92442,FALSE,193161,TRUE,TRUE
+20,Male,8 Hours,Facebook,Lifestlye,Australia,Rural,Software-Engineer,76431,TRUE,109066,TRUE,FALSE
+30,Non-Binary,7 Hours,YouTube,Travel,United States,Urban,Nurse,114849,TRUE,114588,TRUE,FALSE
+45,Male,5 Hours,Instagram,Lifestlye,United Kingdom,Rural,Teacher,112969,TRUE,164026,FALSE,FALSE
+42,Female,6 Hours,YouTube,Lifestlye,Australia,Rural,Accountant,28400,FALSE,70895,FALSE,TRUE
+50,Female,4 Hours,Instagram,Travel,United Kingdom,Suburban,Graphic-Designer,131757,FALSE,98137,FALSE,TRUE
+55,Male,9 Hours,Instagram,Lifestlye,United Kingdom,Urban,Electrician,47011,TRUE,194979,TRUE,FALSE
+23,Non-Binary,4 Hours,Facebook,Lifestlye,Australia,Urban,Lawyer,144240,FALSE,85497,TRUE,FALSE
+61,Male,1 Hours,Instagram,Lifestlye,United States,Suburban,Chef,66873,FALSE,53117,TRUE,TRUE
+62,Male,7 Hours,Instagram,Travel,United States,Rural,Sales-Representative,146815,FALSE,162150,FALSE,TRUE
+49,Non-Binary,7 Hours,YouTube,Lifestlye,United States,Urban,Marketing-Manager,141045,TRUE,168271,FALSE,TRUE
+62,Non-Binary,4 Hours,Facebook,Travel,United States,Urban,Doctor,61104,FALSE,142780,TRUE,TRUE
+64,Female,3 Hours,Instagram,Travel,Australia,Rural,Customer-Service Representative,48286,FALSE,33297,TRUE,FALSE
+38,Non-Binary,8 Hours,Instagram,Sports,Australia,Rural,Web-Developer,77207,FALSE,64787,FALSE,TRUE
+33,Female,5 Hours,Facebook,Sports,Australia,Urban,Construction-Worker,54209,FALSE,159304,TRUE,TRUE
+38,Non-Binary,7 Hours,YouTube,Lifestlye,United Kingdom,Rural,Financial-Analyst,47457,FALSE,42502,TRUE,TRUE
+28,Male,4 Hours,Facebook,Travel,Australia,Urban,Administrative-Assistant,120504,FALSE,179414,TRUE,TRUE
+54,Female,4 Hours,Facebook,Sports,United States,Rural,Plumber,33703,FALSE,85695,FALSE,TRUE
+53,Female,8 Hours,Instagram,Lifestlye,United Kingdom,Rural,Social-Worker,73883,TRUE,178838,TRUE,TRUE
+52,Female,8 Hours,Instagram,Sports,United States,Suburban,Police-Officer,38934,TRUE,63552,TRUE,TRUE
+36,Male,2 Hours,YouTube,Sports,United States,Rural,Pharmacist,43273,FALSE,43350,TRUE,FALSE
+37,Male,2 Hours,Instagram,Travel,Australia,Suburban,Retail-Manager,67151,TRUE,76225,TRUE,FALSE
+35,Male,3 Hours,Instagram,Travel,Australia,Rural,Mechanical-Engineer,91277,FALSE,104658,FALSE,FALSE
+64,Male,3 Hours,Facebook,Sports,United States,Urban,Artist,45865,FALSE,62265,FALSE,TRUE
+58,Male,1 Hours,Instagram,Sports,United States,Urban,HR-Manager,122446,FALSE,33314,FALSE,FALSE
+31,Female,3 Hours,YouTube,Travel,United Kingdom,Rural,Data-Analyst,144239,TRUE,18618,TRUE,TRUE
+32,Male,6 Hours,Facebook,Lifestlye,Australia,Rural,Carpenter,91774,FALSE,87005,FALSE,TRUE
+48,Female,8 Hours,YouTube,Travel,United Kingdom,Urban,Biologist,129876,FALSE,173097,TRUE,TRUE
+18,Male,6 Hours,Facebook,Sports,United Kingdom,Rural,Librarian,129544,TRUE,195261,FALSE,TRUE
+20,Non-Binary,5 Hours,Instagram,Lifestlye,United Kingdom,Suburban,Dentist,106763,TRUE,26603,TRUE,FALSE
+33,Female,4 Hours,Facebook,Sports,United States,Suburban,Journalist,113997,FALSE,68569,FALSE,TRUE
+40,Non-Binary,3 Hours,Facebook,Lifestlye,United Kingdom,Suburban,Architect,109644,TRUE,58274,FALSE,TRUE
+28,Female,4 Hours,Instagram,Sports,United Kingdom,Suburban,Veterinarian,133116,TRUE,174925,FALSE,FALSE
+29,Non-Binary,7 Hours,Instagram,Lifestlye,United States,Suburban,Psychologist,116531,FALSE,191665,TRUE,FALSE
+27,Male,1 Hours,YouTube,Lifestlye,Australia,Rural,Project-Manager,78910,FALSE,71117,TRUE,FALSE
+49,Male,7 Hours,YouTube,Sports,Australia,Rural,Electrician,81788,FALSE,166039,TRUE,TRUE
+33,Male,1 Hours,Instagram,Lifestlye,United Kingdom,Suburban,Event-Planner,140071,TRUE,153657,FALSE,FALSE
+25,Female,2 Hours,Instagram,Travel,United States,Rural,Chef,60860,TRUE,166800,TRUE,TRUE
+55,Non-Binary,4 Hours,Instagram,Sports,Australia,Rural,Software-Developer,75463,TRUE,32172,TRUE,TRUE
+29,Male,1 Hours,Facebook,Travel,United Kingdom,Suburban,Nurse-Practitioner,103579,FALSE,51292,TRUE,FALSE
+41,Non-Binary,9 Hours,Facebook,Sports,United Kingdom,Rural,Marketing-Coordinator,129583,TRUE,21931,TRUE,FALSE
+45,Non-Binary,6 Hours,Facebook,Lifestlye,United States,Rural,Account-Manager,63606,TRUE,192445,TRUE,FALSE
+25,Male,1 Hours,Instagram,Lifestlye,United Kingdom,Rural,Teacher-Assistant,25878,FALSE,49762,TRUE,TRUE
+45,Male,1 Hours,YouTube,Lifestlye,Australia,Suburban,Security-Guard,48682,FALSE,116209,FALSE,TRUE
+53,Non-Binary,6 Hours,Instagram,Sports,United States,Rural,Financial-Advisor,142274,FALSE,109424,FALSE,TRUE
+43,Male,4 Hours,Facebook,Travel,Australia,Urban,Welder,67806,TRUE,121899,TRUE,TRUE
+25,Male,4 Hours,Facebook,Travel,Australia,Urban,Customer-Support Specialist,109481,FALSE,23633,FALSE,TRUE
+45,Male,6 Hours,Instagram,Sports,Australia,Suburban,Graphic-Artist,36057,TRUE,117548,FALSE,TRUE
+45,Female,7 Hours,Instagram,Sports,United Kingdom,Urban,Lawyer,41010,TRUE,113301,TRUE,FALSE
+54,Non-Binary,9 Hours,Facebook,Travel,United Kingdom,Suburban,IT-Technician,41874,FALSE,76279,TRUE,TRUE
+58,Non-Binary,5 Hours,Facebook,Travel,Australia,Urban,Personal-Trainer,143189,FALSE,116707,FALSE,FALSE
+53,Female,9 Hours,Facebook,Travel,Australia,Urban,Real-Estate Agent,69282,FALSE,62888,TRUE,FALSE
