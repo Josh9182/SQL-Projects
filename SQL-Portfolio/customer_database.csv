@@ -1,3 +1,4 @@
+Age	Gender	Time_Spent	Platform	Interests	Location	Demographics	Profession	 Annual_Income 	Indebt	 Debt Amount 	Is_Homeowner	Owns_Car
 56	Male	3  Hours	Instagram	Sports	United Kingdom	Urban	Software Engineer	 $108,824.00 	TRUE	 $133,744.00 	FALSE	FALSE
 46	Female	2  Hours	Facebook	Travel	United Kingdom	Urban	Nurse	 $43,350.00 	TRUE	 $47,803.00 	TRUE	TRUE
 32	Male	8  Hours	Instagram	Sports	Australia	Suburban	Teacher	 $51,030.00 	FALSE	 $161,411.00 	FALSE	FALSE
