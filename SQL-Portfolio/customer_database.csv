@@ -1,4 +1,4 @@
-Age,Gender,Time_Spent,Platform,Interests,Location,Demographics,Profession,Annual_Income,In_Debt,Debt_Amount,Is_Homeowner,Owns_Car
+Age,Gender,Time_Spent,Dominant Platform,Interests,Location,Demographics,Profession,Annual_Income,In_Debt,Debt_Amount,Is_Homeowner,Owns_Car
 56,Male,3 Hours,Instagram,Sports,United Kingdom,Urban,Software-Engineer,10882400,TRUE,13374400,FALSE,FALSE
 46,Female,2 Hours,Facebook,Travel,United Kingdom,Urban,Nurse,43350,TRUE,47803,TRUE,TRUE
 32,Male,8  Hours,Instagram,Sports,Australia,Suburban,Teacher,51030,FALSE,161411,FALSE,FALSE
