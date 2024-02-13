@@ -1,1 +1,6 @@
-
+### Recall scope definitions
+|Scope|Use|
+|---|---|
+|A|Recalls Recalls Pan, Tilt, Zoom and Focus|
+|B|Recalls Pan, Tilt, Zoom and Focus and Iris|
+|C|Recalls Pan, Tilt, Zoom and Focus|
