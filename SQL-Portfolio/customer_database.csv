@@ -598,3 +598,4 @@ Age,Gender,Time_Spent,Dominant Platform,Interests,Location,Demographics,Professi
 28,Non-Binary,5 Hours,Instagram,Sports,Australia,Suburban,Aerospace-Engineer,107974,TRUE,103195,FALSE,TRUE
 35,Male,1 Hours,YouTube,Sports,Australia,Suburban,Interior-Designer,49566,FALSE,92989,FALSE,TRUE
 64,Non-Binary,8 Hours,YouTube,Sports,United States,Urban,Paramedic,26318,TRUE,142723,TRUE,TRUE
+29,Female,3 Hours,Instagram,Sports,United Kingdom,Suburban,Account-Executive,83205,FALSE,31798,TRUE,TRUE
