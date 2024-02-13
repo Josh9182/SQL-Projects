@@ -1,1 +1,200 @@
-
+56	Male	3  Hours	Instagram	Sports	United Kingdom	Urban	Software Engineer	 $108,824.00 	TRUE	 $133,744.00 	FALSE	FALSE
+46	Female	2  Hours	Facebook	Travel	United Kingdom	Urban	Nurse	 $43,350.00 	TRUE	 $47,803.00 	TRUE	TRUE
+32	Male	8  Hours	Instagram	Sports	Australia	Suburban	Teacher	 $51,030.00 	FALSE	 $161,411.00 	FALSE	FALSE
+60	Non-Binary	5  Hours	Instagram	Travel	United Kingdom	Urban	Accountant	 $102,545.00 	FALSE	 $159,572.00 	TRUE	FALSE
+25	Male	1  Hours	Instagram	Lifestlye	Australia	Urban	Graphic Designer	 $63,303.00 	FALSE	 $52,828.00 	TRUE	TRUE
+38	Male	3  Hours	Facebook	Travel	United States	Urban	Electrician	 $32,224.00 	TRUE	 $105,808.00 	TRUE	TRUE
+56	Male	8  Hours	YouTube	Sports	United States	Urban	Lawyer	 $67,003.00 	TRUE	 $62,461.00 	TRUE	TRUE
+36	Male	4  Hours	Instagram	Sports	Australia	Urban	Chef	 $145,554.00 	TRUE	 $64,707.00 	FALSE	TRUE
+40	Non-Binary	7  Hours	YouTube	Lifestlye	Australia	Suburban	Sales Representative	 $88,726.00 	FALSE	 $161,868.00 	FALSE	TRUE
+28	Non-Binary	2  Hours	Instagram	Sports	Australia	Suburban	Marketing Manager	 $54,337.00 	TRUE	 $181,845.00 	FALSE	TRUE
+28	Female	7  Hours	YouTube	Lifestlye	United Kingdom	Urban	Doctor	 $71,499.00 	TRUE	 $58,095.00 	TRUE	FALSE
+41	Non-Binary	5  Hours	Facebook	Sports	United States	Suburban	Customer Service Representative	 $68,242.00 	FALSE	 $96,316.00 	FALSE	FALSE
+53	Non-Binary	5  Hours	Facebook	Sports	Australia	Rural	Web Developer	 $124,364.00 	FALSE	 $78,267.00 	TRUE	TRUE
+57	Female	6  Hours	Instagram	Lifestlye	United Kingdom	Urban	Construction Worker	 $99,017.00 	FALSE	 $33,347.00 	TRUE	FALSE
+41	Non-Binary	9  Hours	YouTube	Travel	United States	Rural	Financial Analyst	 $102,043.00 	TRUE	 $154,571.00 	TRUE	FALSE
+20	Male	6  Hours	Facebook	Sports	United Kingdom	Suburban	Administrative Assistant	 $48,708.00 	TRUE	 $42,894.00 	TRUE	FALSE
+39	Male	8  Hours	Instagram	Travel	United States	Suburban	Plumber	 $40,181.00 	TRUE	 $126,922.00 	TRUE	FALSE
+19	Female	7  Hours	Instagram	Sports	United Kingdom	Rural	Social Worker	 $33,303.00 	FALSE	 $138,448.00 	TRUE	TRUE
+41	Female	9  Hours	Facebook	Sports	United States	Suburban	Police Officer	 $35,430.00 	FALSE	 $72,294.00 	FALSE	FALSE
+61	Female	4  Hours	Facebook	Sports	United States	Urban	Pharmacist	 $109,355.00 	FALSE	 $168,831.00 	FALSE	FALSE
+47	Male	2  Hours	Instagram	Sports	United Kingdom	Rural	Retail Manager	 $73,200.00 	FALSE	 $102,572.00 	FALSE	TRUE
+55	Non-Binary	7  Hours	YouTube	Travel	Australia	Urban	Mechanical Engineer	 $138,475.00 	TRUE	 $88,054.00 	FALSE	TRUE
+19	Male	6  Hours	YouTube	Travel	United States	Rural	Artist	 $53,264.00 	TRUE	 $194,270.00 	TRUE	TRUE
+38	Female	1  Hours	YouTube	Sports	Australia	Suburban	HR Manager	 $44,246.00 	TRUE	 $121,979.00 	TRUE	TRUE
+50	Non-Binary	9  Hours	Instagram	Sports	United Kingdom	Rural	Data Analyst	 $112,076.00 	TRUE	 $133,424.00 	FALSE	FALSE
+29	Non-Binary	9  Hours	Facebook	Travel	Australia	Rural	Carpenter	 $122,136.00 	TRUE	 $194,947.00 	FALSE	TRUE
+39	Male	2  Hours	Instagram	Lifestlye	Australia	Urban	Biologist	 $91,325.00 	TRUE	 $146,222.00 	FALSE	FALSE
+61	Female	3  Hours	Facebook	Lifestlye	Australia	Suburban	Librarian	 $148,550.00 	TRUE	 $109,886.00 	FALSE	FALSE
+42	Male	5  Hours	YouTube	Travel	Australia	Urban	Dentist	 $85,557.00 	TRUE	 $123,620.00 	FALSE	TRUE
+44	Non-Binary	5  Hours	YouTube	Sports	Australia	Suburban	Journalist	 $115,888.00 	FALSE	 $147,503.00 	FALSE	TRUE
+59	Male	1  Hours	Facebook	Sports	United States	Urban	Architect	 $44,044.00 	FALSE	 $91,892.00 	FALSE	TRUE
+45	Male	8  Hours	Facebook	Lifestlye	United States	Rural	Veterinarian	 $31,989.00 	TRUE	 $60,307.00 	FALSE	TRUE
+33	Female	8  Hours	Instagram	Lifestlye	United States	Urban	Psychologist	 $76,618.00 	FALSE	 $159,820.00 	TRUE	TRUE
+32	Female	4  Hours	YouTube	Travel	United Kingdom	Suburban	Project Manager	 $43,853.00 	TRUE	 $186,604.00 	TRUE	TRUE
+64	Non-Binary	7  Hours	Instagram	Lifestlye	Australia	Suburban	Electrician	 $136,328.00 	TRUE	 $128,312.00 	TRUE	FALSE
+61	Male	3  Hours	Instagram	Travel	United States	Rural	Event Planner	 $122,149.00 	FALSE	 $119,586.00 	TRUE	FALSE
+20	Male	6  Hours	Instagram	Lifestlye	United Kingdom	Suburban	Chef	 $136,184.00 	TRUE	 $25,083.00 	FALSE	FALSE
+54	Male	9  Hours	YouTube	Lifestlye	United States	Urban	Software Developer	 $99,728.00 	TRUE	 $59,601.00 	TRUE	FALSE
+24	Non-Binary	1  Hours	Instagram	Lifestlye	United States	Rural	Nurse Practitioner	 $58,393.00 	TRUE	 $42,024.00 	FALSE	TRUE
+38	Non-Binary	5  Hours	Instagram	Sports	Australia	Suburban	Marketing Coordinator	 $77,199.00 	TRUE	 $40,556.00 	TRUE	TRUE
+26	Female	4  Hours	Instagram	Sports	United Kingdom	Suburban	Account Manager	 $127,403.00 	TRUE	 $130,426.00 	FALSE	FALSE
+56	Female	8  Hours	Instagram	Sports	Australia	Urban	Teacher Assistant	 $135,815.00 	TRUE	 $49,665.00 	FALSE	FALSE
+35	Female	1  Hours	Instagram	Lifestlye	Australia	Urban	Security Guard	 $72,751.00 	TRUE	 $124,045.00 	TRUE	FALSE
+21	Male	9  Hours	Instagram	Travel	United States	Rural	Financial Advisor	 $140,819.00 	FALSE	 $62,477.00 	TRUE	TRUE
+42	Male	6  Hours	YouTube	Travel	Australia	Suburban	Welder	 $120,107.00 	FALSE	 $193,448.00 	FALSE	TRUE
+31	Female	4  Hours	Instagram	Travel	United Kingdom	Urban	Customer Support Specialist	 $57,657.00 	TRUE	 $65,268.00 	FALSE	TRUE
+26	Male	9  Hours	Facebook	Travel	Australia	Rural	Graphic Artist	 $71,627.00 	FALSE	 $154,283.00 	FALSE	FALSE
+43	Female	5  Hours	Instagram	Sports	Australia	Suburban	Lawyer	 $81,368.00 	TRUE	 $101,031.00 	TRUE	FALSE
+19	Non-Binary	5  Hours	Instagram	Sports	Australia	Suburban	IT Technician	 $91,620.00 	TRUE	 $142,947.00 	TRUE	TRUE
+37	Female	5  Hours	YouTube	Lifestlye	United States	Rural	Personal Trainer	 $149,940.00 	TRUE	 $161,183.00 	FALSE	TRUE
+45	Non-Binary	1  Hours	YouTube	Lifestlye	United Kingdom	Rural	Real Estate Agent	 $65,440.00 	TRUE	 $154,954.00 	TRUE	FALSE
+64	Male	1  Hours	Facebook	Travel	United States	Urban	Social Media Manager	 $37,458.00 	FALSE	 $144,279.00 	FALSE	FALSE
+24	Female	8  Hours	Facebook	Sports	United States	Suburban	Biomedical Engineer	 $61,353.00 	FALSE	 $33,194.00 	TRUE	TRUE
+61	Male	8  Hours	YouTube	Travel	United States	Suburban	Police Detective	 $142,563.00 	FALSE	 $194,702.00 	TRUE	FALSE
+25	Non-Binary	6  Hours	YouTube	Lifestlye	United States	Suburban	Pharmacy Technician	 $86,099.00 	FALSE	 $94,438.00 	TRUE	TRUE
+64	Non-Binary	4  Hours	Instagram	Lifestlye	United States	Rural	Retail Sales Associate	 $109,104.00 	TRUE	 $186,166.00 	TRUE	TRUE
+52	Non-Binary	2  Hours	YouTube	Travel	United Kingdom	Urban	Civil Engineer	 $107,517.00 	FALSE	 $151,840.00 	TRUE	FALSE
+31	Male	2  Hours	Facebook	Lifestlye	Australia	Suburban	Photographer	 $124,090.00 	TRUE	 $41,240.00 	FALSE	FALSE
+34	Male	9  Hours	Instagram	Travel	United States	Rural	Office Manager	 $56,777.00 	TRUE	 $145,874.00 	FALSE	FALSE
+53	Male	5  Hours	Facebook	Sports	United States	Suburban	Occupational Therapist	 $36,630.00 	FALSE	 $102,954.00 	TRUE	TRUE
+57	Male	4  Hours	Instagram	Travel	United Kingdom	Urban	Firefighter	 $110,332.00 	TRUE	 $135,766.00 	FALSE	FALSE
+21	Non-Binary	1  Hours	YouTube	Sports	United Kingdom	Suburban	Insurance Agent	 $41,212.00 	FALSE	 $138,520.00 	FALSE	FALSE
+19	Non-Binary	7  Hours	Facebook	Sports	Australia	Urban	Automotive Mechanic	 $118,282.00 	FALSE	 $32,713.00 	TRUE	TRUE
+23	Female	3  Hours	Instagram	Lifestlye	United Kingdom	Urban	Archaeologist	 $133,249.00 	FALSE	 $17,511.00 	FALSE	TRUE
+59	Female	6  Hours	Instagram	Lifestlye	Australia	Suburban	Copywriter	 $49,290.00 	FALSE	 $44,847.00 	TRUE	FALSE
+21	Male	5  Hours	YouTube	Lifestlye	United States	Suburban	Financial Planner	 $37,045.00 	FALSE	 $156,484.00 	FALSE	TRUE
+46	Non-Binary	5  Hours	YouTube	Travel	United States	Urban	Veterinarian Assistant	 $52,988.00 	TRUE	 $173,773.00 	FALSE	TRUE
+35	Non-Binary	5  Hours	YouTube	Travel	Australia	Rural	Network Administrator	 $111,245.00 	FALSE	 $129,344.00 	FALSE	TRUE
+43	Non-Binary	1  Hours	Facebook	Lifestlye	United Kingdom	Urban	Physical Therapist	 $145,245.00 	FALSE	 $136,634.00 	FALSE	FALSE
+61	Female	1  Hours	Instagram	Travel	Australia	Suburban	Art Director	 $97,557.00 	TRUE	 $135,746.00 	FALSE	FALSE
+51	Female	3  Hours	YouTube	Lifestlye	United Kingdom	Suburban	Dental Hygienist	 $57,408.00 	FALSE	 $176,087.00 	FALSE	TRUE
+27	Non-Binary	4  Hours	Facebook	Travel	United States	Rural	Software Tester	 $136,786.00 	FALSE	 $150,898.00 	FALSE	TRUE
+53	Non-Binary	5  Hours	Facebook	Sports	United Kingdom	Urban	Human Resources Assistant	 $37,293.00 	TRUE	 $72,956.00 	TRUE	TRUE
+31	Non-Binary	2  Hours	Facebook	Sports	Australia	Urban	Marketing Specialist	 $84,492.00 	TRUE	 $61,072.00 	TRUE	FALSE
+48	Female	8  Hours	YouTube	Lifestlye	Australia	Urban	Aerospace Engineer	 $65,633.00 	FALSE	 $113,960.00 	TRUE	TRUE
+32	Non-Binary	2  Hours	YouTube	Travel	United States	Suburban	Interior Designer	 $84,332.00 	TRUE	 $54,277.00 	TRUE	TRUE
+25	Non-Binary	9  Hours	Instagram	Travel	United Kingdom	Urban	Paramedic	 $48,248.00 	FALSE	 $191,660.00 	FALSE	FALSE
+31	Male	2  Hours	Instagram	Sports	United Kingdom	Rural	Account Executive	 $62,914.00 	TRUE	 $162,668.00 	FALSE	TRUE
+40	Male	9  Hours	YouTube	Sports	United Kingdom	Suburban	Social Worker	 $25,438.00 	FALSE	 $87,036.00 	FALSE	FALSE
+57	Female	7  Hours	Facebook	Lifestlye	United States	Suburban	Data Entry Clerk	 $71,368.00 	FALSE	 $65,665.00 	TRUE	FALSE
+38	Non-Binary	8  Hours	Facebook	Sports	United Kingdom	Urban	Environmental Scientist	 $98,726.00 	FALSE	 $60,020.00 	TRUE	FALSE
+33	Non-Binary	2  Hours	Facebook	Lifestlye	Australia	Rural	Musician	 $49,898.00 	TRUE	 $86,020.00 	TRUE	TRUE
+62	Male	7  Hours	Instagram	Sports	United Kingdom	Suburban	Legal Assistant	 $93,807.00 	FALSE	 $106,666.00 	FALSE	TRUE
+35	Female	6  Hours	Facebook	Sports	United States	Suburban	Electrician	 $93,342.00 	TRUE	 $106,918.00 	TRUE	FALSE
+64	Male	4  Hours	Instagram	Travel	United Kingdom	Urban	Childcare Worker	 $141,850.00 	FALSE	 $106,042.00 	FALSE	TRUE
+41	Male	7  Hours	Instagram	Sports	United Kingdom	Urban	Fashion Designer	 $66,289.00 	FALSE	 $22,134.00 	TRUE	FALSE
+43	Male	4  Hours	Facebook	Sports	Australia	Rural	Financial Analyst	 $75,280.00 	FALSE	 $195,728.00 	FALSE	TRUE
+42	Male	2  Hours	Facebook	Lifestlye	United Kingdom	Urban	Mechanical Engineer	 $32,414.00 	FALSE	 $105,066.00 	TRUE	FALSE
+62	Non-Binary	7  Hours	YouTube	Sports	Australia	Rural	Event Coordinator	 $46,783.00 	FALSE	 $48,860.00 	FALSE	FALSE
+58	Non-Binary	8  Hours	YouTube	Lifestlye	Australia	Suburban	Chef	 $70,061.00 	TRUE	 $113,007.00 	TRUE	TRUE
+46	Male	2  Hours	Facebook	Sports	United States	Rural	Software Engineer	 $79,397.00 	TRUE	 $55,077.00 	TRUE	TRUE
+32	Female	5  Hours	Instagram	Sports	Australia	Rural	Nurse	 $49,819.00 	TRUE	 $161,139.00 	FALSE	TRUE
+62	Female	1  Hours	Instagram	Lifestlye	Australia	Rural	Teacher	 $65,296.00 	FALSE	 $175,148.00 	FALSE	TRUE
+18	Female	7  Hours	Instagram	Travel	United States	Suburban	Accountant	 $34,301.00 	FALSE	 $135,285.00 	TRUE	FALSE
+42	Female	8  Hours	Instagram	Lifestlye	Australia	Urban	Graphic Designer	 $109,856.00 	TRUE	 $52,066.00 	FALSE	FALSE
+24	Male	6  Hours	Instagram	Lifestlye	United States	Suburban	Electrician	 $121,981.00 	FALSE	 $55,583.00 	TRUE	TRUE
+26	Non-Binary	5  Hours	YouTube	Lifestlye	United Kingdom	Urban	Lawyer	 $107,828.00 	FALSE	 $161,358.00 	FALSE	TRUE
+41	Female	6  Hours	Facebook	Travel	United States	Rural	Chef	 $88,490.00 	FALSE	 $111,777.00 	TRUE	FALSE
+18	Male	2  Hours	YouTube	Sports	Australia	Rural	Sales Representative	 $65,482.00 	TRUE	 $166,318.00 	FALSE	TRUE
+61	Female	1  Hours	Instagram	Lifestlye	United States	Rural	Marketing Manage	 $49,998.00 	TRUE	 $115,705.00 	TRUE	TRUE
+25	Female	7  Hours	Instagram	Lifestlye	Australia	Rural	Social Worker	 $107,553.00 	TRUE	 $38,674.00 	TRUE	TRUE
+41	Male	7  Hours	Instagram	Travel	United Kingdom	Rural	Police Officer	 $32,612.00 	TRUE	 $137,773.00 	TRUE	TRUE
+28	Non-Binary	2  Hours	Instagram	Lifestlye	United States	Urban	Pharmacist	 $138,240.00 	TRUE	 $145,742.00 	FALSE	FALSE
+34	Non-Binary	2  Hours	Facebook	Sports	United Kingdom	Urban	Retail Manager	 $66,257.00 	FALSE	 $117,033.00 	TRUE	FALSE
+25	Male	1  Hours	Instagram	Travel	Australia	Rural	Mechanical Engineer	 $116,181.00 	FALSE	 $155,795.00 	FALSE	TRUE
+52	Non-Binary	8  Hours	Facebook	Sports	Australia	Suburban	Artist	 $90,266.00 	FALSE	 $80,709.00 	FALSE	FALSE
+52	Male	8  Hours	Instagram	Sports	United Kingdom	Suburban	HR Manager	 $106,661.00 	FALSE	 $94,973.00 	FALSE	TRUE
+50	Male	1  Hours	Facebook	Travel	United States	Rural	Data Analyst	 $33,064.00 	TRUE	 $19,233.00 	TRUE	TRUE
+22	Male	8  Hours	YouTube	Lifestlye	United States	Urban	Carpenter	 $33,945.00 	TRUE	 $171,900.00 	FALSE	TRUE
+59	Non-Binary	9  Hours	Instagram	Sports	Australia	Suburban	Biologist	 $61,026.00 	FALSE	 $114,310.00 	FALSE	FALSE
+56	Male	4  Hours	Facebook	Sports	United Kingdom	Suburban	Librarian	 $130,937.00 	TRUE	 $48,523.00 	FALSE	FALSE
+58	Female	1  Hours	YouTube	Sports	United Kingdom	Suburban	Dentist	 $88,767.00 	FALSE	 $176,457.00 	TRUE	FALSE
+45	Non-Binary	1  Hours	Instagram	Sports	United States	Rural	Journalist	 $114,827.00 	FALSE	 $56,754.00 	FALSE	FALSE
+24	Non-Binary	3  Hours	Instagram	Travel	United States	Suburban	Architect	 $63,281.00 	FALSE	 $169,266.00 	FALSE	FALSE
+26	Non-Binary	5  Hours	Instagram	Travel	United States	Suburban	Veterinarian	 $61,253.00 	FALSE	 $139,374.00 	FALSE	TRUE
+25	Non-Binary	5  Hours	Facebook	Sports	United Kingdom	Suburban	Psychologist	 $26,844.00 	TRUE	 $102,619.00 	FALSE	TRUE
+29	Female	9  Hours	Facebook	Lifestlye	United States	Suburban	Project Manager	 $113,256.00 	FALSE	 $140,706.00 	TRUE	FALSE
+51	Non-Binary	2  Hours	YouTube	Sports	United States	Urban	Electrician	 $92,607.00 	TRUE	 $85,230.00 	TRUE	FALSE
+50	Non-Binary	2  Hours	Facebook	Lifestlye	Australia	Rural	Event Planner	 $83,706.00 	FALSE	 $126,177.00 	FALSE	FALSE
+40	Male	6  Hours	Facebook	Sports	United States	Rural	Chef	 $29,857.00 	FALSE	 $41,330.00 	FALSE	TRUE
+41	Non-Binary	9  Hours	Instagram	Lifestlye	United States	Urban	Software Developer	 $74,866.00 	FALSE	 $31,022.00 	FALSE	FALSE
+54	Female	1  Hours	Instagram	Sports	United Kingdom	Urban	Software Tester	 $86,147.00 	FALSE	 $19,125.00 	FALSE	TRUE
+52	Female	9  Hours	Instagram	Lifestlye	United Kingdom	Rural	Human Resources Assistant	 $34,534.00 	TRUE	 $86,801.00 	TRUE	TRUE
+61	Female	9  Hours	Instagram	Sports	Australia	Suburban	Marketing Specialist	 $43,711.00 	FALSE	 $55,071.00 	TRUE	FALSE
+57	Female	9  Hours	Instagram	Sports	United States	Suburban	Aerospace Engineer	 $67,796.00 	TRUE	 $114,976.00 	TRUE	TRUE
+39	Non-Binary	5  Hours	Instagram	Lifestlye	Australia	Rural	Interior Designer	 $38,443.00 	FALSE	 $167,355.00 	TRUE	TRUE
+44	Non-Binary	9  Hours	Instagram	Travel	United Kingdom	Suburban	Paramedic	 $26,176.00 	FALSE	 $96,413.00 	FALSE	FALSE
+52	Female	4  Hours	YouTube	Lifestlye	Australia	Urban	Account Executive	 $32,144.00 	FALSE	 $20,513.00 	FALSE	TRUE
+18	Female	2  Hours	YouTube	Travel	United Kingdom	Suburban	Social Worker	 $136,411.00 	TRUE	 $179,986.00 	TRUE	FALSE
+52	Non-Binary	6  Hours	YouTube	Sports	Australia	Suburban	Data Entry Clerk	 $42,572.00 	FALSE	 $46,680.00 	TRUE	TRUE
+54	Female	4  Hours	YouTube	Lifestlye	Australia	Suburban	Environmental Scientist	 $121,746.00 	FALSE	 $170,772.00 	FALSE	FALSE
+64	Male	6  Hours	Instagram	Lifestlye	United States	Rural	Musician	 $97,813.00 	FALSE	 $100,129.00 	FALSE	FALSE
+31	Female	3  Hours	YouTube	Lifestlye	Australia	Urban	Veterinarian	 $136,112.00 	FALSE	 $154,638.00 	FALSE	TRUE
+20	Female	6  Hours	Instagram	Travel	United States	Suburban	Psychologist	 $92,417.00 	FALSE	 $183,961.00 	FALSE	FALSE
+18	Male	2  Hours	YouTube	Travel	United States	Rural	Project Manager	 $72,391.00 	TRUE	 $162,177.00 	FALSE	TRUE
+22	Male	2  Hours	Facebook	Sports	United States	Suburban	Electrician	 $77,541.00 	TRUE	 $95,033.00 	TRUE	TRUE
+43	Non-Binary	9  Hours	YouTube	Travel	United States	Urban	Event Planner	 $86,255.00 	FALSE	 $138,059.00 	TRUE	FALSE
+31	Non-Binary	7  Hours	YouTube	Travel	Australia	Suburban	Chef	 $81,011.00 	FALSE	 $158,453.00 	FALSE	TRUE
+56	Male	3  Hours	Instagram	Sports	United Kingdom	Urban	Software Developer	 $140,918.00 	TRUE	 $111,086.00 	FALSE	FALSE
+44	Male	1  Hours	YouTube	Lifestlye	United Kingdom	Suburban	Software Tester	 $29,653.00 	FALSE	 $182,796.00 	TRUE	TRUE
+26	Non-Binary	8  Hours	Facebook	Lifestlye	United Kingdom	Urban	Human Resources Assistant	 $117,579.00 	TRUE	 $62,755.00 	FALSE	TRUE
+32	Female	6  Hours	Instagram	Sports	Australia	Suburban	Marketing Specialist	 $130,867.00 	FALSE	 $169,936.00 	TRUE	FALSE
+32	Male	7  Hours	Instagram	Lifestlye	United States	Urban	Aerospace Engineer	 $95,151.00 	FALSE	 $176,106.00 	TRUE	TRUE
+43	Non-Binary	9  Hours	YouTube	Travel	United Kingdom	Suburban	Interior Designer	 $125,212.00 	TRUE	 $104,605.00 	TRUE	TRUE
+59	Female	5  Hours	Instagram	Sports	Australia	Suburban	Paramedic	 $70,546.00 	FALSE	 $78,723.00 	TRUE	TRUE
+30	Male	1  Hours	Instagram	Sports	United States	Rural	Account Executive	 $48,488.00 	TRUE	 $91,326.00 	FALSE	TRUE
+49	Female	7  Hours	Instagram	Sports	United Kingdom	Rural	Social Worker	 $60,845.00 	TRUE	 $195,057.00 	FALSE	TRUE
+56	Non-Binary	5  Hours	Instagram	Lifestlye	United States	Urban	Data Entry Clerk	 $149,420.00 	TRUE	 $137,636.00 	TRUE	TRUE
+49	Male	3  Hours	Instagram	Sports	United Kingdom	Suburban	Environmental Scientist	 $144,041.00 	FALSE	 $119,818.00 	FALSE	TRUE
+21	Female	9  Hours	Instagram	Sports	United Kingdom	Urban	Musician	 $87,880.00 	TRUE	 $133,826.00 	FALSE	TRUE
+47	Male	1  Hours	Facebook	Sports	United Kingdom	Rural	Veterinarian	 $143,343.00 	TRUE	 $116,937.00 	FALSE	FALSE
+54	Female	1  Hours	YouTube	Lifestlye	United States	Urban	Marketing Manager	 $32,936.00 	FALSE	 $84,851.00 	FALSE	TRUE
+40	Non-Binary	1  Hours	Facebook	Travel	Australia	Urban	Doctor	 $121,441.00 	FALSE	 $87,996.00 	TRUE	TRUE
+56	Non-Binary	3  Hours	Instagram	Sports	United States	Rural	Customer Service Representative	 $104,225.00 	FALSE	 $59,261.00 	FALSE	FALSE
+62	Male	6  Hours	Instagram	Travel	United Kingdom	Suburban	Web Developer	 $84,961.00 	FALSE	 $103,601.00 	TRUE	FALSE
+32	Female	3  Hours	YouTube	Lifestlye	United States	Urban	Construction Worker	 $30,009.00 	FALSE	 $90,882.00 	TRUE	FALSE
+60	Male	8  Hours	Facebook	Lifestlye	Australia	Rural	Financial Analyst	 $76,451.00 	FALSE	 $126,929.00 	FALSE	TRUE
+46	Male	2  Hours	YouTube	Lifestlye	United States	Suburban	Administrative Assistant	 $105,710.00 	TRUE	 $84,137.00 	TRUE	FALSE
+53	Female	9  Hours	Facebook	Lifestlye	Australia	Rural	Plumber	 $122,368.00 	FALSE	 $150,344.00 	FALSE	FALSE
+30	Female	3  Hours	Instagram	Travel	Australia	Urban	Social Worker	 $115,776.00 	TRUE	 $114,782.00 	FALSE	TRUE
+49	Female	5  Hours	YouTube	Sports	United States	Suburban	Police Officer	 $38,782.00 	FALSE	 $39,600.00 	TRUE	TRUE
+24	Non-Binary	8  Hours	YouTube	Lifestlye	United Kingdom	Suburban	Pharmacist	 $83,451.00 	TRUE	 $151,374.00 	FALSE	FALSE
+39	Male	2  Hours	Instagram	Lifestlye	Australia	Rural	Retail Manager	 $140,310.00 	TRUE	 $18,672.00 	TRUE	FALSE
+45	Male	6  Hours	YouTube	Travel	United States	Rural	Mechanical Engineer	 $132,792.00 	FALSE	 $195,727.00 	TRUE	TRUE
+19	Non-Binary	5  Hours	Facebook	Travel	Australia	Rural	Artist	 $78,317.00 	FALSE	 $160,752.00 	FALSE	TRUE
+59	Female	9  Hours	Facebook	Lifestlye	United Kingdom	Suburban	HR Manager	 $105,431.00 	TRUE	 $93,391.00 	FALSE	TRUE
+62	Non-Binary	5  Hours	Facebook	Sports	United States	Suburban	Archaeologist	 $38,778.00 	FALSE	 $158,834.00 	FALSE	TRUE
+23	Non-Binary	2  Hours	Facebook	Sports	United States	Urban	Zoologist	 $76,967.00 	FALSE	 $100,454.00 	TRUE	TRUE
+45	Non-Binary	5  Hours	Instagram	Lifestlye	United States	Suburban	Fashion Stylist	 $62,218.00 	TRUE	 $155,543.00 	FALSE	FALSE
+45	Male	4  Hours	YouTube	Travel	United Kingdom	Urban	Financial Consultant	 $94,589.00 	TRUE	 $185,100.00 	TRUE	TRUE
+61	Non-Binary	7  Hours	Facebook	Lifestlye	Australia	Rural	Marine Biologist	 $120,254.00 	TRUE	 $175,424.00 	TRUE	TRUE
+61	Male	6  Hours	Instagram	Lifestlye	United States	Rural	Aerospace Engineer	 $101,073.00 	FALSE	 $170,157.00 	FALSE	TRUE
+37	Male	2  Hours	YouTube	Travel	Australia	Suburban	Wedding Planner	 $130,985.00 	FALSE	 $61,752.00 	FALSE	TRUE
+47	Male	5  Hours	YouTube	Lifestlye	Australia	Rural	Physical Therapist Assistant	 $144,818.00 	FALSE	 $77,322.00 	FALSE	TRUE
+28	Female	7  Hours	Instagram	Lifestlye	United Kingdom	Rural	IT Consultant	 $105,691.00 	FALSE	 $183,980.00 	TRUE	FALSE
+45	Male	7  Hours	Instagram	Lifestlye	United States	Suburban	Dental Assistant	 $123,102.00 	TRUE	 $91,035.00 	FALSE	TRUE
+42	Male	5  Hours	Facebook	Travel	Australia	Urban	Fitness Instructor	 $101,328.00 	FALSE	 $174,519.00 	TRUE	FALSE
+56	Female	9  Hours	YouTube	Sports	United States	Suburban	Video Game Designer	 $37,106.00 	TRUE	 $147,733.00 	FALSE	TRUE
+50	Male	4  Hours	YouTube	Sports	United States	Urban	Human Resources Manager	 $45,786.00 	FALSE	 $81,558.00 	FALSE	FALSE
+18	Non-Binary	3  Hours	Instagram	Travel	United Kingdom	Suburban	Forensic Scientist	 $52,964.00 	FALSE	 $143,147.00 	TRUE	FALSE
+44	Non-Binary	4  Hours	YouTube	Sports	United States	Suburban	Fashion Merchandiser	 $69,887.00 	TRUE	 $77,813.00 	TRUE	TRUE
+30	Male	5  Hours	Facebook	Lifestlye	United States	Rural	Landscape Architect	 $96,983.00 	FALSE	 $47,707.00 	FALSE	TRUE
+58	Female	6  Hours	YouTube	Sports	Australia	Suburban	Executive Assistant	 $109,148.00 	FALSE	 $96,711.00 	FALSE	TRUE
+20	Non-Binary	3  Hours	Instagram	Lifestlye	United Kingdom	Suburban	Veterinary Technician	 $77,824.00 	TRUE	 $42,434.00 	FALSE	TRUE
+56	Female	2  Hours	Instagram	Sports	United States	Urban	Biomedical Scientist	 $78,424.00 	FALSE	 $25,058.00 	FALSE	TRUE
+23	Female	4  Hours	Facebook	Travel	Australia	Rural	Investment Banker	 $133,787.00 	TRUE	 $96,644.00 	FALSE	FALSE
+25	Non-Binary	5  Hours	Facebook	Sports	United Kingdom	Urban	Paramedic	 $63,709.00 	TRUE	 $86,987.00 	TRUE	TRUE
+44	Female	4  Hours	YouTube	Sports	United Kingdom	Urban	Biotechnologist	 $92,743.00 	TRUE	 $42,470.00 	TRUE	TRUE
+26	Non-Binary	3  Hours	YouTube	Sports	Australia	Rural	Advertising Manager	 $114,859.00 	TRUE	 $74,830.00 	TRUE	FALSE
+54	Female	8  Hours	Instagram	Travel	Australia	Rural	Mechanical Drafter	 $83,925.00 	FALSE	 $155,672.00 	TRUE	TRUE
+50	Non-Binary	4  Hours	Facebook	Sports	Australia	Rural	Technical Writer	 $149,399.00 	FALSE	 $179,688.00 	FALSE	FALSE
+59	Male	2  Hours	Facebook	Travel	Australia	Suburban	GIS Analyst	 $34,534.00 	FALSE	 $23,832.00 	TRUE	TRUE
+61	Non-Binary	2  Hours	Facebook	Lifestlye	Australia	Rural	Mortgage Broker	 $90,821.00 	TRUE	 $173,871.00 	TRUE	FALSE
+41	Non-Binary	1  Hours	YouTube	Sports	United States	Rural	Content Creator	 $112,776.00 	FALSE	 $21,913.00 	TRUE	TRUE
+32	Non-Binary	4  Hours	Facebook	Travel	United States	Rural	Interior Decorator	 $96,898.00 	FALSE	 $147,310.00 	FALSE	FALSE
+49	Non-Binary	9  Hours	Instagram	Travel	United Kingdom	Urban	Criminal Investigator	 $137,826.00 	FALSE	 $181,144.00 	TRUE	FALSE
+49	Female	7  Hours	Instagram	Sports	United States	Urban	Speech Therapist	 $126,475.00 	FALSE	 $21,150.00 	FALSE	TRUE
+41	Male	7  Hours	YouTube	Lifestlye	United States	Suburban	Urban Planner	 $87,945.00 	TRUE	 $89,991.00 	TRUE	TRUE
+58	Non-Binary	7  Hours	YouTube	Travel	United States	Urban	Pharmaceutical Sales Representative	 $134,190.00 	TRUE	 $42,693.00 	FALSE	TRUE
+29	Female	8  Hours	Facebook	Sports	Australia	Suburban	Business Analyst	 $27,600.00 	FALSE	 $128,336.00 	TRUE	FALSE
