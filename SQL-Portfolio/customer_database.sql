@@ -2,17 +2,17 @@
 
 CREATE TABLE customer_database
 (
-  Age numeric,
+  Age INTEGER,
   Gender character varying(30),
-  Time_Spent_Hrs numeric,
-  Dominant_Platform text,
-  Interests text,
-  Location text,
+  Time_Spent_Hrs INTEGER,
+  Dominant_Platform TEXT,
+  Interests TEXT,
+  Location TEXT,
   Demographics character varying(20),
-  Profession text,
-  Annual_Income numeric,
+  Profession TEXT,
+  Annual_Income NUMERIC,
   In_Debt character varying(5),
-  Debt_Amount numeric,
+  Debt_Amount NUMERIC,
   Is_Homeowner character varying(5),
   Owns_Car character varying(5)  
 );
