@@ -14,12 +14,12 @@ After importing the ```customer_database```, the table ```consumer_database``` i
 
 [In]
 ```
-SELECT *
+sql ... SELECT *
 FROM Customer_Database cd
 LIMIT 15;
 ```
 [Out]
-```sql ... ```
+
 
 
 
