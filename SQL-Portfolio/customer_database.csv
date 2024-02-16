@@ -698,7 +698,7 @@ Age,Gender,Time_Spent_Hrs,Dominant_Platform,Interests,Location,Demographics,Prof
 54,Non-Binary,9,Facebook,Travel,United Kingdom,Suburban,IT-Technician,41874,FALSE,76279,TRUE,TRUE
 58,Non-Binary,5,Facebook,Travel,Australia,Urban,Personal-Trainer,143189,FALSE,116707,FALSE,FALSE
 53,Female,9,Facebook,Travel,Australia,Urban,Real-Estate-Agent,69282,FALSE,62888,TRUE,FALSE
-44,Non-Binary,4,Instagram,Travel,United,States,Urban,Social-Media,Manager,72513,FALSE,174877,FALSE,FALSE
+44,Non-Binary,4,Instagram,Travel,United,States,Urban,Social-Media-Manager,72513,FALSE,174877,FALSE,FALSE
 34,Male,2,Facebook,Sports,United,States,Suburban,Biomedical-Engineer,137768,FALSE,162773,FALSE,FALSE
 26,Non-Binary,3,Facebook,Sports,United,Kingdom,Suburban,Police-Detective,93741,TRUE,140294,FALSE,FALSE
 50,Male,1,YouTube,Lifestlye,United,Kingdom,Rural,Pharmacy-Technician,42431,TRUE,90102,TRUE,TRUE
