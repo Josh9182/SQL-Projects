@@ -19,7 +19,7 @@ FROM Customer_Database cd
 LIMIT 15;
 ```
 [Out]
-![image](https://github.com/Josh9182/SQL-Projects/assets/157394370/98966410-e0a5-40a2-a65f-e14bba82b124)
+```sql ... ```
 
 
 
