@@ -12,6 +12,7 @@ In this notebook, we are going to analyze consumer data from the finctional busi
 
 After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. 
 
+-- IN
 ```
 SELECT *
 FROM Customer_Database cd 
