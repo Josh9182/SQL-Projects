@@ -20,6 +20,7 @@ FROM Customer_Database cd
 LIMIT 15;
 ```
 [Out]
+```
 56	Male	3	Instagram	Sports	United Kingdom	Urban	Software-Engineer	108824	TRUE	133744	FALSE	FALSE
 46	Female	2	Facebook	Travel	United Kingdom	Urban	Nurse	43350	TRUE	47803	TRUE	TRUE
 32	Male	8	Instagram	Sports	Australia	Suburban	Teacher	51030	FALSE	161411	FALSE	FALSE
@@ -35,6 +36,7 @@ LIMIT 15;
 53	Non-Binary	5	Facebook	Sports	South Africa	Rural	Web-Developer	124364	FALSE	78267	TRUE	TRUE
 57	Female	6	Instagram	Lifestlye	Italy	Urban	Construction-Worker	99017	FALSE	33347	TRUE	FALSE
 41	Non-Binary	9	YouTube	Travel	India	Rural	Financial-Analyst	102043	TRUE	154571	TRUE	FALSE
+```
 
 
 
