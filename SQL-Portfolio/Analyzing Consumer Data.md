@@ -10,6 +10,11 @@ In this notebook, we are going to analyze consumer data from the finctional busi
 - Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 - How does location and demographics affect the choice of social media platform?
 
-After importing the ``` customer_database```, the table ``` consumer_database ``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ``` consumer_database ``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. 
+After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. 
+
+```
+SELECT *
+FROM Customer_Database cd 
+```
 
 
