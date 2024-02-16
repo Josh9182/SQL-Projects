@@ -593,7 +593,7 @@ Age,Gender,Time_Spent_Hrs,Dominant_Platform,Interests,Location,Demographics,Prof
 22,Female,2,Instagram,Sports,Australia,Rural,Chef,34678,TRUE,135033,TRUE,TRUE
 52,Male,3,Instagram,Lifestlye,United States,Urban,Software-Developer,93124,TRUE,177744,FALSE,FALSE
 40,Female,7,Instagram,Travel,United States,Urban,Software-Tester,66887,FALSE,106054,FALSE,TRUE
-46,Male,8,YouTube,Sports,United Kingdom,Rural,Human-Resources,Assistant,63147,FALSE,153551,FALSE,TRUE
+46,Male,8,YouTube,Sports,United Kingdom,Rural,Human-Resources-Assistant,63147,FALSE,153551,FALSE,TRUE
 60,Non-Binary,6,Instagram,Travel,United States,Rural,Marketing-Specialist,84513,TRUE,63164,FALSE,FALSE
 28,Non-Binary,5,Instagram,Sports,Australia,Suburban,Aerospace-Engineer,107974,TRUE,103195,FALSE,TRUE
 35,Male,1,YouTube,Sports,Australia,Suburban,Interior-Designer,49566,FALSE,92989,FALSE,TRUE
