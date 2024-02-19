@@ -20,11 +20,7 @@ FROM Customer_Database cd
 LIMIT 15;
 ```
 [Out]
+
 Age	Gender | Time_Spent (Hrs)	| Platform | Interests | Location |	Demographics | Profession |	Annual_Income |	Indebt |	Debt Amount	| Is_Homeowner |	Owns_Car |
-
-------------- | ------------- | ------------------
-[Analyzing Customer Database](https://github.com/Josh9182/SQL-Projects/tree/main/SQL-Portfolio)| Wrote SQL queries to answer mock stakeholder questions about a variety of selfmade customer database personal and financial data | data crafting, manipulation, importing and cleaning.
-ssssssss | Explored data from BusinessFinancing.co.uk on the world's oldest businesses: when they were founded and which industries they belong to | data manipulation and joins
-
 
 
