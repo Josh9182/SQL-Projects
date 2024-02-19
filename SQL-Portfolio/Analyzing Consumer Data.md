@@ -3,7 +3,7 @@ Consumer financial data may be analzed for several purposes, whether it be to or
 
 In this notebook, we are going to analyze consumer data from the finctional business, Aurora Technologies in order to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographical information (demographics and country of residency). Below I will find the answers to questions such as:
 
-- [What is the average age of our consumers?](What-is-the-average-age-of-our-consumers)
+- [What is the average age of our consumers?](What-is-the-average-age-of-our-consumers-?)
 - [What is the least common and most common gender present? What is the numerical amount of each gender?]()
 - [What is the average time spent on each social media platform by age?]()
 - [What is the average income and debt of individuals based on their desired social media platform?]()
