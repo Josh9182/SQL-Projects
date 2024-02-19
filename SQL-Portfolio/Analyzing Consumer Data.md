@@ -22,5 +22,5 @@ LIMIT 15;
 [Out]
 
 Age	Gender | Time_Spent (Hrs)	| Platform | Interests | Location |	Demographics | Profession |	Annual_Income |	Indebt |	Debt Amount	| Is_Homeowner |	Owns_Car |
-
+------------- | ------------- | ------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |
 
