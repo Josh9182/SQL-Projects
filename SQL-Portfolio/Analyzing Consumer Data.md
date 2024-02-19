@@ -22,5 +22,21 @@ LIMIT 15;
 [Out]
 
 Age	Gender | Time_Spent (Hrs)	| Platform | Interests | Location |	Demographics | Profession |	Annual_Income |	Indebt |	Debt Amount	| Is_Homeowner |	Owns_Car |
-------------- | ------------- | ------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |
+------------- | ------------- | ------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |------------- | ------------- |56|Male|3|Instagram|Sports|United Kingdom|Urban|Software-Engineer|108824|TRUE|133744|FALSE|FALSE
+46|Female|2|Facebook|Travel|United Kingdom|Urban|Nurse|43350|TRUE|47803|TRUE|TRUE
+32|Male|8|Instagram|Sports|Australia|Suburban|Teacher|51030|FALSE|161411|FALSE|FALSE
+60|Female|5|Instagram|Travel|United Kingdom|Urban|Accountant|102545|FALSE|159572|TRUE|FALSE
+25|Male|1|Instagram|Lifestlye|Australia|Urban|Graphic-Designer|63303|FALSE|52828|TRUE|TRUE
+38|Female|3|Facebook|Travel|United States|Urban|Electrician|32224|TRUE|105808|TRUE|TRUE
+56|Male|8|YouTube|Sports|France|Urban|Lawyer|67003|TRUE|62461|TRUE|TRUE
+36|Male|4|Instagram|Sports|Japan|Urban|Chef|145554|TRUE|64707|FALSE|TRUE
+40|Female|7|YouTube|Lifestlye|Mexico|Suburban|Sales-Representative|88726|FALSE|161868|FALSE|TRUE
+28|Male|2|Instagram|Sports|Australia|Suburban|Marketing-Manager|54337|TRUE|181845|FALSE|TRUE
+28|Male|7|YouTube|Lifestlye|Canada|Urban|Doctor|71499|TRUE|58095|TRUE|FALSE
+41|Female|5|Facebook|Sports|Brazil|Suburban|Customer-Service-Representative|68242|FALSE|96316|FALSE|FALSE
+53|Male|5|Facebook|Sports|South Africa|Rural|Web-Developer|124364|FALSE|78267|TRUE|TRUE
+57|Male|6|Instagram|Lifestlye|Italy|Urban|Construction-Worker|99017|FALSE|33347|TRUE|FALSE
+41|Female|9|YouTube|Travel|India|Rural|Financial-Analyst|102043|TRUE|154571|TRUE|FALSE
+20|Female|6|Facebook|Sports|Germany|Suburban|Administrative-Assistant|48708|TRUE|42894|TRUE|FALSE
+
 
