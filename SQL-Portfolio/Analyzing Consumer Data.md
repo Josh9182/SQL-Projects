@@ -29,7 +29,7 @@ LIMIT 15;
 | 60  | Female | 5 | Instagram | Travel | United Kingdom | Urban | Accountant | 102545 | FALSE | 159572 | TRUE | FALSE |
 | 25  | Male   | 1 | Instagram | Lifestlye | Australia | Urban | Graphic-Designer | 63303 | FALSE | 52828 | TRUE | TRUE |
 
-What is the average age of our consumers?
+## What is the average age of our consumers?
 
 After using the function above we can see the 15 rows 
 
