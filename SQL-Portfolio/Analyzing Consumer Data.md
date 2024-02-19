@@ -10,7 +10,7 @@ In this notebook, we are going to analyze consumer data from the finctional busi
 - Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 - How does location and demographics affect the choice of social media platform?
 
-After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 15 rows for this example. However the rest of the queries will be executed without the ```LIMIT```.
+After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 15 rows to better visualize the example. However the rest of the queries will be executed without the ```LIMIT```.
 
 [In]
 
@@ -39,4 +39,6 @@ LIMIT 15;
 | 57  | Male   | 6 | Instagram | Lifestlye | Italy | Urban | Construction-Worker | 99017 | FALSE | 33347 | TRUE | FALSE |
 | 41  | Female | 9 | YouTube | Travel | India | Rural | Financial-Analyst | 102043 | TRUE | 154571 | TRUE | FALSE |
 | 20  | Female | 6 | Facebook | Sports | Germany | Suburban | Administrative-Assistant | 48708 | TRUE | 42894 | TRUE | FALSE |
+
+After using the function above we can see the 15 rows 
 
