@@ -33,7 +33,7 @@ LIMIT 15;
 
 After using the function above we can see the 15 rows 
 
-**Age Gender Time_Spent (Hrs)**
+**Age | Gender | Time_Spent (Hrs)**
 
-``` 46 Male 3 ```
+```46 |  Male  | 3```
 
