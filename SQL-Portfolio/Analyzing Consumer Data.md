@@ -34,12 +34,16 @@ LIMIT 15;
 
 After using the function above we can see the first 5 rows, which includes the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
 
-While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it. In the section below we will calculate the average age of our consumers, and as a bonus find the average age by proffesion. 
+While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it. In the section below we will calculate the average rounded age of our consumers, and as a bonus find the average age by proffesion. 
 
 [In]
 
 ``` sql //
-SELECT cd.*,
-(SELECT AVG(Age) FROM Customer_Database AS Average_Age)
-FROM Customer_Database cd
+SELECT ROUND(AVG(Age)) AS Average_Age
+FROM Customer_Database;
 ```
+[Out]
+
+**Average Rounded Age:**
+
+```41```
