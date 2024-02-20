@@ -3,7 +3,4 @@ This repository is the home page of the SQL-Projects I have created to display m
 
 Project Name  | Description   |  Topic
 ------------- | ------------- | ------------------
- Analyzing Consumer Database| ssssssss  | ssssssss
- ssssssss | ssssssss | ssssssss
-
-https://github.com/Josh9182/SQL-Projects/tree/main/SQL-Portfolio
+[Analyzing Consumer Data](https://github.com/Josh9182/SQL-Projects/tree/main/SQL-Portfolio) | Using a self created database of 1000 rows of fictional consumer data, it will be analyzed, cleaned, and used to answer stakeholder questions| SQL queries, database creation, database analyzation
