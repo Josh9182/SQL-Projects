@@ -32,6 +32,7 @@ LIMIT 15;
 ## What is the average age of our consumers?
 
 After using the function above we can see the 15 rows 
+
 **Age Gender Time_Spent (Hrs)**
 
 ```46``` ```Female``` ```3```
