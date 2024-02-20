@@ -119,67 +119,74 @@ The previous section provided tons of useful data for us to play around with! Ob
 
 Using the data from previous sections will now help us find a suitable location for marketing based off the data gathered through calculating time spent based on age. 
 
-## AVG Time Spent on Youtube
+**Additionally, due to the size of this chart, I will be grouping ages into their respective ranges.**
+
+## AVG Time Spent on Youtube 18-29
 
 [In]
 
 ``` sql //
-SELECT age, Platform, ROUND(AVG("Time_Spent (Hrs)")) AS Average_Time
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
 FROM Customer_Database cd 
-GROUP BY age, Platform
-ORDER BY Platform DESC 
+WHERE Platform LIKE 'YouTube' 
+AND Age BETWEEN 18 AND 29
 ```
 [Out]
 
-**Average Time Spent on Youtube by Age:**
+**Average Time Spent on Youtube by 18-29:**
 ```
-18	YouTube	5.0
-19	YouTube	7.0
-20	YouTube	7.0
-21	YouTube	4.0
-22	YouTube	6.0
-23	YouTube	4.0
-24	YouTube	6.0
-25	YouTube	5.0
-26	YouTube	4.0
-27	YouTube	4.0
-28	YouTube	6.0
-29	YouTube	4.0
-30	YouTube	6.0
-31	YouTube	4.0
-32	YouTube	3.0
-33	YouTube	4.0
-34	YouTube	6.0
-35	YouTube	4.0
-36	YouTube	3.0
-37	YouTube	4.0
-38	YouTube	6.0
-39	YouTube	7.0
-40	YouTube	6.0
-41	YouTube	5.0
-42	YouTube	6.0
-43	YouTube	7.0
-44	YouTube	5.0
-45	YouTube	3.0
-46	YouTube	4.0
-47	YouTube	4.0
-48	YouTube	6.0
-49	YouTube	5.0
-50	YouTube	5.0
-51	YouTube	4.0
-52	YouTube	4.0
-53	YouTube	3.0
-54	YouTube	5.0
-55	YouTube	6.0
-56	YouTube	6.0
-57	YouTube	4.0
-58	YouTube	5.0
-59	YouTube	5.0
-60	YouTube	6.0
-61	YouTube	6.0
-62	YouTube	4.0
-63	YouTube	3.0
-64	YouTube	3.0
+5.1 Hours
+```
+
+## AVG Time Spent on Youtube 30-41
+
+[In]
+
+``` sql //
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
+FROM Customer_Database cd 
+WHERE Platform LIKE 'YouTube' 
+AND Age BETWEEN 18 AND 29
+```
+[Out]
+
+**Average Time Spent on Youtube by 30-41:**
+```
+
+```
+
+## AVG Time Spent on Youtube 42-53
+
+[In]
+
+``` sql //
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
+FROM Customer_Database cd 
+WHERE Platform LIKE 'YouTube' 
+AND Age BETWEEN 18 AND 29
+```
+[Out]
+
+**Average Time Spent on Youtube by 42-53:**
+```
+
+```
+
+## AVG Time Spent on Youtube 54-64
+
+[In]
+
+``` sql //
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
+FROM Customer_Database cd 
+WHERE Platform LIKE 'YouTube' 
+AND Age BETWEEN 18 AND 29
+```
+[Out]
+
+**Average Time Spent on Youtube by 54-64:**
+```
+
 ```
 
 
