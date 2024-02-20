@@ -39,3 +39,7 @@ While we can calculate the average manually, SQL can quickly, efficiently, and c
 [In]
 
 ``` sql //
+SELECT cd.*,
+(SELECT AVG(Age) FROM Customer_Database AS Average_Age)
+FROM Customer_Database cd
+```
