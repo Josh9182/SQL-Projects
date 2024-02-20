@@ -10,10 +10,7 @@ In this notebook, we are going to analyze consumer data from the finctional busi
 - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?]()
 - [How does location and demographics affect the choice of social media platform?]()
 
-
-
-
- 
+### 
 After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 15 rows to better visualize the example. However the rest of the queries will be executed without the ```LIMIT```.
 
 [In]
