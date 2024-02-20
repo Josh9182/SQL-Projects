@@ -74,7 +74,9 @@ Advertising-Manager: 34
 
 ## What is the least common and most common gender present?
 
-From the first five rows, we can see the average age of our consumers in general as well as by proffesion. However while this information is very helpful to see what marketing types will be most successful. We do not know which gender is the most common, which is the least, and what the count is for each. 
+From the first five rows, we can see the average age of our consumers in general as well as by proffesion. However while this information is very helpful to see what marketing types will be most successful. Will billboards or social media ads be more benneficial to a 38yr old IT Technician? Will television or print mail be more successful for a 56yr old Police Detective?
+
+While we know age and profession, we do not know which gender is the most common, which is the least, and what the count is for each. 
 
 Finding this data will allow us to see why certain sexes are more attracted to this product and why some aren't. This data will allow us to better shape our marketing to be more versatile and equally accepted. 
 
@@ -111,4 +113,10 @@ LIMIT 1
 **Most Common Gender Present & Count:** ```Female, 522``` 
 
 ## What is the average time spent on each social media platform by age?
+
+After implementing all of our queries we can see a total of 488 Males and 522 Females, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the time spent in hours on the desired social media app daily. 
+
+The previous section provided tons of useful data for us to play around with! Obtaining the dominant/least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19 year old females? Will Instagram ads in the form of short videos be most successful for 56 year old males? 
+
+Using the data from previous sections will now help us find a suitable location for marketing based off the 
 
