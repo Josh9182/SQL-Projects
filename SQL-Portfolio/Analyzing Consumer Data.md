@@ -3,12 +3,12 @@ Consumer financial data may be analzed for several purposes, whether it be to or
 
 In this notebook, we are going to analyze consumer data from the finctional business, Aurora Technologies in order to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographical information (demographics and country of residency). Below I will find the answers to questions such as:
 
-    - [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
-    - [What is the least common and most common gender present? What is the numerical amount of each gender?]()
-    - [What is the average time spent on each social media platform by age?]()
-    - [What is the average income and debt of individuals based on their desired social media platform?]()
-    - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?]()
-    - [How does location and demographics affect the choice of social media platform?]()
+- [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
+- [What is the least common and most common gender present? What is the numerical amount of each gender?]()
+- [What is the average time spent on each social media platform by age?]()
+- [What is the average income and debt of individuals based on their desired social media platform?]()
+- [Do homeowners tend to spend more or less time on social media compared to non-homeowners?]()
+- [How does location and demographics affect the choice of social media platform?]()
 
 ###                                                             .
 After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 15 rows to better visualize the example. However the rest of the queries will be executed without the ```LIMIT```.
