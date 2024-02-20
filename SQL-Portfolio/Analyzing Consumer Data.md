@@ -35,5 +35,5 @@ After using the function above we can see the 15 rows
 
 **Age Gender Time_Spent (Hrs)**
 
-```46``` ```Female``` ```3```
+``` 46 Male 3 ```
 
