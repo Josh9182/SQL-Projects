@@ -11,14 +11,14 @@ In this notebook, we are going to analyze consumer data from the finctional busi
   - [How does location and demographics affect the choice of social media platform?]()
 
 ###                                                             .
-After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 15 rows to better visualize the example. However the rest of the queries will be executed without the ```LIMIT```.
+After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However most of the queries will be executed without the ```LIMIT```.
 
 [In]
 
 ``` sql //
 SELECT *
 FROM Customer_Database cd
-LIMIT 15;
+LIMIT 5;
 ```
 [Out]
 
@@ -32,11 +32,11 @@ LIMIT 15;
 
 ## What is the average age of our consumers?
 
-After using the function above we can see the first 5 rows, which includes the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
+After using the function above we can see the first 5 rows, which include the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
 
 While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it.
 
-In the section below we will calculate the average rounded age of our consumers, and as a bonus find the average age by profession. 
+In the section below we will calculate the average rounded age of our consumers, and as a bonus, find the average age by profession. 
 
 [In]
 
@@ -74,16 +74,15 @@ Advertising-Manager: 34
 
 ## What is the least common and most common gender present?
 
-From the first five rows, we can see the average age of our consumers in general as well as by proffesion. However while this information is very helpful to see what marketing types will be most successful. Will billboards or social media ads be more benneficial to a 38yr old IT Technician? Will television or print mail be more successful for a 56yr old Police Detective?
+From the first five rows, we can see the average age of our consumers in general as well as by proffesion. This information allows us to answer some pivotal questions in regard to marketing and how we can develop a strategy based off of consumer data. Will billboards or social media ads be more benneficial to a 38yr old IT Technician? Will television or print mail be more successful for a 56yr old Police Detective?
 
-While we know age and profession, we do not know which gender is the most common, which is the least, and what the count is for each. 
-
-Finding this data will allow us to see why certain sexes are more attracted to this product and why some aren't. This data will allow us to better shape our marketing to be more versatile and equally accepted. 
+While we know age and profession, we do not know which gender is the most common, which is the least, and what the count is for each. Finding this data will allow us to see why certain sexes are more attracted to this product and why some aren't. This data will allow us to better shape our marketing to be more versatile and equally accepted. 
 
 In this section, we are going to discover the least common gender and the most common gender. Rather than creating several different queries, we will find the least/most common gender while also showing the count of each. 
 
 
 ## Least Common Gender
+
 [In]
 
 ``` sql //
@@ -114,9 +113,74 @@ LIMIT 1
 
 ## What is the average time spent on each social media platform by age?
 
-After implementing all of our queries we can see a total of 488 Males and 522 Females, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the time spent in hours on the desired social media app daily. 
+After implementing all of our queries we can see a total of 488 Males and 522 Females, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
 
 The previous section provided tons of useful data for us to play around with! Obtaining the dominant/least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19 year old females? Will Instagram ads in the form of short videos be most successful for 56 year old males? 
 
-Using the data from previous sections will now help us find a suitable location for marketing based off the 
+Using the data from previous sections will now help us find a suitable location for marketing based off the data gathered through calculating time spent based on age. 
+
+## AVG Time Spent on Youtube
+
+[In]
+
+``` sql //
+SELECT age, Platform, ROUND(AVG("Time_Spent (Hrs)")) AS Average_Time
+FROM Customer_Database cd 
+GROUP BY age, Platform
+ORDER BY Platform DESC 
+```
+[Out]
+
+**Average Time Spent on Youtube by Age:**
+```
+18	YouTube	5.0
+19	YouTube	7.0
+20	YouTube	7.0
+21	YouTube	4.0
+22	YouTube	6.0
+23	YouTube	4.0
+24	YouTube	6.0
+25	YouTube	5.0
+26	YouTube	4.0
+27	YouTube	4.0
+28	YouTube	6.0
+29	YouTube	4.0
+30	YouTube	6.0
+31	YouTube	4.0
+32	YouTube	3.0
+33	YouTube	4.0
+34	YouTube	6.0
+35	YouTube	4.0
+36	YouTube	3.0
+37	YouTube	4.0
+38	YouTube	6.0
+39	YouTube	7.0
+40	YouTube	6.0
+41	YouTube	5.0
+42	YouTube	6.0
+43	YouTube	7.0
+44	YouTube	5.0
+45	YouTube	3.0
+46	YouTube	4.0
+47	YouTube	4.0
+48	YouTube	6.0
+49	YouTube	5.0
+50	YouTube	5.0
+51	YouTube	4.0
+52	YouTube	4.0
+53	YouTube	3.0
+54	YouTube	5.0
+55	YouTube	6.0
+56	YouTube	6.0
+57	YouTube	4.0
+58	YouTube	5.0
+59	YouTube	5.0
+60	YouTube	6.0
+61	YouTube	6.0
+62	YouTube	4.0
+63	YouTube	3.0
+64	YouTube	3.0
+```
+
+
 
