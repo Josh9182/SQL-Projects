@@ -139,25 +139,25 @@ Using the data from previous sections will now help us find a suitable location 
 
 ## Average Time Spent for Each Consumer Based off of Desired Platform 
 
-This first query will show each consumer's age, their most used platform, and the rounded average time spent on this desired platform. Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate values and averages them out as the ```Average_Time``` instead of showing 1000 rows of duplicate information. This query results in 141 rows of unique information. 
+This first query will show the average consumer's age, most used platform, and the rounded average time spent on the desired platform. If we ```GROUP BY``` ```Age``` as well as ```Platform``` It will instead show 141 rows of unique information. 
+
+Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate values and averages them out as the ```Average_Time``` instead of showing 1000 rows of duplicate information. 
 
 [In]
 
 ``` sql //
 SELECT age, platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
 FROM Customer_Database cd 
-GROUP BY age, Platform 
+GROUP BY Platform 
 ORDER BY Platform DESC 
 ```
 [Out]
 
 | Age | Platform | Average_Time |
 |-----|----------|--------------|
-| 18  | YouTube  | 8            |
-| 19  | YouTube  | 4            |
-| 20  | YouTube  | 7            |
-| 21  | YouTube  | 7            |
-| 22  | YouTube  | 7            |
+| 56  | YouTube  | 4            |
+| 56  | Instagram| 4.1          |
+| 46  | Facebook | 3.9          |
 
 ## Average Time Spent on Youtube 18-64
 
@@ -222,4 +222,20 @@ AND Age BETWEEN 18 AND 29
 **Average Time Spent on Facebook by 54-64:** ```2.4 Hours```
 
 ## What is the average income and debt of individuals based on their desired social media platform?
+
+Now that we have our individuals general information as well as their preffered platform and statistics, the most important information regarding a finance app is the customers financial information. 
+
+Understanding a users financial information will allow us to conduct a targeted marketing strategy which tailors to personal needs, such as saving for a property, managing investments, and creating financial goals. Studying both income amount as well as debt allows us to assess users financial health, allowing us to track their risk assesment and spending habits. 
+
+Using the data from previous sections will now help us see which app provides the greatest and worst spenders and help us engage in advertisements that tailor to the correct audience. 
+
+[In]
+
+``` sql //
+SELECT age, platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
+FROM Customer_Database cd 
+GROUP BY Platform 
+ORDER BY Platform DESC 
+```
+[Out]
 
