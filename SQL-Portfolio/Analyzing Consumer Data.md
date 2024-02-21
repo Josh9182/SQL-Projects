@@ -221,7 +221,7 @@ AND Age BETWEEN 18 AND 29
 
 **Average Time Spent on Facebook by 54-64:** ```2.4 Hours```
 
-## What is the average income and debt of individuals based on their desired social media platform?
+## What is the average income and debt based on the most used social media platforms?
 
 Now that we have our individuals general information as well as their preffered platform and statistics, the most important information regarding a finance app is the customers financial information. 
 
