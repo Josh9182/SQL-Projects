@@ -26,11 +26,11 @@ LIMIT 5;
 
 | Age | Gender | Time_Spent (Hrs) | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt Amount | Is_Homeowner | Owns_Car |
 |-----|--------|------------------|----------|-----------|----------|--------------|------------|---------------|--------|-------------|---------------|----------|
-| 56  | Male   | 3 | Instagram | Sports | United Kingdom | Urban | Software-Engineer | 108824 | TRUE | 133744 | FALSE | FALSE |
+| 56  | Male   | 3 | Instagram | Sports | United Kingdom | Urban | Software Engineer | 108824 | TRUE | 133744 | FALSE | FALSE |
 | 46  | Female | 2 | Facebook | Travel | United Kingdom | Urban | Nurse | 43350 | TRUE | 47803 | TRUE | TRUE |
-| 32  | Male   | 8 | Instagram | Sports | Australia | Suburban | Teacher | 51030 | FALSE | 161411 | FALSE | FALSE |
-| 60  | Female | 5 | Instagram | Travel | United Kingdom | Urban | Accountant | 102545 | FALSE | 159572 | TRUE | FALSE |
-| 25  | Male   | 1 | Instagram | Lifestlye | Australia | Urban | Graphic-Designer | 63303 | FALSE | 52828 | TRUE | TRUE |
+| 32  | Male   | 7 | Instagram | Sports | Australia | Suburban | Teacher | 51030 | FALSE | 161411 | FALSE | FALSE |
+| 60  | Female | 4 | Instagram | Travel | United Kingdom | Urban | Accountant | 102545 | FALSE | 159572 | TRUE | FALSE |
+| 25  | Male   | 6 | Instagram | Lifestlye | Australia | Urban | Graphic Designer | 63303 | FALSE | 52828 | TRUE | TRUE |
 
 ## What is the average age of our consumers?
 
