@@ -246,4 +246,21 @@ GROUP BY Platform
 | Instagram | 90269.1        | 47458.1      |
 | YouTube   | 85879.7        | 50589.8      |
 
+## What is the average income and debt of each individual based on their desired social media platform?
+
+Differing from the question above, this query will show each consumer's age, desired platform, average income, and average debt while combining all duplicate values and averaging them out as both ```Average_Income``` and ```Average_Debt```. This result will show 141 rows. 
+
+
+[In]
+
+``` sql //
+SELECT Age, Platform,
+	ROUND(AVG(Annual_Income),2) AS Average_Income,
+	ROUND(AVG("Debt Amount"),2) AS Average_Debt
+FROM Customer_Database cd 
+GROUP BY age, Platform 
+ORDER BY Platform DESC
+```
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
+
+Now that we have calculated our consumers personal information as well as financial we can develop a marketing strategy 
