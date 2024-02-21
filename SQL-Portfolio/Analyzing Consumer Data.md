@@ -67,11 +67,11 @@ LIMIT 5;
 **Average Rounded Age By Profession:** 
 
 ```
-Account-Executive: 32
-Account-Manager: 37
-Accountant: 39
-Administrative-Assistant: 38
-Advertising-Manager: 34
+Account Executive: 37
+Account Manager: 29
+Accountant: 43
+Administrative Assistant: 43
+Advertising Manager: 35
 ```
 
 ## What is the least common and most common gender present?
@@ -137,7 +137,7 @@ Using the data from previous sections will now help us find a suitable location 
 
 **Due to the size of this chart, I will be grouping ages into their respective ranges.**
 
-## Average Time Spent for Each Consumer Based Off of Platform ()
+## Average Time Spent for Each Consumer Based off of Desired Platform 
 
 (describe what this query does, I.E. shows distinct values and averages them out so if having (3) 42 year olds it will average out that value, etc)
 
@@ -160,6 +160,9 @@ FROM Customer_Database cd
 GROUP BY age, Platform 
 ORDER BY Platform DESC 
 ```
+[Out]
+
+**Shows 142 rows of each age, platform, and average time spent on their desired platform. Due to the size of the result it will not be shown here.**
 
 ## Average Time Spent on Youtube 18-64
 
