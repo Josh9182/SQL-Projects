@@ -80,7 +80,7 @@ From the first five rows, we can see the average age of our consumers in general
 
 While we know age and profession, we do not know which gender is the most common, which is the least, and what the count is for each. Finding this data will allow us to see why certain sexes are more attracted to this product and why some aren't. This data will allow us to better shape our marketing to be more versatile and equally accepted. 
 
-In this section, we are going to discover the least common gender and the most common gender. Rather than creating several different queries, we will find the least/most common gender while also showing the count of each. 
+In this section, we are going to discover the least common gender, moderatly common, and the most common gender. Rather than creating several different queries, we will find the least/most common gender while also showing the count of each. 
 
 ## Least Common Gender
 
