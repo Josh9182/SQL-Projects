@@ -66,7 +66,6 @@ LIMIT 5;
 
 **Average Rounded Age By Profession:** 
 
-```
 | Profession | Average_Age |
 |-----|--------|
 | Account Executive  | 37   | 
@@ -74,13 +73,6 @@ LIMIT 5;
 | Accountant  | 43   | 
 | Administrative Assistant  | 43 | 
 | Advertising Manager  | 35  | 
-
-Account Executive: 37
-Account Manager: 29
-Accountant: 43
-Administrative Assistant: 43
-Advertising Manager: 35
-```
 
 ## What is the least common and most common gender present?
 
