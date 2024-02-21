@@ -97,21 +97,6 @@ LIMIT 1;
 
 **Least Common Gender Present & Count:** ```Non-Binary, 116``` 
 
-## Most Common Gender
-
-[In]
-
-``` sql //
-SELECT Gender, COUNT(*) AS Gender_Amount
-FROM Customer_Database cd 
-GROUP BY Gender 
-ORDER BY gender_Amount DESC 
-LIMIT 1
-```
-[Out]
-
-**Most Common Gender Present & Count:** ```Male, 486``` 
-
 ## Moderately Common Gender 
 
 [In]
@@ -126,6 +111,21 @@ LIMIT 1 OFFSET 1
 [Out]
 
 **Moderately Common Gender Present & Count:** ```Female, 398```
+
+## Most Common Gender
+
+[In]
+
+``` sql //
+SELECT Gender, COUNT(*) AS Gender_Amount
+FROM Customer_Database cd 
+GROUP BY Gender 
+ORDER BY gender_Amount DESC 
+LIMIT 1
+```
+[Out]
+
+**Most Common Gender Present & Count:** ```Male, 486``` 
 
 ## What is the average time spent on each social media platform by age?
 
