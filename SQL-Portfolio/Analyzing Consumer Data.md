@@ -232,10 +232,16 @@ Using the data from previous sections will now help us see which app provides th
 [In]
 
 ``` sql //
-SELECT age, platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
+SELECT Platform,
+	ROUND(AVG(Annual_Income),2) AS Average_Income,
+	ROUND(AVG("Debt Amount"),2) AS Average_Debt
 FROM Customer_Database cd 
 GROUP BY Platform 
-ORDER BY Platform DESC 
 ```
 [Out]
 
+| Platform  | Average_Income | Average_Debt |
+|-----------|----------------|--------------|
+| Facebook  | 88472.2        | 48892.7      |
+| Instagram | 90269.1        | 47458.1      |
+| YouTube   | 85879.7        | 50589.8      |
