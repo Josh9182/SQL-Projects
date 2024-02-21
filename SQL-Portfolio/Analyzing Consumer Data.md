@@ -183,6 +183,43 @@ AND Age BETWEEN 18 AND 29
 
 ## Average Time Spent on Instagram 18-64
 
+[In]
+
+``` sql //
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
+FROM Customer_Database cd 
+WHERE Platform LIKE 'Instagram' 
+AND Age BETWEEN 18 AND 29
+```
+[Out]
+
+**Average Time Spent on Instagram by 18-29:** ```6.2 Hours```
+
+**Average Time Spent on Instagram by 30-41:** ```4.4 Hours```
+
+**Average Time Spent on Instagram by 42-53:** ```3.0 Hours```
+
+**Average Time Spent on Instagram by 54-64:** ```2.3 Hours```
+
 ## Average Time Spent on Facebook 18-64
 
+[In]
+
+``` sql //
+SELECT platform, ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
+FROM Customer_Database cd 
+WHERE Platform LIKE 'Facebook' 
+AND Age BETWEEN 18 AND 29
+```
+[Out]
+
+**Average Time Spent on Facebook by 18-29:** ```6.1 Hours```
+
+**Average Time Spent on Facebook by 30-41:** ```4.6 Hours```
+
+**Average Time Spent on Facebook by 42-53:** ```2.7 Hours```
+
+**Average Time Spent on Facebook by 54-64:** ```2.4 Hours```
+
+## What is the average income and debt of individuals based on their desired social media platform?
 
