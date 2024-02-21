@@ -67,6 +67,14 @@ LIMIT 5;
 **Average Rounded Age By Profession:** 
 
 ```
+| Profession | Average_Age |
+|-----|--------|
+| Account Executive  | 37   | 
+| Account Manager  | 29 | 
+| Accountant  | 43   | 
+| Administrative Assistant  | 43 | 
+| Advertising Manager  | 35  | 
+
 Account Executive: 37
 Account Manager: 29
 Accountant: 43
@@ -162,7 +170,11 @@ ORDER BY Platform DESC
 ```
 [Out]
 
-**Shows 142 rows of each age, platform, and average time spent on their desired platform. Due to the size of the result it will not be shown here.**
+18	YouTube	8.0
+19	YouTube	4.0
+20	YouTube	7.0
+21	YouTube	7.0
+22	YouTube	7.0
 
 ## Average Time Spent on Youtube 18-64
 
