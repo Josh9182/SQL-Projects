@@ -1,7 +1,9 @@
-# Fictional Consumer Data
+# Aurora Technologies Consumer Data
 Consumer financial data may be analzed for several purposes, whether it be to organize civilians in different categories such as through a government database or for marketing reasons. Companies, whether they be financial, healthcare, technology, or retail, use consumer data for a multitude of reasons such as to better understand their customers, improve products and services, and enhance marketing strategies. 
 
-In this notebook, we are going to analyze consumer data from the finctional business, Aurora Technologies in order to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographical information (demographics and country of residency). Below I will find the answers to questions such as:
+In this notebook, we are going to analyze consumer data from the finctional business, Aurora Technologies in order to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. Aurora Technologies is a software company specializing in app developement. Our new app, Budget Buddy was released in order to help consumers budget better, track their credit score, and find the best personal, automotive, and mortgage loans for their income and area. However, we need help marketing our product, and to do that we wil use our customer database from our past applications. 
+
+The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographical information (demographics and country of residency). Below I will find the answers to questions such as:
 
   - [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
   - [What is the least common and most common gender present?](#What-is-the-least-common-and-most-common-gender-present)
