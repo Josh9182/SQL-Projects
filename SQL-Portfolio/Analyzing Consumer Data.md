@@ -173,14 +173,16 @@ AND Age BETWEEN 18 AND 29
 ```
 [Out]
 
-**Average Time Spent on Youtube by 18-29:** ```5.1 Hours```
+**Average Time Spent on Youtube by 18-29:** ```6.2 Hours```
 
 **Average Time Spent on Youtube by 30-41:** ```4.8 Hours```
 
-**Average Time Spent on Youtube by 42-53:** ```4.8 Hours```
+**Average Time Spent on Youtube by 42-53:** ```3.1 Hours```
 
-**Average Time Spent on Youtube by 54-64:** ```4.8 Hours```
+**Average Time Spent on Youtube by 54-64:** ```2.4 Hours```
 
-## AVG Time Spent on Youtube 18-64
+## Average Time Spent on Instagram 18-64
+
+## Average Time Spent on Facebook 18-64
 
 
