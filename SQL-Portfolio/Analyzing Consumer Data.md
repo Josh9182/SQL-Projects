@@ -82,7 +82,6 @@ While we know age and profession, we do not know which gender is the most common
 
 In this section, we are going to discover the least common gender and the most common gender. Rather than creating several different queries, we will find the least/most common gender while also showing the count of each. 
 
-
 ## Least Common Gender
 
 [In]
@@ -96,7 +95,7 @@ LIMIT 1;
 ```  
 [Out]
 
-**Least Common Gender Present & Count:** ```Male, 488``` 
+**Least Common Gender Present & Count:** ```Non-Binary, 116``` 
 
 ## Most Common Gender
 
@@ -111,11 +110,26 @@ LIMIT 1
 ```
 [Out]
 
-**Most Common Gender Present & Count:** ```Female, 522``` 
+**Most Common Gender Present & Count:** ```Male, 486``` 
+
+## Moderately Common Gender 
+
+[In]
+
+``` sql //
+SELECT Gender, COUNT(*) AS Gender_Amount
+FROM Customer_Database cd 
+GROUP BY gender
+ORDER BY Gender_Amount DESC
+LIMIT 1 OFFSET 1
+```
+[Out]
+
+**Moderately Common Gender Present & Count:** ```Female, 398```
 
 ## What is the average time spent on each social media platform by age?
 
-After implementing all of our queries we can see a total of 488 Males and 522 Females, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
+After implementing all of our queries we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
 
 The previous section provided tons of useful data for us to play around with! Obtaining the dominant/least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19 year old females? Will Instagram ads in the form of short videos be most successful for 56 year old males? 
 
