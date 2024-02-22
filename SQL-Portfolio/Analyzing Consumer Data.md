@@ -297,16 +297,17 @@ SELECT Is_Homeowner, Platform,
        ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
 FROM Customer_Database
 GROUP BY Is_Homeowner, Platform
+ORDER BY Is_Homeowner DESC
 ```
 
 [Out]
 
 | Is_Homeowner | Platform  | Avg_Time_Spent |
 |--------------|-----------|----------------|
-| FALSE        | Facebook  | 3.82           |
-| FALSE        | Instagram | 4.04           |
-| FALSE        | YouTube   | 4.04           |
 | TRUE         | Facebook  | 4.03           |
 | TRUE         | Instagram | 4.13           |
 | TRUE         | YouTube   | 3.99           |
+| FALSE        | Facebook  | 3.82           |
+| FALSE        | Instagram | 4.04           |
+| FALSE        | YouTube   | 4.04           |
 
