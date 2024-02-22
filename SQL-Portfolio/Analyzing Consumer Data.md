@@ -288,7 +288,29 @@ As we keep going further into our consumers information we can now develop a str
 
 To further on with our marketing endeavor, asking questions in regard to a homeowner status would be most beneficial as we can calculate not only how much time homeowners spend on social media, but if they spend it more or less than those without one. Additionally, knowing home owner statistics regarding our consumers will allow us to introduce features such as locating mortgage rates and payment information for those who are both in the midst of paying their mortgage and those who are saving for a home. 
 
-In the section below we will see how much homeowners spend on social media compared to non-homeowners, allowing for us to once again personalize our marketing. 
+In the section below we will see create a query that averages out the time spent on platforms by homeowners as well as non-homeowners, additionally we will show the expanded view for each platform. 
+
+## The average time spent on platforms by homeowners vs non-homeowners 
+
+[In]
+
+``` sql //
+SELECT Is_Homeowner,
+       ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+FROM Customer_Database
+GROUP BY Is_Homeowner
+ORDER BY Is_Homeowner DESC;
+```
+
+[Out]
+
+| Is_Homeowner | Avg_Time_Spent |
+|--------------|----------------|
+| TRUE         | 4.05           |
+| FALSE        | 3.97           |
+
+
+## The average time spent on each platform by homeowners vs non-homeowners
 
 [In]
 
