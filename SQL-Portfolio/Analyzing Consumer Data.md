@@ -160,8 +160,8 @@ ORDER BY Average_Time DESC
 
 | Age | Platform | Average_Time |
 |-----|----------|--------------|
-| 56  | YouTube  | 4            |
 | 56  | Instagram| 4.1          |
+| 56  | Youtube  | 4            |
 | 46  | Facebook | 3.9          |
 
 ## Average Time Spent on Youtube 18-64
