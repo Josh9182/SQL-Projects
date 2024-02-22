@@ -52,7 +52,7 @@ FROM Customer_Database;
 
 ## What is the average age of our consumers by profession?
 
-Due to the table having 179 unique professions, we will limit the results to just 5 rows to not cloud up the document.
+Due to the table having 179 unique professions, we will limit the results to just 5 random rows to not cloud up the document.
 
 [In]
 
@@ -61,19 +61,21 @@ SELECT Profession,
 	ROUND(AVG(Age)) AS Average_Age
 	FROM Customer_Database
 GROUP BY Profession
+	ORDER BY RANDOM()
 LIMIT 5;
 ```
 [Out]
 
 **Average Rounded Age By Profession:** 
 
-| Profession | Average_Age |
-|-----|--------|
-| Account Executive  | 37   | 
-| Account Manager  | 29 | 
-| Accountant  | 43   | 
-| Administrative Assistant  | 43 | 
-| Advertising Manager  | 35  | 
+| Profession           | Average Age |
+|----------------------|-------------|
+| Insurance Underwriter| 33          |
+| Financial Controller | 27          |
+| Arbitrator           | 46          |
+| Accountant           | 43          |
+| Immigration Lawyer   | 35          |
+
 
 ## What is the least common and most common gender present?
 
@@ -109,7 +111,7 @@ SELECT Gender,
 	FROM Customer_Database cd 
 GROUP BY gender
 ORDER BY Gender_Amount DESC
-	LIMIT 1 OFFSET 1
+	LIMIT 1 OFFSET 1;
 ```
 [Out]
 
@@ -125,7 +127,7 @@ SELECT Gender,
 	FROM Customer_Database cd 
 GROUP BY Gender 
 ORDER BY gender_Amount DESC 
-	LIMIT 1
+	LIMIT 1;
 ```
 [Out]
 
@@ -154,7 +156,7 @@ SELECT age, platform,
 	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
 	FROM Customer_Database cd 
 GROUP BY Platform 
-ORDER BY Average_Time DESC 
+ORDER BY Average_Time DESC;
 ```
 [Out]
 
@@ -175,7 +177,7 @@ SELECT platform,
 	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
 	FROM Customer_Database cd 
 WHERE Platform LIKE 'YouTube' 
-AND Age BETWEEN 18 AND 29
+AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -196,7 +198,7 @@ SELECT platform,
 	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
 	FROM Customer_Database cd 
 WHERE Platform LIKE 'Instagram' 
-AND Age BETWEEN 18 AND 29
+AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -217,7 +219,7 @@ SELECT platform,
 	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
 	FROM Customer_Database cd 
 WHERE Platform LIKE 'Facebook' 
-AND Age BETWEEN 18 AND 29
+AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -244,7 +246,7 @@ SELECT Platform,
 	ROUND(AVG(Annual_Income),2) AS Average_Income,
 	ROUND(AVG("Debt Amount"),2) AS Average_Debt
 FROM Customer_Database cd 
-GROUP BY Platform 
+GROUP BY Platform; 
 ```
 [Out]
 
@@ -258,7 +260,7 @@ GROUP BY Platform
 
 Differing from the question above, this query will show each consumer's age, desired platform, average income, and average debt while combining all duplicate values and averaging them out as both ```Average_Income``` and ```Average_Debt```. 
 
-This result will show 141 rows. However for examples sake, the ```LIMIT``` function will be applied. 
+This result will show 141 rows organized by the ```Platform``` column in descending alphabetical order. However for examples sake, the ```LIMIT``` function is applied to not cloud up the document.
 
 
 [In]
@@ -266,11 +268,11 @@ This result will show 141 rows. However for examples sake, the ```LIMIT``` funct
 ``` sql //
 SELECT Age, Platform,
 	ROUND(AVG(Annual_Income),2) AS Average_Income,
-	ROUND(AVG("Debt Amount"),2) AS Average_Debt
+	ROUND(AVG("Debt_Amount"),2) AS Average_Debt
 FROM Customer_Database cd 
 GROUP BY age, Platform 
 ORDER BY Platform DESC
-	LIMIT 5
+	LIMIT 5;
 ```
 [Out]
 
