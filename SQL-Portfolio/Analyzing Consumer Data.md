@@ -346,5 +346,33 @@ Lastly, it was shown that Instagram holds on average the top earners with the le
 
 As we come to a close, the last stakeholder question follows suit as essential, does location matter? While we have our main plan for markteing to those in a higher / lower tax bracket and which apps to use. Location can make or break the success of our ad campaign. 
 
-This section will see the effects location and demographics has on consumers's desired social media platform and time spent on this platform. 
+This section will see the effects location and demographics have on consumers's desired social media platform and time spent on this platform. 
 
+[In]
+
+``` sql //
+SELECT Locations.Location, Customer_Database.Demographics, Customer_Database.Platform,
+    COUNT(Customer_Database.Location) AS Users,
+    COALESCE(SUM(Customer_Database."Time_Spent (Hrs)"), 0) AS Total_Time_Spent,
+    ROUND(AVG(Customer_Database."Time_Spent (Hrs)"), 1) AS Average_Time_Per_Location
+FROM (SELECT DISTINCT Location 
+FROM Customer_Database) AS Locations
+	LEFT JOIN Customer_Database ON Locations.Location = Customer_Database.Location
+	GROUP BY Locations.Location, Customer_Database.Demographics, Customer_Database.Platform 
+ORDER BY RANDOM(),Customer_Database.Demographics,Customer_Database.location DESC
+	LIMIT 10;
+```
+[Out]
+
+| Location        | Demographic | Platform   | Users | Total_Time_Spent | Average_Time_Per_Location |
+|-----------------|-------------|------------|-------|------------------|---------------------------|
+| Malta           | Suburban    | YouTube    | 1     | 2                | 2.0                       |
+| Germany         | Urban       | YouTube    | 1     | 8                | 8.0                       |
+| South Korea     | Rural       | YouTube    | 1     | 6                | 6.0                       |
+| Mexico          | Suburban    | Facebook   | 1     | 2                | 2.0                       |
+| Germany         | Rural       | Instagram  | 1     | 2                | 2.0                       |
+| United States   | Suburban    | Instagram  | 29    | 124              | 4.3                       |
+| Russia          | Rural       | Instagram  | 1     | 7                | 7.0                       |
+| Australia       | Suburban    | YouTube    | 29    | 113              | 3.9                       |
+| Denmark         | Urban       | Facebook   | 1     | 2                | 2.0                       |
+| Canada          | Rural       | YouTube    | 3     | 18               | 6.0                       |
