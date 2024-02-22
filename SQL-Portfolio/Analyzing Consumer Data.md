@@ -284,10 +284,29 @@ ORDER BY Platform DESC
 
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 
-Now that we have calculated our consumers personal information as well as financial we can develop a marketing strategy that caters to their income. Using financial informaion as well as 
+As we keep going further into our consumers information we can now develop a stronger understanding of how we can advertise our app most successfully based off of age, platform, income, and debt. Understanding this information will allow a more tailored experience that will reach the right audiences and create a more personalized bond with those who are witnessing said advertisement. 
+
+To further on with our marketing endeavor, asking questions in regard to a homeowner status would be most beneficial as we can calculate not only how much time homeowners spend on social media, but if they spend it more or less than those without one. Additionally, knowing home owner statistics regarding our consumers will allow us to introduce features such as locating mortgage rates and payment information for those who are both in the midst of paying their mortgage and those who are saving for a home. 
+
+In the section below we will how much homeowners spend on social media compared to non-homeowners, allowing for us to once again personalize our marketing. 
 
 [In]
 
 ``` sql //
+SELECT Is_Homeowner, Platform,
+       ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+FROM Customer_Database
+GROUP BY Is_Homeowner, Platform
+```
 
 [Out]
+
+| Is_Homeowner | Platform  | Avg_Time_Spent |
+|--------------|-----------|----------------|
+| FALSE        | Facebook  | 3.82           |
+| FALSE        | Instagram | 4.04           |
+| FALSE        | YouTube   | 4.04           |
+| TRUE         | Facebook  | 4.03           |
+| TRUE         | Instagram | 4.13           |
+| TRUE         | YouTube   | 3.99           |
+
