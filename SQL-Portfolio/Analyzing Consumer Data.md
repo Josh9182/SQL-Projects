@@ -10,7 +10,7 @@ The dataset contains information about customers, ranging from personal informat
   - [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
   - [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
   - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
-  - [How does location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform)
+  - [How does location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
 
 ###                                                             .
 After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However most of the queries will be executed without the ```LIMIT```.
@@ -24,7 +24,7 @@ LIMIT 5;
 ```
 [Out]
 
-| Age | Gender | Time_Spent (Hrs) | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt Amount | Is_Homeowner | Owns_Car |
+| Age | Gender | Time_Spent (Hrs) | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car |
 |-----|--------|------------------|----------|-----------|----------|--------------|------------|---------------|--------|-------------|---------------|----------|
 | 56  | Male   | 3 | Instagram | Sports | United Kingdom | Urban | Software Engineer | 108824 | TRUE | 133744 | FALSE | FALSE |
 | 46  | Female | 2 | Facebook | Travel | United Kingdom | Urban | Nurse | 43350 | TRUE | 47803 | TRUE | TRUE |
@@ -244,7 +244,7 @@ Using the data from previous sections will now help us see which app provides th
 ``` sql //
 SELECT Platform,
 	ROUND(AVG(Annual_Income),2) AS Average_Income,
-	ROUND(AVG("Debt Amount"),2) AS Average_Debt
+	ROUND(AVG(Debt_Amount),2) AS Average_Debt
 FROM Customer_Database cd 
 GROUP BY Platform; 
 ```
@@ -252,9 +252,9 @@ GROUP BY Platform;
 
 | Platform  | Average_Income | Average_Debt |
 |-----------|----------------|--------------|
-| Facebook  | 88472.2        | 48892.7      |
-| Instagram | 90269.1        | 47458.1      |
-| YouTube   | 85879.7        | 50589.8      |
+| Instagram |   90269.12     |  47458.14    |
+| Facebook  |   88472.23     |  48892.71    |
+| YouTube   |   85879.72     |  50589.84    |
 
 ## What is the average income and debt of each individual based on their desired social media platform?
 
@@ -262,13 +262,12 @@ Differing from the question above, this query will show each consumer's age, des
 
 This result will show 141 rows organized by the ```Platform``` column in descending alphabetical order. However for examples sake, the ```LIMIT``` function is applied to not cloud up the document.
 
-
 [In]
 
 ``` sql //
 SELECT Age, Platform,
 	ROUND(AVG(Annual_Income),2) AS Average_Income,
-	ROUND(AVG("Debt_Amount"),2) AS Average_Debt
+	ROUND(AVG(Debt_Amount),2) AS Average_Debt
 FROM Customer_Database cd 
 GROUP BY age, Platform 
 ORDER BY Platform DESC
@@ -335,7 +334,17 @@ ORDER BY Is_Homeowner DESC
 | FALSE        | Instagram | 4.04           |
 | FALSE        | YouTube   | 4.04           |
 
-## How does location and demographics affect the choice of social media platform?
+## How does location and demographics affect the choice of social media platform and time spent?
 
+Our previous sections have shown a momentous amount of helpful data that we, Aurora Technologies, can use to better understand our customers while simultaneously allowing us to market ourselves correctly and advertise specific features to those who require them.
 
+We have seen how our customers on average are about the age of 41 years old, and most are of the gender "Male". Our consumers use their technological devices on average about 4 hours a day, with Instagram being the most used social media platform at 4.1 hours. 
+
+The most important data found was in regard to age, with those between the ages of 18-29 using social media platforms 3x as much as those in between the ages of 54-64. While our main customer age is between 41-50, we can now see how important social media ads are for the younger generation while more traditional ads whether they be billboards, commercials, or newspapers would be more beneficial for those who are older. 
+
+Lastly, it was shown that Instagram holds on average the top earners with the least amount of debt, those who are making 9.4% more than the lesser earners of our consumers. Those who statistically make the least income and have the most debt of our consumers are shown to be using Facebook as their main platform. 
+
+As we come to a close, the last stakeholder question follows suit as essential, does location matter? While we have our main plan for markteing to those in a higher / lower tax bracket and which apps to use. Location can make or break the success of our ad campaign. 
+
+This section will see the effects location and demographics has on consumers's desired social media platform and time spent on this platform. 
 
