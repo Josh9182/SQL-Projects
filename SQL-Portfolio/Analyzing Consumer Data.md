@@ -346,7 +346,9 @@ Lastly, it was shown that Instagram holds on average the top earners with the le
 
 As we come to a close, the last stakeholder question follows suit as essential, does location matter? While we have our main plan for markteing to those in a higher / lower tax bracket and which apps to use. Location can make or break the success of our ad campaign. 
 
-This section will see the effects location and demographics have on consumers's desired social media platform and time spent on this platform. 
+This section will see the effects location and demographics have on consumers's desired social media platform and time spent on said platform. 
+
+## How does Location and Demographics affect userbase, time spent on platforms, and average time spent on platforms by user. 
 
 [In]
 
@@ -359,7 +361,7 @@ FROM (SELECT DISTINCT Location
 FROM Customer_Database) AS Locations
 	LEFT JOIN Customer_Database ON Locations.Location = Customer_Database.Location
 	GROUP BY Locations.Location, Customer_Database.Demographics, Customer_Database.Platform 
-ORDER BY RANDOM(),Customer_Database.Demographics,Customer_Database.location DESC
+ORDER BY RANDOM(), Customer_Database.location, Customer_Database.Demographics DESC
 	LIMIT 10;
 ```
 [Out]
