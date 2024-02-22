@@ -10,7 +10,7 @@ The dataset contains information about customers, ranging from personal informat
   - [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
   - [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
   - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
-  - [How does location and demographics affect the choice of social media platform?]()
+  - [How does location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform)
 
 ###                                                             .
 After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However most of the queries will be executed without the ```LIMIT```.
@@ -332,4 +332,8 @@ ORDER BY Is_Homeowner DESC
 | FALSE        | Facebook  | 3.82           |
 | FALSE        | Instagram | 4.04           |
 | FALSE        | YouTube   | 4.04           |
+
+## How does location and demographics affect the choice of social media platform?
+
+
 
