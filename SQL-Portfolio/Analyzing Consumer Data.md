@@ -8,7 +8,7 @@ The dataset contains information about customers, ranging from personal informat
   - [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
   - [What is the least common and most common gender present?](#What-is-the-least-common-and-most-common-gender-present)
   - [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
-  - [What is the average income and debt of individuals based on their desired social media platform?](#What-is-the-average-income-and-debt-of-individuals-based-on-their-desired-social-media-platform)
+  - [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
   - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
   - [How does location and demographics affect the choice of social media platform?]()
 
