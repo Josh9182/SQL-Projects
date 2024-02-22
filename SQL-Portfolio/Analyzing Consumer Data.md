@@ -267,12 +267,12 @@ LIMIT 5
 [Out]
 
 | Age | Platform | Average_Income | Average_Debt |
-------------------------------------------------
-| 18  | YouTube  | 100019.73      | 15408.09       |
-| 19  | YouTube  | 109678.63      | 15889.00       |
-| 20  | YouTube  | 94897.83       | 14304.83       |
-| 21  | YouTube  | 39128.50        | 12572.50      |
-| 22  | YouTube  | 55615.00        | 15110.67      |
+|-----|----------|----------------|--------------|
+| 18  | YouTube  | 100019.73      | 15408.09     |
+| 19  | YouTube  | 109678.63      | 15889.00     |
+| 20  | YouTube  | 94897.83       | 14304.83     |
+| 21  | YouTube  | 39128.50       | 12572.50     |
+| 22  | YouTube  | 55615.00       | 15110.67     |
 
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 
