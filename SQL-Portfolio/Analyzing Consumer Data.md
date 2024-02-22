@@ -154,7 +154,7 @@ SELECT age, platform,
 	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
 	FROM Customer_Database cd 
 GROUP BY Platform 
-ORDER BY Platform DESC 
+ORDER BY Average_Time DESC 
 ```
 [Out]
 
