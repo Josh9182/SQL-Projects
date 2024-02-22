@@ -263,4 +263,10 @@ ORDER BY Platform DESC
 ```
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 
-Now that we have calculated our consumers personal information as well as financial we can develop a marketing strategy 
+Now that we have calculated our consumers personal information as well as financial we can develop a marketing strategy that caters to their income. Using financial informaion as well as 
+
+[In]
+
+``` sql //
+
+[Out]
