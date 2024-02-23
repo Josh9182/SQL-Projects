@@ -443,4 +443,62 @@ LIMIT 10;
 
 ## Marketing Plan
 
-Using all the data from our countless queries we can now create a plan to better market to our consumers. 
+Using all the data from our countless queries we can now create a plan to better market to our constumers. Based off of age data as well as demographical statistics we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark them by the use of a new column, ```Advertisement_Type```. 
+
+Below will be this query, the final query that will organize our consumers by how we can and will market to them in the coming weeks. To simply data and not cloud up this document, a ```LIMIT``` of 10 will be assigned. 
+
+
+[In]
+
+``` sql //
+SELECT *,
+    COALESCE(
+        CASE
+            WHEN age BETWEEN 18 AND 41
+                AND Platform IN ('YouTube', 'Instagram', 'Facebook') 
+                AND Interests IN (
+                    'Sports', 'Travel', 'Lifestyle', 'Cooking', 'Photography', 'Hiking', 'Painting', 'Yoga', 'Reading', 'Gardening',
+                    'Traveling', 'Playing musical instruments', 'Writing', 'Astronomy', 'Gaming', 'Birdwatching', 'Knitting', 'Fishing',
+                    'Pottery', 'Cycling', 'Sculpting', 'Meditation', 'Dancing', 'DIY Projects', 'Film-making', 'Calligraphy', 'Surfing',
+                    'Rock climbing', 'Collecting antiques', 'Woodworking', 'Stand-up comedy', 'Scuba diving', 'Horseback riding',
+                    'Volunteer work', 'Martial arts', 'Baking', 'Urban exploration', 'Sewing', 'Home brewing', 'Archery', 'Graphic design',
+                    'Interior decorating', 'Beekeeping', 'Geocaching', 'Model building', 'Parkour', 'Origami', 'Learning languages',
+                    'Skydiving', 'Chess', 'Mountain biking', 'Cross-stitching', 'Creative writing', 'Urban gardening', 'Playing board games',
+                    'Ice skating', 'Singing', 'DIY electronics', 'Genealogy research', 'Mountain climbing', 'Ballet', 'Salsa dancing',
+                    'Wine tasting', 'Learning magic tricks', 'Kayaking', 'Historical reenactment', 'Cooking Japanese cuisine')
+                THEN 'Ad through ' || Platform || ' featuring visuals regarding ' || Interests
+            WHEN age BETWEEN 42 AND 64
+                AND Platform IN ('YouTube', 'Instagram', 'Facebook') 
+                AND Interests IN (
+                    'Sports', 'Travel', 'Lifestyle', 'Cooking', 'Photography', 'Hiking', 'Painting', 'Yoga', 'Reading', 'Gardening',
+                    'Traveling', 'Playing musical instruments', 'Writing', 'Astronomy', 'Gaming', 'Birdwatching', 'Knitting', 'Fishing',
+                    'Pottery', 'Cycling', 'Sculpting', 'Meditation', 'Dancing', 'DIY Projects', 'Film-making', 'Calligraphy', 'Surfing',
+                    'Rock climbing', 'Collecting antiques', 'Woodworking', 'Stand-up comedy', 'Scuba diving', 'Horseback riding',
+                    'Volunteer work', 'Martial arts', 'Baking', 'Urban exploration', 'Sewing', 'Home brewing', 'Archery', 'Graphic design',
+                    'Interior decorating', 'Beekeeping', 'Geocaching', 'Model building', 'Parkour', 'Origami', 'Learning languages',
+                    'Skydiving', 'Chess', 'Mountain biking', 'Cross-stitching', 'Creative writing', 'Urban gardening', 'Playing board games',
+                    'Ice skating', 'Singing', 'DIY electronics', 'Genealogy research', 'Mountain climbing', 'Ballet', 'Salsa dancing',
+                    'Wine tasting', 'Learning magic tricks', 'Kayaking', 'Historical reenactment', 'Cooking Japanese cuisine')
+                THEN 'Ad through physical mail and ' || Platform || ' featuring visuals regarding ' || Interests
+            ELSE
+                'Ad through ' || Platform || ' featuring visuals regarding ' || Interests
+        END,
+        'Other Advertisement Message'
+    ) AS Advertisement_Type
+FROM
+    Customer_Database
+WHERE
+    ((age BETWEEN 18 AND 41 AND Demographics = 'Urban')
+    OR
+    (age BETWEEN 42 AND 64 AND Demographics = 'Urban')
+    OR
+    (age BETWEEN 18 AND 41 AND Demographics = 'Suburban')
+    OR
+    (age BETWEEN 42 AND 64 AND Demographics = 'Suburban')
+    OR
+    (age BETWEEN 18 AND 41 AND Demographics = 'Rural')
+    OR
+    (age BETWEEN 42 AND 64 AND Demographics = 'Rural'))
+LIMIT 10;
+```
+[Out]
