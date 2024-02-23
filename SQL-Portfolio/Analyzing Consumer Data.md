@@ -502,3 +502,17 @@ WHERE
 LIMIT 10;
 ```
 [Out]
+
+| Age | Gender | Time_Spent_Hrs | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car | Advertisement_Message |
+|-----|--------|----------------|----------|-----------|----------|--------------|------------|---------------|--------|-------------|--------------|----------|-----------------------|
+| 56  |   3    |     Sports     |   United Kingdom   |   Urban    | Software Engineer | Ad through physical mail and Instagram featuring visuals regarding Sports |
+| 46  |   2    |     Travel     |   United Kingdom   |   Urban    | Nurse | Ad through physical mail and Facebook featuring visuals regarding Travel |
+| 32  |   7    |     Sports     |   Australia   |   Suburban    | Teacher | Ad through Instagram featuring visuals regarding Sports |
+| 60  |   4    |     Travel     |   United Kingdom   |   Urban    | Accountant | Ad through physical mail and Instagram featuring visuals regarding Travel |
+| 25  |   6    |     Lifestyle     |   Australia   |   Urban    | Graphic Designer | Ad through Instagram featuring visuals regarding Lifestyle |
+| 38  |   3    |     Travel     |   United States   |   Urban    | Electrician | Ad through Facebook featuring visuals regarding Travel |
+| 56  |   3    |     Sports     |   France   |   Urban    | Lawyer | Ad through physical mail and YouTube featuring visuals regarding Sports |
+| 36  |   2    |     Sports     |   Japan   |   Urban    | Chef | Ad through Instagram featuring visuals regarding Sports |
+| 40  |   4    |     Lifestyle     |   Mexico   |   Suburban    | Sales Representative | Ad through YouTube featuring visuals regarding Lifestyle |
+| 28  |   3    |     Cooking     |   Australia   |   Suburban    | Marketing Manager | Ad through Instagram featuring visuals regarding Cooking |
+
