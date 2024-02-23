@@ -353,16 +353,29 @@ This section will see the effects location and demographics have on consumers's 
 [In]
 
 ``` sql //
-SELECT Locations.Location, Customer_Database.Demographics, Customer_Database.Platform,
+SELECT
+    Locations.Location,
+    Customer_Database.Demographics,
+    Customer_Database.Platform,
     COUNT(Customer_Database.Location) AS Users,
     COALESCE(SUM(Customer_Database."Time_Spent (Hrs)"), 0) AS Total_Time_Spent,
     ROUND(AVG(Customer_Database."Time_Spent (Hrs)"), 1) AS Average_Time_Per_Location
-FROM (SELECT DISTINCT Location 
-FROM Customer_Database) AS Locations
-	LEFT JOIN Customer_Database ON Locations.Location = Customer_Database.Location
-	GROUP BY Locations.Location, Customer_Database.Demographics, Customer_Database.Platform 
-ORDER BY RANDOM(), Customer_Database.location, Customer_Database.Demographics DESC
-	LIMIT 10;
+FROM
+    (
+        SELECT DISTINCT Location 
+        FROM Customer_Database
+    ) AS Locations
+LEFT JOIN
+    Customer_Database ON Locations.Location = Customer_Database.Location
+GROUP BY
+    Locations.Location,
+    Customer_Database.Demographics,
+    Customer_Database.Platform 
+ORDER BY
+    RANDOM(),
+    Customer_Database.location,
+    Customer_Database.Demographics DESC
+LIMIT 10;
 ```
 [Out]
 
