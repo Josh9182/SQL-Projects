@@ -451,7 +451,7 @@ Below will be this query, the final query that will organize our consumers by ho
 [In]
 
 ``` sql //
-SELECT *,
+SELECT age, Platform, Time_Spent_Hrs, Interests, Location, Demographics,
     COALESCE(
         CASE
             WHEN age BETWEEN 18 AND 41
@@ -503,18 +503,15 @@ LIMIT 10;
 ```
 [Out]
 
-| Age | Time_Spent_Hrs | Interests | Location         | Demographics | Profession          | Advertisement_Type                                                    |
-|-----|----------------|-----------|------------------|--------------|---------------------|------------------------------------------------------------------------|
-| 56  | 3              | Sports    | United Kingdom   | Urban        | Software Engineer   | Ad through physical mail and Instagram featuring visuals regarding Sports |
-| 46  | 2              | Travel    | United Kingdom   | Urban        | Nurse               | Ad through physical mail and Facebook featuring visuals regarding Travel |
-| 32  | 7              | Sports    | Australia        | Suburban     | Teacher             | Ad through Instagram featuring visuals regarding Sports               |
-| 60  | 4              | Travel    | United Kingdom   | Urban        | Accountant          | Ad through physical mail and Instagram featuring visuals regarding Travel |
-| 25  | 6              | Lifestyle | Australia        | Urban        | Graphic Designer    | Ad through Instagram featuring visuals regarding Lifestyle             |
-| 38  | 3              | Travel    | United States    | Urban        | Electrician         | Ad through Facebook featuring visuals regarding Travel               |
-| 56  | 3              | Sports    | France           | Urban        | Lawyer              | Ad through physical mail and YouTube featuring visuals regarding Sports |
-| 36  | 2              | Sports    | Japan            | Urban        | Chef                | Ad through Instagram featuring visuals regarding Sports               |
-| 40  | 4              | Lifestyle | Mexico           | Suburban     | Sales Representative| Ad through YouTube featuring visuals regarding Lifestyle             |
-| 28  | 3              | Cooking   | Australia        | Suburban     | Marketing Manager   | Ad through Instagram featuring visuals regarding Cooking             |
-
-
-
+| Age | Platform  | Time_Spent_Hrs | Interests | Location       | Demographics | Advertisement_type                                                     |
+|-----|-----------|----------------|-----------|----------------|--------------|----------------------------------------------------------------------|
+| 56  | Instagram | 3              | Sports    | United Kingdom | Urban        | Ad through physical mail and Instagram featuring visuals regarding Sports |
+| 46  | Facebook  | 2              | Travel    | United Kingdom | Urban        | Ad through physical mail and Facebook featuring visuals regarding Travel |
+| 32  | Instagram | 7              | Sports    | Australia      | Suburban     | Ad through Instagram featuring visuals regarding Sports            |
+| 60  | Instagram | 4              | Travel    | United Kingdom | Urban        | Ad through physical mail and Instagram featuring visuals regarding Travel |
+| 25  | Instagram | 6              | Lifestlye | Australia      | Urban        | Ad through Instagram featuring visuals regarding Lifestlye          |
+| 38  | Facebook  | 3              | Travel    | United States  | Urban        | Ad through Facebook featuring visuals regarding Travel             |
+| 56  | YouTube   | 3              | Sports    | France         | Urban        | Ad through physical mail and YouTube featuring visuals regarding Sports |
+| 36  | Instagram | 2              | Sports    | Japan          | Urban        | Ad through Instagram featuring visuals regarding Sports            |
+| 40  | YouTube   | 4              | Lifestlye | Mexico         | Suburban     | Ad through YouTube featuring visuals regarding Lifestlye          |
+| 28  | Instagram | 3              | Cooking   | Australia      | Suburban     | Ad through Instagram featuring visuals regarding Cooking           |
