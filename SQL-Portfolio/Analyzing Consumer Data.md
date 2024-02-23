@@ -399,7 +399,7 @@ As we come to a close, the last stakeholder question follows suit as essential, 
 
 This section will see the effects location and demographics have on consumers's desired social media platform and time spent on said platform. 
 
-## How does Location and Demographics affect userbase, time spent on platforms, and average time spent on platforms by user. 
+## How does location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user? 
 
 [In]
 
