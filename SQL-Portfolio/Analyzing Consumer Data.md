@@ -13,7 +13,7 @@ The dataset contains information about customers, ranging from personal informat
   - [How does location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
 
 ###                                                             .
-After importing the ```customer_database```, the table ```consumer_database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```consumer_database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However most of the queries will be executed without the ```LIMIT```.
+After importing the ```Customer_Database```, the table ```Customer_Database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```Customer_Database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However most of the queries will be executed without the ```LIMIT```.
 
 [In]
 
