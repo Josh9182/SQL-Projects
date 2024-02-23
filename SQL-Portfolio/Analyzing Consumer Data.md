@@ -443,9 +443,9 @@ LIMIT 10;
 
 ## Marketing Plan
 
-Using all the data from our countless queries we can now create a plan to better market to our constumers. Based off of age data as well as demographical statistics we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark them by the use of a new column, ```Advertisement_Type```. 
+Using all the data from our countless queries we can now create a plan to better market to our constumers. Based off of age data as well as demographical statistics we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
 
-Below will be this query, the final query that will organize our consumers by how we can and will market to them in the coming weeks. To simply data and not cloud up this document, a ```LIMIT``` of 10 will be assigned. 
+Below will be our final query that will organize our consumers by how we can and will market to them in the coming weeks. To simplify the data listed and not cloud up this document, a ```LIMIT``` of 10 will be assigned. 
 
 
 [In]
