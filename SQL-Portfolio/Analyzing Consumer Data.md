@@ -446,7 +446,7 @@ LIMIT 10;
 ## hhh
 
 Location              |Demographics|Platform |Users|Total_Time_Spent|Average_Time_Per_Location|
-----------------------+------------+---------+-----+----------------+-------------------------+
+----------------------|------------|---------|-----|----------------|-------------------------|
 Albania               |Suburban    |Instagram|    1|               2|                      2.0|
 Andorra               |Rural       |Facebook |    1|               4|                      4.0|
 Argentina             |Urban       |Facebook |    2|               5|                      2.5|
