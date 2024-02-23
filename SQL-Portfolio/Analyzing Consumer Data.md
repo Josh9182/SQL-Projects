@@ -43,8 +43,10 @@ In the section below we will calculate the average rounded age of our consumers,
 [In]
 
 ``` sql //
-SELECT ROUND(AVG(Age)) AS Average_Age
-FROM Customer_Database;
+SELECT 
+    ROUND(AVG(Age)) AS Average_Age
+FROM 
+    Customer_Database;
 ```
 [Out]
 
@@ -57,11 +59,15 @@ Due to the table having 179 unique professions, we will limit the results to jus
 [In]
 
 ``` sql //
-SELECT Profession,
-	ROUND(AVG(Age)) AS Average_Age
-	FROM Customer_Database
-GROUP BY Profession
-	ORDER BY RANDOM()
+SELECT
+    Profession,
+    ROUND(AVG(Age)) AS Average_Age
+FROM
+    Customer_Database
+GROUP BY
+    Profession
+ORDER BY
+    RANDOM()
 LIMIT 5;
 ```
 [Out]
@@ -90,12 +96,16 @@ In this section, we are going to discover the least common gender, moderatly com
 [In]
 
 ``` sql //
-SELECT Gender,
-	COUNT(*) AS Gender_Amount
-	FROM Customer_Database cd 
-GROUP BY gender
-ORDER BY Gender_Amount ASC 
-	LIMIT 1;
+SELECT
+    Gender,
+    COUNT(*) AS Gender_Amount
+FROM
+    Customer_Database cd 
+GROUP BY
+    Gender
+ORDER BY
+    Gender_Amount ASC 
+LIMIT 1;
 ```  
 [Out]
 
@@ -106,12 +116,16 @@ ORDER BY Gender_Amount ASC
 [In]
 
 ``` sql //
-SELECT Gender,
-	COUNT(*) AS Gender_Amount
-	FROM Customer_Database cd 
-GROUP BY gender
-ORDER BY Gender_Amount DESC
-	LIMIT 1 OFFSET 1;
+SELECT
+    Gender,
+    COUNT(*) AS Gender_Amount
+FROM
+    Customer_Database cd 
+GROUP BY
+    Gender
+ORDER BY
+    Gender_Amount DESC
+LIMIT 1 OFFSET 1;
 ```
 [Out]
 
@@ -122,12 +136,16 @@ ORDER BY Gender_Amount DESC
 [In]
 
 ``` sql //
-SELECT Gender,
-	COUNT(*) AS Gender_Amount
-	FROM Customer_Database cd 
-GROUP BY Gender 
-ORDER BY gender_Amount DESC 
-	LIMIT 1;
+SELECT
+    Gender,
+    COUNT(*) AS Gender_Amount
+FROM
+    Customer_Database cd
+GROUP BY
+    Gender
+ORDER BY
+    Gender_Amount DESC
+LIMIT 1;
 ```
 [Out]
 
@@ -152,11 +170,16 @@ Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate
 [In]
 
 ``` sql //
-SELECT age, platform,
-	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time 
-	FROM Customer_Database cd 
-GROUP BY Platform 
-ORDER BY Average_Time DESC;
+SELECT
+    age,
+    platform,
+    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+FROM
+    Customer_Database cd
+GROUP BY
+    platform
+ORDER BY
+    Average_Time DESC;
 ```
 [Out]
 
@@ -173,11 +196,14 @@ This query is the exact same for every age range as well as platform, the only d
 [In]
 
 ``` sql //
-SELECT platform,
-	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
-	FROM Customer_Database cd 
-WHERE Platform LIKE 'YouTube' 
-AND Age BETWEEN 18 AND 29;
+SELECT
+    platform,
+    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+FROM
+    Customer_Database cd 
+WHERE
+    Platform LIKE 'Youtube' 
+    AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -194,11 +220,14 @@ AND Age BETWEEN 18 AND 29;
 [In]
 
 ``` sql //
-SELECT platform,
-	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
-	FROM Customer_Database cd 
-WHERE Platform LIKE 'Instagram' 
-AND Age BETWEEN 18 AND 29;
+SELECT
+    platform,
+    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+FROM
+    Customer_Database cd 
+WHERE
+    Platform LIKE 'Instagram' 
+    AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -215,11 +244,14 @@ AND Age BETWEEN 18 AND 29;
 [In]
 
 ``` sql //
-SELECT platform,
-	ROUND(AVG("Time_Spent (Hrs)"),1) AS Average_Time
-	FROM Customer_Database cd 
-WHERE Platform LIKE 'Facebook' 
-AND Age BETWEEN 18 AND 29;
+SELECT
+    platform,
+    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+FROM
+    Customer_Database cd
+WHERE
+    Platform LIKE 'Facebook'
+    AND Age BETWEEN 18 AND 29;
 ```
 [Out]
 
@@ -242,11 +274,14 @@ Using the data from previous sections will now help us see which app provides th
 [In]
 
 ``` sql //
-SELECT Platform,
-	ROUND(AVG(Annual_Income),2) AS Average_Income,
-	ROUND(AVG(Debt_Amount),2) AS Average_Debt
-FROM Customer_Database cd 
-GROUP BY Platform; 
+SELECT
+    Platform,
+    ROUND(AVG(Annual_Income), 2) AS Average_Income,
+    ROUND(AVG(Debt_Amount), 2) AS Average_Debt
+FROM
+    Customer_Database cd 
+GROUP BY
+    Platform;
 ```
 [Out]
 
@@ -265,13 +300,19 @@ This result will show 141 rows organized by the ```Platform``` column in descend
 [In]
 
 ``` sql //
-SELECT Age, Platform,
-	ROUND(AVG(Annual_Income),2) AS Average_Income,
-	ROUND(AVG(Debt_Amount),2) AS Average_Debt
-FROM Customer_Database cd 
-GROUP BY age, Platform 
-ORDER BY Platform DESC
-	LIMIT 5;
+SELECT
+    Age,
+    Platform,
+    ROUND(AVG(Annual_Income), 2) AS Average_Income,
+    ROUND(AVG(Debt_Amount), 2) AS Average_Debt
+FROM
+    Customer_Database cd 
+GROUP BY
+    Age,
+    Platform 
+ORDER BY
+    Platform DESC
+LIMIT 5;
 ```
 [Out]
 
@@ -296,11 +337,15 @@ In the section below we will see create a query that averages out the time spent
 [In]
 
 ``` sql //
-SELECT Is_Homeowner,
-       ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
-FROM Customer_Database
-GROUP BY Is_Homeowner
-ORDER BY Is_Homeowner DESC;
+SELECT
+    Is_Homeowner,
+    ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+FROM
+    Customer_Database
+GROUP BY
+    Is_Homeowner
+ORDER BY
+    Is_Homeowner DESC;
 ```
 
 [Out]
@@ -316,11 +361,17 @@ ORDER BY Is_Homeowner DESC;
 [In]
 
 ``` sql //
-SELECT Is_Homeowner, Platform,
-       ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
-FROM Customer_Database
-GROUP BY Is_Homeowner, Platform
-ORDER BY Is_Homeowner DESC
+SELECT
+    Is_Homeowner,
+    Platform,
+    ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+FROM
+    Customer_Database
+GROUP BY
+    Is_Homeowner,
+    Platform
+ORDER BY
+    Is_Homeowner DESC;
 ```
 
 [Out]
@@ -360,8 +411,9 @@ SELECT
     COUNT(Customer_Database.Location) AS Users,
     COALESCE(SUM(Customer_Database."Time_Spent (Hrs)"), 0) AS Total_Time_Spent,
     ROUND(AVG(Customer_Database."Time_Spent (Hrs)"), 1) AS Average_Time_Per_Location
-FROM (SELECT DISTINCT Location
-	FROM Customer_Database) AS Locations
+FROM
+   (SELECT DISTINCT Location
+FROM Customer_Database) AS Locations
 LEFT JOIN
     Customer_Database ON Locations.Location = Customer_Database.Location
 GROUP BY
