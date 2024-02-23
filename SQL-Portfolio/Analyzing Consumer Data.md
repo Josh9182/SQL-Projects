@@ -153,7 +153,7 @@ LIMIT 1;
 
 ## What is the average time spent on each social media platform by age?
 
-After implementing all of our queries we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```time_spent (hrs)``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
+After implementing all of our queries we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```Time_Spent_Hrs``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
 
 The previous section provided tons of useful data for us to play around with! Obtaining the dominant/least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19 year old females? Will Instagram ads in the form of short videos be most successful for 56 year old males? 
 
@@ -173,7 +173,7 @@ Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate
 SELECT
     age,
     platform,
-    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+    ROUND(AVG(Time_Spent_Hrs), 1) AS Average_Time
 FROM
     Customer_Database cd
 GROUP BY
@@ -198,7 +198,7 @@ This query is the exact same for every age range as well as platform, the only d
 ``` sql //
 SELECT
     platform,
-    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+    ROUND(AVG(Time_Spent_Hrs), 1) AS Average_Time
 FROM
     Customer_Database cd 
 WHERE
@@ -222,7 +222,7 @@ WHERE
 ``` sql //
 SELECT
     platform,
-    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+    ROUND(AVG(Time_Spent_Hrs), 1) AS Average_Time
 FROM
     Customer_Database cd 
 WHERE
@@ -246,7 +246,7 @@ WHERE
 ``` sql //
 SELECT
     platform,
-    ROUND(AVG("Time_Spent (Hrs)"), 1) AS Average_Time
+    ROUND(AVG(Time_Spent_Hrs), 1) AS Average_Time
 FROM
     Customer_Database cd
 WHERE
@@ -339,7 +339,7 @@ In the section below we will see create a query that averages out the time spent
 ``` sql //
 SELECT
     Is_Homeowner,
-    ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+    ROUND(AVG(Time_Spent_Hrs), 2) AS Avg_Time_Spent
 FROM
     Customer_Database
 GROUP BY
@@ -364,7 +364,7 @@ ORDER BY
 SELECT
     Is_Homeowner,
     Platform,
-    ROUND(AVG("Time_Spent (Hrs)"), 2) AS Avg_Time_Spent
+    ROUND(AVG(Time_Spent_Hrs), 2) AS Avg_Time_Spent
 FROM
     Customer_Database
 GROUP BY
@@ -409,8 +409,8 @@ SELECT
     Customer_Database.Demographics,
     Customer_Database.Platform,
     COUNT(Customer_Database.Location) AS Users,
-    COALESCE(SUM(Customer_Database."Time_Spent (Hrs)"), 0) AS Total_Time_Spent,
-    ROUND(AVG(Customer_Database."Time_Spent (Hrs)"), 1) AS Average_Time_Per_Location
+    COALESCE(SUM(Customer_Database.Time_Spent_Hrs), 0) AS Total_Time_Spent,
+    ROUND(AVG(Customer_Database.Time_Spent_Hrs), 1) AS Average_Time_Per_Location
 FROM
    (SELECT DISTINCT Location
 FROM Customer_Database) AS Locations
