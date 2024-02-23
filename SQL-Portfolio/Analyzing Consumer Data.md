@@ -360,11 +360,8 @@ SELECT
     COUNT(Customer_Database.Location) AS Users,
     COALESCE(SUM(Customer_Database."Time_Spent (Hrs)"), 0) AS Total_Time_Spent,
     ROUND(AVG(Customer_Database."Time_Spent (Hrs)"), 1) AS Average_Time_Per_Location
-FROM
-    (
-        SELECT DISTINCT Location 
-        FROM Customer_Database
-    ) AS Locations
+FROM (SELECT DISTINCT Location
+	FROM Customer_Database) AS Locations
 LEFT JOIN
     Customer_Database ON Locations.Location = Customer_Database.Location
 GROUP BY
