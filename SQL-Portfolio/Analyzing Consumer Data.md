@@ -440,3 +440,7 @@ LIMIT 10;
 | Australia       | Suburban    | YouTube    | 29    | 113              | 3.9                       |
 | Denmark         | Urban       | Facebook   | 1     | 2                | 2.0                       |
 | Canada          | Rural       | YouTube    | 3     | 18               | 6.0                       |
+
+## Marketing Plan
+
+Using all the data from our countless queries we can now create a plan 
