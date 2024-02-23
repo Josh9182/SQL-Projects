@@ -443,4 +443,4 @@ LIMIT 10;
 
 ## Marketing Plan
 
-Using all the data from our countless queries we can now create a plan 
+Using all the data from our countless queries we can now create a plan to better market to our consumers. 
