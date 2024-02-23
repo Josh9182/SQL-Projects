@@ -24,7 +24,7 @@ LIMIT 5;
 ```
 [Out]
 
-| Age | Gender | Time_Spent (Hrs) | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car |
+| Age | Gender | Time_Spent_Hrs | Platform | Interests | Location | Demographics | Profession | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car |
 |-----|--------|------------------|----------|-----------|----------|--------------|------------|---------------|--------|-------------|---------------|----------|
 | 56  | Male   | 3 | Instagram | Sports | United Kingdom | Urban | Software Engineer | 108824 | TRUE | 133744 | FALSE | FALSE |
 | 46  | Female | 2 | Facebook | Travel | United Kingdom | Urban | Nurse | 43350 | TRUE | 47803 | TRUE | TRUE |
