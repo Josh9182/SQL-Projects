@@ -440,3 +440,228 @@ LIMIT 10;
 | Australia       | Suburban    | YouTube    | 29    | 113              | 3.9                       |
 | Denmark         | Urban       | Facebook   | 1     | 2                | 2.0                       |
 | Canada          | Rural       | YouTube    | 3     | 18               | 6.0                       |
+
+
+
+## hhh
+
+Location              |Demographics|Platform |Users|Total_Time_Spent|Average_Time_Per_Location|
+----------------------+------------+---------+-----+----------------+-------------------------+
+Albania               |Suburban    |Instagram|    1|               2|                      2.0|
+Andorra               |Rural       |Facebook |    1|               4|                      4.0|
+Argentina             |Urban       |Facebook |    2|               5|                      2.5|
+Argentina             |Urban       |Instagram|    1|               3|                      3.0|
+Argentina             |Urban       |YouTube  |    1|               4|                      4.0|
+Argentina             |Suburban    |Instagram|    1|               4|                      4.0|
+Argentina             |Suburban    |YouTube  |    1|               2|                      2.0|
+Argentina             |Rural       |Facebook |    1|               2|                      2.0|
+Argentina             |Rural       |Instagram|    1|               7|                      7.0|
+Australia             |Urban       |Facebook |   23|              70|                      3.0|
+Australia             |Urban       |Instagram|   26|             127|                      4.9|
+Australia             |Urban       |YouTube  |   30|             112|                      3.7|
+Australia             |Suburban    |Facebook |   27|             120|                      4.4|
+Australia             |Suburban    |Instagram|   34|             128|                      3.8|
+Australia             |Suburban    |YouTube  |   29|             113|                      3.9|
+Australia             |Rural       |Facebook |   26|             103|                      4.0|
+Australia             |Rural       |Instagram|   35|             150|                      4.3|
+Australia             |Rural       |YouTube  |   32|             123|                      3.8|
+Austria               |Suburban    |Facebook |    3|              11|                      3.7|
+Belarus               |Suburban    |YouTube  |    1|               2|                      2.0|
+Belgium               |Urban       |Instagram|    1|               3|                      3.0|
+Belgium               |Suburban    |Instagram|    1|               7|                      7.0|
+Belgium               |Rural       |Instagram|    1|               7|                      7.0|
+Belgium               |Rural       |YouTube  |    1|               6|                      6.0|
+Bhutan                |Urban       |Facebook |    1|               7|                      7.0|
+Bhutan                |Suburban    |YouTube  |    1|               4|                      4.0|
+Bhutan                |Rural       |Instagram|    1|               2|                      2.0|
+Bhutan                |Rural       |YouTube  |    1|               3|                      3.0|
+Bosnia and Herzegovina|Urban       |Facebook |    1|               4|                      4.0|
+Brazil                |Urban       |Facebook |    1|               2|                      2.0|
+Brazil                |Urban       |Instagram|    2|              11|                      5.5|
+Brazil                |Suburban    |Facebook |    1|               3|                      3.0|
+Brazil                |Suburban    |Instagram|    1|               2|                      2.0|
+Brazil                |Suburban    |YouTube  |    1|               3|                      3.0|
+Brazil                |Rural       |Facebook |    2|               8|                      4.0|
+Brazil                |Rural       |Instagram|    3|              14|                      4.7|
+Brunei                |Urban       |Facebook |    1|               2|                      2.0|
+Bulgaria              |Rural       |Instagram|    1|               2|                      2.0|
+Canada                |Urban       |Facebook |    2|              11|                      5.5|
+Canada                |Urban       |Instagram|    5|              20|                      4.0|
+Canada                |Urban       |YouTube  |    3|              12|                      4.0|
+Canada                |Suburban    |Facebook |    1|               3|                      3.0|
+Canada                |Suburban    |Instagram|    1|               7|                      7.0|
+Canada                |Suburban    |YouTube  |    2|               4|                      2.0|
+Canada                |Rural       |YouTube  |    3|              18|                      6.0|
+Chile                 |Urban       |YouTube  |    1|               7|                      7.0|
+China                 |Urban       |Facebook |    1|               3|                      3.0|
+China                 |Urban       |YouTube  |    2|              11|                      5.5|
+China                 |Suburban    |Facebook |    2|               6|                      3.0|
+Colombia              |Suburban    |YouTube  |    1|               2|                      2.0|
+Croatia               |Suburban    |YouTube  |    1|               3|                      3.0|
+Cyprus                |Urban       |Instagram|    1|               7|                      7.0|
+Czech Republic        |Urban       |Facebook |    1|               6|                      6.0|
+Czech Republic        |Urban       |YouTube  |    1|               3|                      3.0|
+Czech Republic        |Suburban    |Instagram|    1|               7|                      7.0|
+Denmark               |Urban       |Facebook |    1|               2|                      2.0|
+Denmark               |Urban       |YouTube  |    1|               3|                      3.0|
+Denmark               |Suburban    |Instagram|    1|               4|                      4.0|
+Egypt                 |Urban       |Facebook |    1|               2|                      2.0|
+Egypt                 |Rural       |Instagram|    1|               2|                      2.0|
+Egypt                 |Rural       |YouTube  |    1|               2|                      2.0|
+Estonia               |Urban       |Instagram|    1|               7|                      7.0|
+Finland               |Suburban    |YouTube  |    1|               7|                      7.0|
+France                |Urban       |Facebook |    1|               4|                      4.0|
+France                |Urban       |Instagram|    1|               3|                      3.0|
+France                |Urban       |YouTube  |    1|               3|                      3.0|
+France                |Suburban    |Facebook |    4|              10|                      2.5|
+France                |Suburban    |Instagram|    1|               4|                      4.0|
+France                |Suburban    |YouTube  |    2|               8|                      4.0|
+France                |Rural       |Instagram|    1|               4|                      4.0|
+France                |Rural       |YouTube  |    1|               4|                      4.0|
+Germany               |Urban       |Instagram|    1|               7|                      7.0|
+Germany               |Urban       |YouTube  |    1|               8|                      8.0|
+Germany               |Suburban    |Facebook |    2|              10|                      5.0|
+Germany               |Suburban    |Instagram|    2|               8|                      4.0|
+Germany               |Suburban    |YouTube  |    1|               8|                      8.0|
+Germany               |Rural       |Instagram|    1|               2|                      2.0|
+Germany               |Rural       |YouTube  |    2|              10|                      5.0|
+Greece                |Urban       |Instagram|    1|               2|                      2.0|
+Greece                |Rural       |Facebook |    1|               4|                      4.0|
+Greece                |Rural       |Instagram|    1|               2|                      2.0|
+Hungary               |Suburban    |Instagram|    1|               7|                      7.0|
+Iceland               |Rural       |Instagram|    1|               4|                      4.0|
+India                 |Urban       |Facebook |    1|               4|                      4.0|
+India                 |Urban       |Instagram|    1|               8|                      8.0|
+India                 |Urban       |YouTube  |    1|               2|                      2.0|
+India                 |Suburban    |Instagram|    2|               4|                      2.0|
+India                 |Rural       |Facebook |    2|              11|                      5.5|
+India                 |Rural       |Instagram|    1|               6|                      6.0|
+India                 |Rural       |YouTube  |    4|              14|                      3.5|
+Indonesia             |Urban       |Facebook |    1|               2|                      2.0|
+Indonesia             |Urban       |YouTube  |    2|               4|                      2.0|
+Indonesia             |Suburban    |Facebook |    1|               3|                      3.0|
+Indonesia             |Suburban    |Instagram|    1|               7|                      7.0|
+Indonesia             |Suburban    |YouTube  |    1|               2|                      2.0|
+Indonesia             |Rural       |Facebook |    1|               6|                      6.0|
+Ireland               |Urban       |Instagram|    1|               3|                      3.0|
+Italy                 |Urban       |Facebook |    2|               5|                      2.5|
+Italy                 |Urban       |Instagram|    1|               3|                      3.0|
+Italy                 |Urban       |YouTube  |    2|               9|                      4.5|
+Italy                 |Suburban    |Instagram|    1|               4|                      4.0|
+Italy                 |Suburban    |YouTube  |    1|               2|                      2.0|
+Italy                 |Rural       |Instagram|    1|               4|                      4.0|
+Japan                 |Urban       |Facebook |    2|               9|                      4.5|
+Japan                 |Urban       |Instagram|    3|               9|                      3.0|
+Japan                 |Urban       |YouTube  |    1|               4|                      4.0|
+Japan                 |Suburban    |Facebook |    1|               2|                      2.0|
+Japan                 |Suburban    |Instagram|    3|              12|                      4.0|
+Japan                 |Suburban    |YouTube  |    2|              11|                      5.5|
+Japan                 |Rural       |Facebook |    3|              18|                      6.0|
+Japan                 |Rural       |YouTube  |    1|               7|                      7.0|
+Kosovo                |Urban       |YouTube  |    1|               7|                      7.0|
+Latvia                |Suburban    |Instagram|    1|               2|                      2.0|
+Liechtenstein         |Suburban    |Facebook |    1|               2|                      2.0|
+Lithuania             |Urban       |Instagram|    1|               3|                      3.0|
+Luxembourg            |Suburban    |YouTube  |    1|               6|                      6.0|
+Malaysia              |Urban       |Facebook |    2|              11|                      5.5|
+Malaysia              |Urban       |Instagram|    2|               5|                      2.5|
+Malaysia              |Suburban    |Facebook |    1|               2|                      2.0|
+Malaysia              |Rural       |Facebook |    1|               2|                      2.0|
+Malta                 |Suburban    |YouTube  |    1|               2|                      2.0|
+Mexico                |Urban       |Facebook |    1|               3|                      3.0|
+Mexico                |Urban       |Instagram|    1|               2|                      2.0|
+Mexico                |Urban       |YouTube  |    1|               6|                      6.0|
+Mexico                |Suburban    |Facebook |    1|               2|                      2.0|
+Mexico                |Suburban    |Instagram|    2|               9|                      4.5|
+Mexico                |Suburban    |YouTube  |    3|              12|                      4.0|
+Mexico                |Rural       |Facebook |    1|               3|                      3.0|
+Mexico                |Rural       |Instagram|    3|              12|                      4.0|
+Moldova               |Rural       |Facebook |    1|               2|                      2.0|
+Monaco                |Rural       |YouTube  |    1|               6|                      6.0|
+Montenegro            |Rural       |Instagram|    1|               3|                      3.0|
+Myanmar               |Suburban    |Facebook |    1|               2|                      2.0|
+Myanmar               |Rural       |YouTube  |    1|               4|                      4.0|
+Netherlands           |Rural       |YouTube  |    3|              18|                      6.0|
+New Zealand           |Urban       |Facebook |    1|               4|                      4.0|
+New Zealand           |Urban       |YouTube  |    1|               7|                      7.0|
+New Zealand           |Suburban    |Facebook |    2|               5|                      2.5|
+New Zealand           |Suburban    |Instagram|    1|               7|                      7.0|
+Nigeria               |Urban       |Instagram|    2|               9|                      4.5|
+Nigeria               |Rural       |YouTube  |    1|               3|                      3.0|
+North Macedonia       |Rural       |Facebook |    1|               4|                      4.0|
+Norway                |Urban       |Facebook |    1|               7|                      7.0|
+Norway                |Urban       |Instagram|    1|               2|                      2.0|
+Norway                |Urban       |YouTube  |    1|               3|                      3.0|
+Norway                |Suburban    |Facebook |    3|              12|                      4.0|
+Norway                |Suburban    |YouTube  |    1|               7|                      7.0|
+Norway                |Rural       |Facebook |    1|               2|                      2.0|
+Norway                |Rural       |Instagram|    1|               4|                      4.0|
+Norway                |Rural       |YouTube  |    1|               7|                      7.0|
+Peru                  |Rural       |Instagram|    1|               2|                      2.0|
+Philippines           |Urban       |Instagram|    1|               6|                      6.0|
+Philippines           |Suburban    |Instagram|    1|               4|                      4.0|
+Philippines           |Suburban    |YouTube  |    1|               2|                      2.0|
+Philippines           |Rural       |YouTube  |    3|              10|                      3.3|
+Poland                |Suburban    |YouTube  |    1|               3|                      3.0|
+Portugal              |Suburban    |Instagram|    1|               4|                      4.0|
+Portugal              |Rural       |Instagram|    1|               2|                      2.0|
+Portugal              |Rural       |YouTube  |    1|               4|                      4.0|
+Romania               |Urban       |Instagram|    1|               7|                      7.0|
+Russia                |Urban       |Facebook |    2|               9|                      4.5|
+Russia                |Urban       |Instagram|    2|              11|                      5.5|
+Russia                |Urban       |YouTube  |    1|               6|                      6.0|
+Russia                |Suburban    |YouTube  |    1|               4|                      4.0|
+Russia                |Rural       |Facebook |    1|               3|                      3.0|
+Russia                |Rural       |Instagram|    1|               7|                      7.0|
+San Marino            |Suburban    |Facebook |    1|               2|                      2.0|
+Serbia                |Urban       |YouTube  |    1|               2|                      2.0|
+Singapore             |Rural       |Instagram|    2|              10|                      5.0|
+Slovakia              |Rural       |Instagram|    1|               7|                      7.0|
+Slovenia              |Rural       |Facebook |    1|               2|                      2.0|
+South Africa          |Urban       |Facebook |    3|              15|                      5.0|
+South Africa          |Urban       |Instagram|    1|               4|                      4.0|
+South Africa          |Urban       |YouTube  |    1|               7|                      7.0|
+South Africa          |Suburban    |Facebook |    1|               3|                      3.0|
+South Africa          |Suburban    |Instagram|    2|               6|                      3.0|
+South Africa          |Suburban    |YouTube  |    2|               6|                      3.0|
+South Africa          |Rural       |Facebook |    2|               4|                      2.0|
+South Africa          |Rural       |Instagram|    2|              11|                      5.5|
+South Korea           |Suburban    |Facebook |    1|               6|                      6.0|
+South Korea           |Rural       |Instagram|    1|               2|                      2.0|
+South Korea           |Rural       |YouTube  |    1|               6|                      6.0|
+Spain                 |Urban       |YouTube  |    1|               4|                      4.0|
+Spain                 |Rural       |Instagram|    2|               9|                      4.5|
+Sweden                |Urban       |Instagram|    1|               2|                      2.0|
+Sweden                |Rural       |Instagram|    1|               2|                      2.0|
+Sweden                |Rural       |YouTube  |    1|               7|                      7.0|
+Switzerland           |Urban       |Facebook |    1|               3|                      3.0|
+Switzerland           |Urban       |Instagram|    1|               6|                      6.0|
+Switzerland           |Urban       |YouTube  |    1|               8|                      8.0|
+Thailand              |Urban       |YouTube  |    2|              10|                      5.0|
+Thailand              |Suburban    |Instagram|    2|              10|                      5.0|
+Thailand              |Suburban    |YouTube  |    2|               4|                      2.0|
+Thailand              |Rural       |Facebook |    2|              10|                      5.0|
+Thailand              |Rural       |Instagram|    1|               7|                      7.0|
+Turkey                |Urban       |YouTube  |    2|               5|                      2.5|
+Turkey                |Suburban    |Facebook |    1|               2|                      2.0|
+Ukraine               |Suburban    |Instagram|    1|               2|                      2.0|
+United Kingdom        |Urban       |Facebook |   29|             120|                      4.1|
+United Kingdom        |Urban       |Instagram|   23|              81|                      3.5|
+United Kingdom        |Urban       |YouTube  |   31|             124|                      4.0|
+United Kingdom        |Suburban    |Facebook |   29|             112|                      3.9|
+United Kingdom        |Suburban    |Instagram|   26|              99|                      3.8|
+United Kingdom        |Suburban    |YouTube  |   26|             108|                      4.2|
+United Kingdom        |Rural       |Facebook |   21|              76|                      3.6|
+United Kingdom        |Rural       |Instagram|   34|             131|                      3.9|
+United Kingdom        |Rural       |YouTube  |   26|              98|                      3.8|
+United States         |Urban       |Facebook |   22|              84|                      3.8|
+United States         |Urban       |Instagram|   26|              91|                      3.5|
+United States         |Urban       |YouTube  |   20|              68|                      3.4|
+United States         |Suburban    |Facebook |   22|             103|                      4.7|
+United States         |Suburban    |Instagram|   29|             124|                      4.3|
+United States         |Suburban    |YouTube  |   27|             118|                      4.4|
+United States         |Rural       |Facebook |   26|             117|                      4.5|
+United States         |Rural       |Instagram|   35|             151|                      4.3|
+United States         |Rural       |YouTube  |   22|              89|                      4.0|
+Vietnam               |Urban       |Facebook |    1|               7|                      7.0|
+Vietnam               |Rural       |Facebook |    1|               2|                      2.0|
