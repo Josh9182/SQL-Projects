@@ -452,8 +452,7 @@ Below will be our final query that will organize our consumers by how we can and
 [In]
 
 ``` sql //
-SELECT age, Platform, Time_Spent_Hrs, Interests, Location, Demographics,
-    COALESCE(
+SELECT Age, Platform, Time_Spent_Hrs, Interests, Location, Demographics,
         CASE
             WHEN age BETWEEN 18 AND 41
                 AND Platform IN ('YouTube', 'Instagram', 'Facebook') 
@@ -483,9 +482,7 @@ SELECT age, Platform, Time_Spent_Hrs, Interests, Location, Demographics,
                 THEN 'Ad through physical mail and ' || Platform || ' featuring visuals regarding ' || Interests
             ELSE
                 'Ad through ' || Platform || ' featuring visuals regarding ' || Interests
-        END,
-        'Other Advertisement Message'
-    ) AS Advertisement_Type
+        END AS Advertisement_Type
 FROM
     Customer_Database
 WHERE
