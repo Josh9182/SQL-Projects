@@ -164,7 +164,7 @@ Using the data from previous sections will now help us find a suitable location 
 
 ## Average Time Spent for Each Consumer Based off of Desired Platform 
 
-This first query will show the average consumer's age, most used platform, and the rounded average time spent on the desired platform. If we ```GROUP BY``` ```Age``` as well as ```Platform``` It will instead show 141 rows of unique information. 
+This first query will show the platform as well as the rounded average time spent on the desired platform. If we ```GROUP BY``` ```Age``` as well as ```Platform``` It will instead show 141 rows of unique information. 
 
 Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate values and averages them out as the ```Average_Time``` instead of showing 1000 rows of duplicate information. 
 
@@ -172,7 +172,6 @@ Although there are 1000 rows, the ```GROUP BY``` function combines all duplicate
 
 ``` sql //
 SELECT
-    age,
     platform,
     ROUND(AVG(Time_Spent_Hrs), 1) AS Average_Time
 FROM
@@ -184,11 +183,11 @@ ORDER BY
 ```
 [Out]
 
-| Age | Platform | Average_Time |
-|-----|----------|--------------|
-| 56  | Instagram| 4.1          |
-| 56  | Youtube  | 4            |
-| 46  | Facebook | 3.9          |
+| Platform | Average_Time |
+|----------|--------------|
+| Instagram| 4.1          |
+| Youtube  | 4            |
+| Facebook | 3.9          |
 
 ## Average Time Spent on Youtube 18-64
 
