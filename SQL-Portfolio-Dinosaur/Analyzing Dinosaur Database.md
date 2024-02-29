@@ -1,2 +1,1 @@
 # Paleontological Data 
-Paleo
