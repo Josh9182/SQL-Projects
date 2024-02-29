@@ -1,20 +1,20 @@
 # Aurora Technologies Consumer Data
 Consumer financial data may be analyzed for several purposes, whether it be to obtain information from different categories such as through a government database or for marketing reasons. Companies, whether they be financial, healthcare, technology, or retail, use consumer data for a multitude of reasons such as to better understand their customers, improve products and services, and enhance marketing strategies. 
 
-In this notebook, we are going to analyze consumer data from the functional business, Aurora Technologies in order to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. Aurora Technologies is a software company specializing in app development. Our new app, Budget Buddy was released in order to help consumers budget better, track their credit score, and find the best personal, automotive, and mortgage loans for their income and area. However, we need help marketing our product, and to do that we wil use our customer database from our past applications. 
+In this notebook, we are going to analyze consumer data from the functional business, Aurora Technologies to assist stakeholders in finding answers to questions for the purpose of a marketing strategy. Aurora Technologies is a software company specializing in-app development. Our new app, Budget Buddy, was released to help consumers budget better, track their credit score, and find the best personal, automotive, and mortgage loans for their income and area. However, we need to help market our product, and to do that we will use our customer database from our past applications. 
 
 The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographic information (demographics and country of residency). Below I will find the answers to questions such as:
 
   - [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
-  - [What is the least common and most common gender present?](#What-is-the-least-common-and-most-common-gender-present)
+  - [What is the least common and the most common genders present?](#What-is-the-least-common-and-the-most-common-genders-present)
   - [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
   - [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
   - [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
-  - [How does location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
+  - [How do location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
   - [Marketing Plan](#Marketing-Plan)
 
 ###                                                             .
-After importing the ```Customer_Database```, the table ```Customer_Database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```Customer_Database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to 5 rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
+After importing the ```Customer_Database```, the table ```Customer_Database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```Customer_Database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to five rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
 
 [In]
 
@@ -35,11 +35,11 @@ LIMIT 5;
 
 ## What is the average age of our consumers?
 
-After using the function above we can see the first 5 rows, which include the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
+After using the function above, we can see the first five rows, which include the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
 
 While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it.
 
-In the section below we will calculate the average rounded age of our consumers, and as a bonus, find the average age by profession. 
+In the section below, we will calculate the average rounded age of our consumers, and as a bonus, find the average age by profession. 
 
 [In]
 
@@ -55,7 +55,7 @@ FROM
 
 ## What is the average age of our consumers by profession?
 
-Due to the table having 179 unique professions, we will limit the results to just 5 random rows to not cloud up the document.
+Due to the table having 179 unique professions, we will limit the results to just five random rows to not cloud up the document.
 
 [In]
 
@@ -84,9 +84,9 @@ LIMIT 5;
 | Immigration Lawyer    | 35          |
 
 
-## What is the least common and most common gender present?
+## What is the least common and the most common genders present?
 
-From the first five rows, we can see the average age of our consumers in general as well as by profession. This information allows us to answer some pivotal questions in regard to marketing and how we can develop a strategy based off of consumer data. Will billboards or social media ads be more beneficial to a 38yr old IT Technician? Will television or print mail be more successful for a 56yr old Police Detective?
+From the first five rows, we can see the average age of our consumers in general as well as by profession. This information allows us to answer some pivotal questions in regard to marketing and how we can develop a strategy based off of consumer data. Will billboards or social media ads be more beneficial to a 38th old IT Technician? Will television or print mail be more successful for a 56th old Police Detective?
 
 While we know age and profession, we do not know which gender is the most common, which is the least, and what the count is for each. Finding this data will allow us to see why certain sexes are more attracted to this product and why some aren't. This data will allow us to better shape our marketing to be more versatile and equally accepted. 
 
@@ -154,9 +154,9 @@ LIMIT 1;
 
 ## What is the average time spent on each social media platform by age?
 
-After implementing all of our queries we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```Time_Spent_Hrs``` can be seen, this will be our next destination. This column shows the daily time spent in hours on the desired social media app. 
+After implementing all of our queries, we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```Time_Spent_Hrs``` can be seen, this will be our next destination. This column shows the daily time spent in the past hours on the desired social media app. 
 
-The previous section provided tons of useful data for us to play around with! Obtaining the dominant as well as the least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19 year old females? Will Instagram ads in the form of short videos be most successful for 56 year old males? 
+The previous section provided tons of useful data for us to play around with! Obtaining the dominant as well as the least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19-year-old women? Will Instagram ads in the form of short videos be most successful for 56-year-old men? 
 
 Using the data from previous sections will now help us find a suitable location for marketing based off the data gathered through calculating time spent based on age. 
 
@@ -189,7 +189,7 @@ ORDER BY
 | Youtube   | 4            |
 | Facebook  | 3.9          |
 
-## Average Time Spent on YouTube 18-64
+## Average Time Spent on YouTube 18–64
 
 This query is the exact same for every age range as well as platform, the only difference would be the ages or platforms requested. To see the different results, change the ```Youtube``` and ```18 AND 29``` to be any desired values. 
 
@@ -207,15 +207,15 @@ WHERE
 ```
 [Out]
 
-**Average Time Spent on YouTube by 18-29:** ```6.2 Hours```
+**Average Time Spent on YouTube by 18–29:** ```6.2 Hours```
 
-**Average Time Spent on YouTube by 30-41:** ```4.8 Hours```
+**Average Time Spent on YouTube by 30–41:** ```4.8 Hours```
 
-**Average Time Spent on YouTube by 42-53:** ```3.1 Hours```
+**Average Time Spent on YouTube by 42–53:** ```3.1 Hours```
 
-**Average Time Spent on YouTube by 54-64:** ```2.4 Hours```
+**Average Time Spent on YouTube by 54–64:** ```2.4 Hours```
 
-## Average Time Spent on Instagram 18-64
+## Average Time Spent on Instagram 18–64
 
 [In]
 
@@ -231,13 +231,13 @@ WHERE
 ```
 [Out]
 
-**Average Time Spent on Instagram by 18-29:** ```6.2 Hours```
+**Average Time Spent on Instagram by 18–29:** ```6.2 Hours```
 
-**Average Time Spent on Instagram by 30-41:** ```4.4 Hours```
+**Average Time Spent on Instagram by 30–41:** ```4.4 Hours```
 
-**Average Time Spent on Instagram by 42-53:** ```3.0 Hours```
+**Average Time Spent on Instagram by 42–53:** ```3.0 Hours```
 
-**Average Time Spent on Instagram by 54-64:** ```2.3 Hours```
+**Average Time Spent on Instagram by 54–64:** ```2.3 Hours```
 
 ## Average Time Spent on Facebook 18-64
 
@@ -255,19 +255,19 @@ WHERE
 ```
 [Out]
 
-**Average Time Spent on Facebook by 18-29:** ```6.1 Hours```
+**Average Time Spent on Facebook by 18–29:** ```6.1 Hours```
 
-**Average Time Spent on Facebook by 30-41:** ```4.6 Hours```
+**Average Time Spent on Facebook by 30–41:** ```4.6 Hours```
 
-**Average Time Spent on Facebook by 42-53:** ```2.7 Hours```
+**Average Time Spent on Facebook by 42–53:** ```2.7 Hours```
 
-**Average Time Spent on Facebook by 54-64:** ```2.4 Hours```
+**Average Time Spent on Facebook by 54–64:** ```2.4 Hours```
 
 ## What is the average income and debt based on the most used social media platforms?
 
-Now that we have our individuals general information as well as their preferred platform and statistics, the most important information regarding a finance app is the customers financial information. 
+Now that we have our individuals' general information as well as their preferred platform and statistics, the most important information regarding a finance app is the customer's financial information. 
 
-Understanding a users financial information will allow us to conduct a targeted marketing strategy which tailors to personal needs, such as saving for a property, managing investments, and creating financial goals. Studying both income amount and debt allows us to assess users financial health, allowing us to track their risk assessment and spending habits. 
+Understanding a users' financial information will allow us to conduct a targeted marketing strategy which tailors to personal needs, such as saving for a property, managing investments, and creating financial goals. Studying both income amount and debt allows us to assess users' financial health, allowing us to track their risk assessment and spending habits. 
 
 Using the data from previous sections will now help us see which app provides the greatest and worst spenders and help us engage in advertisements that tailor to the correct audience. 
 
@@ -326,13 +326,13 @@ LIMIT 5;
 
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 
-As we keep going further into our consumers information we can now develop a stronger understanding of how we can advertise our app most successfully based off of age, platform, income, and debt. Understanding this information will allow a more tailored experience that will reach the right audiences and create a more personalized bond with those who are witnessing said advertisement. 
+As we keep going further into our consumer information, we can now develop a stronger understanding of how we can advertise our app most successfully based off of age, platform, income, and debt. Understanding this information will allow a more tailored experience that will reach the right audiences and create a more personalized bond with those who are witnessing said advertisement. 
 
 To further on with our marketing endeavor, asking questions in regard to a homeowner status would be most beneficial as we can calculate not only how much time homeowners spend on social media, but if they spend it more or less than those without one. Additionally, knowing homeowner statistics regarding our consumers will allow us to introduce features such as locating mortgage rates and payment information for those who are both in the midst of paying their mortgage and those who are saving for a home. 
 
-In the section below we will see create a query that averages out the time spent on platforms by homeowners as well as non-homeowners, additionally we will show the expanded view for each platform. 
+In the section below we will see create a query that averages out the time spent on platforms by homeowners as well as non-homeowners, additionally, we will show the expanded view for each platform. 
 
-## The average time spent on platforms by homeowners vs non-homeowners 
+## The average time spent on platforms by homeowners vs. non-homeowners 
 
 [In]
 
@@ -356,7 +356,7 @@ ORDER BY
 | FALSE        | 3.97           |
 
 
-## The average time spent on each platform by homeowners vs non-homeowners
+## The average time spent on each platform by homeowners vs. non-homeowners
 
 [In]
 
@@ -385,21 +385,21 @@ ORDER BY
 | FALSE        | Instagram | 4.04           |
 | FALSE        | YouTube   | 4.04           |
 
-## How does location and demographics affect the choice of social media platform and time spent?
+## How do location and demographics affect the choice of social media platform and time spent?
 
 Our previous sections have shown a momentous amount of helpful data that we, Aurora Technologies, can use to better understand our customers while simultaneously allowing us to market ourselves correctly and advertise specific features to those who require them.
 
-We have seen how our customers on average are about the age of 41 years old, and most are of the gender "Male". Our consumers use their technological devices on average about 4 hours a day, with Instagram being the most used social media platform at 4.1 hours. 
+We have seen how our customers on average are about the age of 41 years old, and most are of the gender "Male." Our consumers use their technological devices on average about 4 hours a day, with Instagram being the most used social media platform at 4.1 hours. 
 
-The most important data found was in regard to age, with those between the ages of 18-29 using social media platforms 3x as much as those in between the ages of 54-64. While our main customer age is between 41-50, we can now see how important social media ads are for the younger generation while more traditional ads whether they be billboards, commercials, or newspapers would be more beneficial for those who are older. 
+The most important data found was in regard to age, with those between the ages of 18–29 using social media platforms 3x as much as those in between the ages of 54–64. While our main customer age is between 41–50, we can now see how important social media ads are for the younger generation, while more traditional ads, whether they be billboards, commercials, or newspapers would be more beneficial for those who are older. 
 
 Lastly, it was shown that Instagram holds on average the top earners with the least amount of debt, those who are making 9.4% more than the lesser earners of our consumers. Those who statistically make the least income and have the most debt of our consumers are shown to be using Facebook as their main platform. 
 
 As we come to a close, the last stakeholder question follows suit as essential, does location matter? While we have our main plan for marketing to those in a higher / lower tax bracket and which apps to use. Location can make or break the success of our ad campaign. 
 
-This section will see the effects location and demographics have on consumer's desired social media platform and time spent on said platform. 
+This section will examine the effects that location and demographics have on consumers' desired social media platform and the time spent on the said platform.
 
-## How does location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user? 
+## How do location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user? 
 
 [In]
 
@@ -443,7 +443,7 @@ LIMIT 10;
 
 ## Marketing Plan
 
-Using all the data from our countless queries we can now create a plan to better market to our costumers. Based off of age data as well as demographic statistics we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
+Using all the data from our countless queries, we can now create a plan to better market to our costumers. Based off of age data as well as demographic statistics, we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
 
 Below will be our final query that will organize our consumers by how we can and will market to them in the coming weeks. To simplify the data listed and not cloud up this document, a ```LIMIT``` of 10 will be assigned. 
 
