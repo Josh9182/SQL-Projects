@@ -1,18 +1,21 @@
-﻿-- Table: dino_data
+﻿-- Table: dino_database
 
-CREATE TABLE dino_data
-(
-  Name character varying(50),
-  Diet character varying(15),
-  Period character varying(200),
-  Lived_in character varying(30),
-  Type character varying(30),
-  Length character varying(10),
-  Taxonomy character varying(200),
-  Named_By character varying(200),
-  Species character varying(30)
-);
-
+CREATE TABLE dino_database AS
+SELECT 
+    bio.Name,
+    bio.Diet,
+    bio.Length,
+    bio.Taxonomy,
+    bio.Species,
+    arch.Name,
+    arch.Type,
+    arch.Period,
+    arch.Lived_in,
+    arch.Named_By
+FROM 
+    dino_biological_info bio
+JOIN 
+    dino_archaeological_info arch ON bio.Name = arch.Name;
 
 -- Copy over data from CSV
-\copy dino_data FROM 'dino_data.csv' DELIMITER ',' CSV HEADER;
+\copy dino_database FROM 'customer_database.csv' DELIMITER ',' CSV HEADER;
