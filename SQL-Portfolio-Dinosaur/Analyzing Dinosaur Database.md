@@ -5,11 +5,12 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
--k
--k
--k
--k
--k
+- [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?]()
+- [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?]()
+- [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
+- [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
+- [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
+
 
 ###                                                             .
 This dataset features two tables, ```dino_biological_info``` as well as ```dino_archaeological_info```. After importing said data, we can join these two datasets to make our data analysis journey just a little bit easier! We will combine these two tables with the ```JOIN``` function to create the ```dino_database``` table.  
@@ -55,4 +56,8 @@ LIMIT 5;
 | Hylaeosaurus   | Herbivorous | 5.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria                                                                     | Armatus         | Armoured Dinosaur | Early Cretaceous 150-135 Million Years Ago| United Kingdom    | Mantell (1833)                     |
 | Sonidosaurus   | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria              | Saihangaobiensis| Sauropod          | Late Cretaceous 89-65 Million Years Ago   | China             | Xu Zhang Tan Zhao And Tan (2006)   |
 | Silvisaurus    | Herbivorous | 4.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                                                        | Condrayi        | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago| USA               | Eaton (1960)                       |
+
+## 
+
+
 
