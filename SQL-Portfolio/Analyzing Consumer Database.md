@@ -20,7 +20,8 @@ After importing the ```Customer_Database```, the table ```Customer_Database``` i
 
 ``` sql //
 SELECT *
-FROM Customer_Database cd
+FROM 
+    Customer_Database cd
 LIMIT 5;
 ```
 [Out]
