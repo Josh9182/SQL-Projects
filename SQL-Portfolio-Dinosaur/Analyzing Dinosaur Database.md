@@ -5,7 +5,7 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
-- [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?]()
+- [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
 - [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?]()
 - [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
 - [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
@@ -57,7 +57,13 @@ LIMIT 5;
 | Sonidosaurus   | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria              | Saihangaobiensis| Sauropod          | Late Cretaceous 89-65 Million Years Ago   | China             | Xu Zhang Tan Zhao And Tan (2006)   |
 | Silvisaurus    | Herbivorous | 4.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                                                        | Condrayi        | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago| USA               | Eaton (1960)                       |
 
-## 
+## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
+
+After using the function above, we can see the first five rows, which include the geographical regions of our consumers. With 291 rows, averaging the age column would not only take time but could lead to errors due to the massive amount of data available.
+
+While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it.
+
+In the section below, we will calculate the average rounded age of our consumers, and as a bonus, find the average age by profession.
 
 
 
