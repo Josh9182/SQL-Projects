@@ -49,6 +49,7 @@ ORDER BY
 LIMIT 5;
 ```
 [Out]
+
 | Name           | Diet        | Length | Taxonomy                                                                                                                                          | Species         | Type              | Period                                    | Lived_In          | Named_By                           |
 |----------------|-------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------|-------------------------------------------|-------------------|------------------------------------|
 | Deinocheirus   | Omnivorous  | 10.0M  | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria              | Mirificus       | Large Theropod    | Late Cretaceous 70-66 Million Years Ago   | Mongolia          | Osmolska And Roniewicz (1970)      |
@@ -59,11 +60,35 @@ LIMIT 5;
 
 ## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
 
-After using the function above, we can see the first five rows, which include the geographical regions of our consumers. With 291 rows, averaging the age column would not only take time but could lead to errors due to the massive amount of data available.
+After using the function above, we can see the first five rows of ```dino_database```, which include the geographical regions in which the fossils were found.
 
-While we can calculate the average manually, SQL can quickly, efficiently, and correctly analyze and calculate the query we provide it.
+In the section below, we will isolate the geographical regions the fossils were found in, count how many times fossils were found in each country, and order them by greatest to least.
 
-In the section below, we will calculate the average rounded age of our consumers, and as a bonus, find the average age by profession.
+## All regions with their count of fossils ordered from greatest to least
+
+[In]
+
+``` sql //
+SELECT
+	Lived_In,
+	COUNT(Lived_In) AS Fossil_Count
+FROM
+	dino_database dd 
+GROUP BY
+	Lived_In 
+ORDER BY 
+	Fossil_Count DESC 
+LIMIT 5;
+```
+[Out]
+
+| Lived_In        | Country_Count |
+|-----------------|---------------|
+| USA             | 75            |
+| China           | 43            |
+| Mongolia        | 41            |
+| Argentina       | 26            |
+| United Kingdom  | 20            |
 
 
 
