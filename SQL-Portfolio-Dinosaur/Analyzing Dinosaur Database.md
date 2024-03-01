@@ -48,3 +48,11 @@ ORDER BY
 LIMIT 5;
 ```
 [Out]
+| Name           | Diet        | Length | Taxonomy                                                                                                                                          | Species         | Type              | Period                                    | Lived_In          | Named_By                           |
+|----------------|-------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------|-------------------------------------------|-------------------|------------------------------------|
+| Deinocheirus   | Omnivorous  | 10.0M  | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria              | Mirificus       | Large Theropod    | Late Cretaceous 70-66 Million Years Ago   | Mongolia          | Osmolska And Roniewicz (1970)      |
+| Huayangosaurus | Herbivorous | 4.5M   | Dinosauria Ornithischia Genasauria Thyreophora Stegosauria Huayangosauridae                                                                       | Taibaii         | Armoured Dinosaur | Mid Jurassic 170-160 Million Years Ago    | China             | Dong Tang And Zhou (1982)          |
+| Hylaeosaurus   | Herbivorous | 5.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria                                                                     | Armatus         | Armoured Dinosaur | Early Cretaceous 150-135 Million Years Ago| United Kingdom    | Mantell (1833)                     |
+| Sonidosaurus   | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria              | Saihangaobiensis| Sauropod          | Late Cretaceous 89-65 Million Years Ago   | China             | Xu Zhang Tan Zhao And Tan (2006)   |
+| Silvisaurus    | Herbivorous | 4.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                                                        | Condrayi        | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago| USA               | Eaton (1960)                       |
+
