@@ -5,11 +5,17 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
-- [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
-- [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
-- [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
-- [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
-- [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
+- #### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
+  - [Count of fossils ordered from greatest to least per country](#Count-of-fossils-ordered-from-greatest-to-least-per-country)
+  - [Which country has the most number of fossils? What is the fossil concentration?](#Which-country-has-the-most-number-of-fossils-What-is-the-fossil-concentration)
+  - [Which country has the least number of fossils? What is the fossil concentration?](#Which-country-has-the-least-number-of-fossils-What-is-the-fossil-concentration)
+- #### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
+  - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
+  - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
+  - [Does diet contribute to size?](#Does-diet-contribute-to-size)
+- #### [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
+- #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
+- #### [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
 
 
 ###                                                             .
@@ -211,14 +217,14 @@ LIMIT 5;
 
 ## Does diet contribute to size?
 
-Now that we have an overview of concentration per location as well as diet, we can come to one of our conclusions, does diet contribute to size?
+Now that we have an overview of fossil concentration per location as well as diet, we can answer a question that will lead us to our main goal, we can ask does diet contribute to size?
 
 [In]
 
 ``` sql //
 SELECT
     Diet,
-    COUNT(*) AS Classification_Amount,
+    COUNT(Diet) AS Classification_Amount,
     ROUND(AVG(Length),2) AS Average_Length_By_Meters
 FROM
     dino_database dd 
