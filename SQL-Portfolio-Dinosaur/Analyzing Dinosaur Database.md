@@ -12,7 +12,9 @@ The dataset contains information about dinosaurs, ranging from biological inform
 - #### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
   - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
-  - [Does diet contribute to size?](#Does-diet-contribute-to-size)
+    - [Does diet contribute to size?](#Does-diet-contribute-to-size)
+    - [Does diet vary through species? If so, what are the patterns observed?](#does-diet-vary-through-species-if-so-what-are-the-patterns-observed)
+    - [Does diet vary through region? Do certain climates have a higher concentration of a specific classification?](#does-diet-vary-through-region-do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
 - #### [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
 - #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
 - #### [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
@@ -240,5 +242,13 @@ ORDER BY
 | Herbivorous |          171          |          8.88           |
 | Carnivorous |          93           |          5.15           |
 | Omnivorous  |          26           |          3.68           |
+
+## Does diet vary through species? If so, what are the patterns observed?
+
+As we can see above, interestingly, diet has a correlation to size! On average, the fossils that were found, cleaned, and examined showed that those of herbivorous dietary patterns were 42% larger than the fossils of carnivorous dinosaurs.
+
+## Does diet vary through region? Do certain climates have a higher concentration of a specific classification?
+
+
 
 
