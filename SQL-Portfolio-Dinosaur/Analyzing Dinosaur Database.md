@@ -6,7 +6,7 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
 - [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
-- [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?]()
+- [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
 - [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
 - [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
 - [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
@@ -33,7 +33,7 @@ SELECT
 FROM
 	dino_biological_info bio
 JOIN
-	dino_archaeological_info arch ON bio.name = arch.name
+	dino_archaeological_info arch ON bio.name = arch.name;
 ```
 
 After creating the ```dino_database``` table, we can now start our paleontology research! To start off I will ```SELECT``` all of the data from ```dino_database``` to answer the questions above and help my stakeholders uncover the mysteries of evolution from the Mezoziac Era. Due to this data being 291 rows, I will limit the output to five rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
@@ -132,7 +132,7 @@ ORDER BY
 ```
 [Out]
 
-**It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations with this amount we can include the ```HAVING``` function. With this inclusion we will now see our minutely successful expeditions, which have the lowest fossil count we encountered!**
+**It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations with this amount, we can include the ```HAVING``` function. With this inclusion we will now see our minutely successful expeditions, which have the lowest fossil count we encountered!**
 
 | Lived_in      | Fossil_Count |
 |---------------|--------------|
@@ -145,8 +145,65 @@ ORDER BY
 | Uruguay       | 1            |
 | Wales         | 1            |
 
+## What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?
+
+With location varying just as much as fossil count, analyzing our dinosaurs' dietary patterns can provide valuable insights related to paleontology. Understanding the diet diversity in certain regions, uncovering the population of dominant species or classifications, and revealing evolutionary adaptations due to climate or dinosaur population are just a few conclusions we can make based on this question.   
+
+In the section below, we will isolate dinosaur dietary classifications as well use the previous data to infer how climate, vegetation, and population might have caused rapid evolutionary adaptations. 
+
+## What are the classification amounts found in our research? Which is most common, moderately common, and least common?
+
+[In]
+
+``` sql //
+SELECT 
+	Diet,
+	COUNT(Diet) AS Classification_Amount
+FROM 	
+	dino_database dd 
+GROUP BY 
+	Diet 
+ORDER BY 
+	Classification_Amount DESC;
+```
+[Out]
+
+| Diet         | Classification Amount |
+|--------------|-----------------------|
+| Herbivorous  | 171                   |
+| Carnivorous  | 93                    |
+| Omnivorous   | 26                    |
 
 
+## Based on location, what are the dietary patterns observed among the sampled dinosaurs?
+
+[In]
+
+``` sql //
+SELECT 
+	Lived_In,
+	Diet,
+	COUNT(Diet) AS Classification_Amount
+FROM 	
+	dino_database dd 
+GROUP BY 
+	Lived_In,
+	Diet 
+ORDER BY
+	RANDOM(), 
+	Diet,
+	Lived_In ASC 
+LIMIT 5;
+```
+[Out]
+
+| Lived_In     | Diet         | Classification_Amount |
+|--------------|--------------|-----------------------|
+| South Africa | Omnivorous   | 1                     |
+| Brazil       | Carnivorous  | 2                     |
+| Argentina    | Herbivorous  | 13                    |
+| Mongolia     | Carnivorous  | 12                    |
+| Canada       | Omnivorous   | 3                     |
 
 
 
