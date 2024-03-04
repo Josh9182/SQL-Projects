@@ -153,6 +153,8 @@ In the section below, we will isolate dinosaur dietary classifications as well u
 
 ## What are the classification amounts found in our research? Which is most common, moderately common, and least common?
 
+Now that we have organized data which informs us about which locations have the highest concentration of fossils, it would be extremely helpful to see which classification these fossils would fall into! This would be fantastic since it would allow us to see what the concentration of carnivores, herbivores, and omnivores populated the spaces long ago. With this information, we can infer what the climate as well as environment was like! 
+
 [In]
 
 ``` sql //
@@ -176,6 +178,8 @@ ORDER BY
 
 
 ## Based on location, what are the dietary patterns observed among the sampled dinosaurs?
+
+After finding the total number of fossils per classification, we can further our research by advancing our query to show the concentration of fossils per location and per classification! 
 
 [In]
 
@@ -205,8 +209,30 @@ LIMIT 5;
 |   Mongolia   | Carnivorous  |          12           |
 |    Canada    |  Omnivorous  |           3           |
 
+## Does diet contribute to size?
 
+Now that we have an overview of concentration per location as well as diet, we can come to one of our conclusions, does diet contribute to size?
 
+[In]
 
+``` sql //
+SELECT
+    Diet,
+    COUNT(*) AS Classification_Amount,
+    ROUND(AVG(Length),2) AS Average_Length_By_Meters
+FROM
+    dino_database dd 
+GROUP BY
+    Diet
+ORDER BY 
+	Average_Length_By_Meters DESC;
+```
+[Out]
+
+|    Diet     | Classification Amount | Average Length (meters) |
+|:-----------:|:---------------------:|:-----------------------:|
+| Herbivorous |          171          |          8.88           |
+| Carnivorous |          93           |          5.15           |
+| Omnivorous  |          26           |          3.68           |
 
 
