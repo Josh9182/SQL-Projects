@@ -26,13 +26,13 @@ LIMIT 5;
 ```
 [Out]
 
-| Age | Gender | Time_Spent_Hrs | Platform  | Interests | Location       | Demographics | Profession        | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car |
-|-----|--------|----------------|-----------|-----------|----------------|--------------|-------------------|---------------|--------|-------------|--------------|----------|
-| 56  | Male   | 3              | Instagram | Sports    | United Kingdom | Urban        | Software Engineer | 108824        | TRUE   | 133744      | FALSE        | FALSE    |
-| 46  | Female | 2              | Facebook  | Travel    | United Kingdom | Urban        | Nurse             | 43350         | TRUE   | 47803       | TRUE         | TRUE     |
-| 32  | Male   | 7              | Instagram | Sports    | Australia      | Suburban     | Teacher           | 51030         | FALSE  | 161411      | FALSE        | FALSE    |
-| 60  | Female | 4              | Instagram | Travel    | United Kingdom | Urban        | Accountant        | 102545        | FALSE  | 159572      | TRUE         | FALSE    |
-| 25  | Male   | 6              | Instagram | Lifestyle | Australia      | Urban        | Graphic Designer  | 63303         | FALSE  | 52828       | TRUE         | TRUE     |
+| Age | Gender | Time_Spent_Hrs | Platform  | Interests |    Location    | Demographics |    Profession     | Annual_Income | Indebt | Debt_Amount | Is_Homeowner | Owns_Car |
+|:---:|:------:|:--------------:|:---------:|:---------:|:--------------:|:------------:|:-----------------:|:-------------:|:------:|:-----------:|:------------:|:--------:|
+| 56  |  Male  |       3        | Instagram |  Sports   | United Kingdom |    Urban     | Software Engineer |    108824     |  TRUE  |   133744    |    FALSE     |  FALSE   |
+| 46  | Female |       2        | Facebook  |  Travel   | United Kingdom |    Urban     |       Nurse       |     43350     |  TRUE  |    47803    |     TRUE     |   TRUE   |
+| 32  |  Male  |       7        | Instagram |  Sports   |   Australia    |   Suburban   |      Teacher      |     51030     | FALSE  |   161411    |    FALSE     |  FALSE   |
+| 60  | Female |       4        | Instagram |  Travel   | United Kingdom |    Urban     |    Accountant     |    102545     | FALSE  |   159572    |     TRUE     |  FALSE   |
+| 25  |  Male  |       6        | Instagram | Lifestyle |   Australia    |    Urban     | Graphic Designer  |     63303     | FALSE  |    52828    |     TRUE     |   TRUE   |
 
 ## What is the average age of our consumers?
 
@@ -76,13 +76,13 @@ LIMIT 5;
 
 **Average Rounded Age By Profession:** 
 
-| Profession            | Average Age |
-|-----------------------|-------------|
-| Insurance Underwriter | 33          |
-| Financial Controller  | 27          |
-| Arbitrator            | 46          |
-| Accountant            | 43          |
-| Immigration Lawyer    | 35          |
+|      Profession       | Average Age |
+|:---------------------:|:-----------:|
+| Insurance Underwriter |     33      |
+| Financial Controller  |     27      |
+|      Arbitrator       |     46      |
+|      Accountant       |     43      |
+|  Immigration Lawyer   |     35      |
 
 
 ## What is the least common and the most common genders present?
@@ -185,10 +185,10 @@ ORDER BY
 [Out]
 
 | Platform  | Average_Time |
-|-----------|--------------|
-| Instagram | 4.1          |
-| Youtube   | 4            |
-| Facebook  | 3.9          |
+|:---------:|:------------:|
+| Instagram |     4.1      |
+|  Youtube  |      4       |
+| Facebook  |     3.9      |
 
 ## Average Time Spent on YouTube 18–64
 
@@ -287,10 +287,10 @@ GROUP BY
 [Out]
 
 | Platform  | Average_Income | Average_Debt |
-|-----------|----------------|--------------|
-| Instagram |   90269.12     |  47458.14    |
-| Facebook  |   88472.23     |  48892.71    |
-| YouTube   |   85879.72     |  50589.84    |
+|:---------:|:--------------:|:------------:|
+| Instagram |    90269.12    |   47458.14   |
+| Facebook  |    88472.23    |   48892.71   |
+|  YouTube  |    85879.72    |   50589.84   |
 
 ## What is the average income and debt of each individual based on their desired social media platform?
 
@@ -318,12 +318,12 @@ LIMIT 5;
 [Out]
 
 | Age | Platform | Average_Income | Average_Debt |
-|-----|----------|----------------|--------------|
-| 18  | YouTube  | 100019.73      | 15408.09     |
-| 19  | YouTube  | 109678.63      | 15889.00     |
-| 20  | YouTube  | 94897.83       | 14304.83     |
-| 21  | YouTube  | 39128.50       | 12572.50     |
-| 22  | YouTube  | 55615.00       | 15110.67     |
+|:---:|:--------:|:--------------:|:------------:|
+| 18  | YouTube  |   100019.73    |   15408.09   |
+| 19  | YouTube  |   109678.63    |   15889.00   |
+| 20  | YouTube  |    94897.83    |   14304.83   |
+| 21  | YouTube  |    39128.50    |   12572.50   |
+| 22  | YouTube  |    55615.00    |   15110.67   |
 
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
 
@@ -352,9 +352,9 @@ ORDER BY
 [Out]
 
 | Is_Homeowner | Avg_Time_Spent |
-|--------------|----------------|
-| TRUE         | 4.05           |
-| FALSE        | 3.97           |
+|:------------:|:--------------:|
+|     TRUE     |      4.05      |
+|    FALSE     |      3.97      |
 
 
 ## The average time spent on each platform by homeowners vs. non-homeowners
@@ -378,13 +378,13 @@ ORDER BY
 [Out]
 
 | Is_Homeowner | Platform  | Avg_Time_Spent |
-|--------------|-----------|----------------|
-| TRUE         | Facebook  | 4.03           |
-| TRUE         | Instagram | 4.13           |
-| TRUE         | YouTube   | 3.99           |
-| FALSE        | Facebook  | 3.82           |
-| FALSE        | Instagram | 4.04           |
-| FALSE        | YouTube   | 4.04           |
+|:------------:|:---------:|:--------------:|
+|     TRUE     | Facebook  |      4.03      |
+|     TRUE     | Instagram |      4.13      |
+|     TRUE     |  YouTube  |      3.99      |
+|    FALSE     | Facebook  |      3.82      |
+|    FALSE     | Instagram |      4.04      |
+|    FALSE     |  YouTube  |      4.04      |
 
 ## How do location and demographics affect the choice of social media platform and time spent?
 
@@ -429,18 +429,18 @@ LIMIT 10;
 ```
 [Out]
 
-| Location        | Demographic | Platform   | Users | Total_Time_Spent | Average_Time_Per_Location |
-|-----------------|-------------|------------|-------|------------------|---------------------------|
-| Malta           | Suburban    | YouTube    | 1     | 2                | 2.0                       |
-| Germany         | Urban       | YouTube    | 1     | 8                | 8.0                       |
-| South Korea     | Rural       | YouTube    | 1     | 6                | 6.0                       |
-| Mexico          | Suburban    | Facebook   | 1     | 2                | 2.0                       |
-| Germany         | Rural       | Instagram  | 1     | 2                | 2.0                       |
-| United States   | Suburban    | Instagram  | 29    | 124              | 4.3                       |
-| Russia          | Rural       | Instagram  | 1     | 7                | 7.0                       |
-| Australia       | Suburban    | YouTube    | 29    | 113              | 3.9                       |
-| Denmark         | Urban       | Facebook   | 1     | 2                | 2.0                       |
-| Canada          | Rural       | YouTube    | 3     | 18               | 6.0                       |
+|    Location     | Demographic |  Platform  | Users | Total_Time_Spent | Average_Time_Per_Location |
+|:---------------:|:-----------:|:----------:|:-----:|:----------------:|:-------------------------:|
+|      Malta      |  Suburban   |  YouTube   |   1   |        2         |            2.0            |
+|     Germany     |    Urban    |  YouTube   |   1   |        8         |            8.0            |
+|   South Korea   |    Rural    |  YouTube   |   1   |        6         |            6.0            |
+|     Mexico      |  Suburban   |  Facebook  |   1   |        2         |            2.0            |
+|     Germany     |    Rural    | Instagram  |   1   |        2         |            2.0            |
+|  United States  |  Suburban   | Instagram  |  29   |       124        |            4.3            |
+|     Russia      |    Rural    | Instagram  |   1   |        7         |            7.0            |
+|    Australia    |  Suburban   |  YouTube   |  29   |       113        |            3.9            |
+|     Denmark     |    Urban    |  Facebook  |   1   |        2         |            2.0            |
+|     Canada      |    Rural    |  YouTube   |   3   |        18        |            6.0            |
 
 ## Marketing Plan
 
@@ -501,15 +501,15 @@ LIMIT 10;
 ```
 [Out]
 
-| Age | Platform  | Time_Spent_Hrs | Interests | Location       | Demographics | Advertisement_type                                                        |
-|-----|-----------|----------------|-----------|----------------|--------------|---------------------------------------------------------------------------|
-| 56  | Instagram | 3              | Sports    | United Kingdom | Urban        | Ad through physical mail and Instagram featuring visuals regarding Sports |
-| 46  | Facebook  | 2              | Travel    | United Kingdom | Urban        | Ad through physical mail and Facebook featuring visuals regarding Travel  |
-| 32  | Instagram | 7              | Sports    | Australia      | Suburban     | Ad through Instagram featuring visuals regarding Sports                   |
-| 60  | Instagram | 4              | Travel    | United Kingdom | Urban        | Ad through physical mail and Instagram featuring visuals regarding Travel |
-| 25  | Instagram | 6              | Lifestyle | Australia      | Urban        | Ad through Instagram featuring visuals regarding Lifestyle                |
-| 38  | Facebook  | 3              | Travel    | United States  | Urban        | Ad through Facebook featuring visuals regarding Travel                    |
-| 56  | YouTube   | 3              | Sports    | France         | Urban        | Ad through physical mail and YouTube featuring visuals regarding Sports   |
-| 36  | Instagram | 2              | Sports    | Japan          | Urban        | Ad through Instagram featuring visuals regarding Sports                   |
-| 40  | YouTube   | 4              | Lifestyle | Mexico         | Suburban     | Ad through YouTube featuring visuals regarding Lifestyle                  |
-| 28  | Instagram | 3              | Cooking   | Australia      | Suburban     | Ad through Instagram featuring visuals regarding Cooking                  |
+| Age | Platform  | Time_Spent_Hrs | Interests |    Location    | Demographics |                            Advertisement_type                             |
+|:---:|:---------:|:--------------:|:---------:|:--------------:|:------------:|:-------------------------------------------------------------------------:|
+| 56  | Instagram |       3        |  Sports   | United Kingdom |    Urban     | Ad through physical mail and Instagram featuring visuals regarding Sports |
+| 46  | Facebook  |       2        |  Travel   | United Kingdom |    Urban     | Ad through physical mail and Facebook featuring visuals regarding Travel  |
+| 32  | Instagram |       7        |  Sports   |   Australia    |   Suburban   |          Ad through Instagram featuring visuals regarding Sports          |
+| 60  | Instagram |       4        |  Travel   | United Kingdom |    Urban     | Ad through physical mail and Instagram featuring visuals regarding Travel |
+| 25  | Instagram |       6        | Lifestyle |   Australia    |    Urban     |        Ad through Instagram featuring visuals regarding Lifestyle         |
+| 38  | Facebook  |       3        |  Travel   | United States  |    Urban     |          Ad through Facebook featuring visuals regarding Travel           |
+| 56  |  YouTube  |       3        |  Sports   |     France     |    Urban     |  Ad through physical mail and YouTube featuring visuals regarding Sports  |
+| 36  | Instagram |       2        |  Sports   |     Japan      |    Urban     |          Ad through Instagram featuring visuals regarding Sports          |
+| 40  |  YouTube  |       4        | Lifestyle |     Mexico     |   Suburban   |         Ad through YouTube featuring visuals regarding Lifestyle          |
+| 28  | Instagram |       3        |  Cooking  |   Australia    |   Suburban   |         Ad through Instagram featuring visuals regarding Cooking          |
