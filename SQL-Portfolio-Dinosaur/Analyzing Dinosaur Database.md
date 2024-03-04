@@ -124,14 +124,15 @@ SELECT
 FROM
 	dino_database dd 
 GROUP BY
-	Lived_In 
+	Lived_In
+HAVING 
+	Fossil_Count = 1
 ORDER BY 
-	Fossil_Count ASC 
-LIMIT 10;
+	Fossil_Count ASC;
 ```
 [Out]
 
-**It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations we can ```LIMIT``` by 10 and see our minutely successful expeditions!**
+**It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations with this amount we can include the ```HAVING``` function. With this inclusion we will now see our minutely successful expeditions, which have the lowest fossil count we encountered!**
 
 | Lived_in      | Fossil_Count |
 |---------------|--------------|
@@ -143,8 +144,7 @@ LIMIT 10;
 | Tunisia       | 1            |
 | Uruguay       | 1            |
 | Wales         | 1            |
-| Egypt         | 2            |
-| Japan         | 2            |
+
 
 
 
