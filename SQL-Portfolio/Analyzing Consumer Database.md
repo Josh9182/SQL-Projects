@@ -6,11 +6,22 @@ In this notebook, we are going to analyze consumer data from the fictional busin
 The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographic information (demographics and country of residency). Below I will find the answers to questions such as:
 
   - #### [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
-  - #### [What is the least common and the most common genders present?](#What-is-the-least-common-and-the-most-common-genders-present)
+    - [What is the average age of our consumers by profession?](#what-is-the-average-age-of-our-consumers-by-profession)
+    - [What is the least common and the most common genders present?](#what-is-the-least-common-and-the-most-common-genders-present)
+      - [Least Common Gender](#least-common-gender)
+      - [Moderately Common Gender](#moderately-common-gender)
+      - [Most Common Gender](#most-common-gender)
   - #### [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
+    - [Average Time Spent for Each Consumer Based off of Desired Platform](#average-time-spent-for-each-consumer-based-off-of-desired-platform-)
+      - [Average Time Spent on YouTube 18–64](#average-time-spent-on-youtube-1864)
+      - [Average Time Spent on Instagram 18–64](#average-time-spent-on-instagram-1864)
+      - [Average Time Spent on Facebook 18-64](#average-time-spent-on-youtube-1864)
   - #### [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
+    - [What is the average income and debt of each individual based on their desired social media platform?](#what-is-the-average-income-and-debt-of-each-individual-based-on-their-desired-social-media-platform)
   - #### [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
-  - #### [How do location and demographics affect the choice of social media platform?](#How-does-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
+    - [The average time spent on platforms by homeowners vs. non-homeowners](#the-average-time-spent-on-each-platform-by-homeowners-vs-non-homeowners)
+  - #### [How do location and demographics affect the choice of social media platform?](#How-do-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
+    - [How do location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user?](#how-do-location-and-demographics-affect-userbase-time-spent-on-platforms-and-average-time-spent-on-platforms-by-user-)
   - #### [Marketing Plan](#Marketing-Plan)
 
 ###                                                             .
