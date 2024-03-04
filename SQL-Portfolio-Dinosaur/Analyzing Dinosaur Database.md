@@ -249,7 +249,7 @@ As we can see above, interestingly, diet has a correlation to size! On average, 
 
 Since we have a general overview on size, let's further our research and make it far more precise. Can we see how diet affects the size of our dinosaurs? Are all carnivores generally the same size or does it vary?
 
-In the section below we will explore how diet affects all of our dino's size based on species and understand if all classifications are usually the same size or if they differ greatly, possibly due to other factors.
+In the section below, we will explore how diet affects all of our dino's size based on species and understand if all classifications are usually the same size or if they differ greatly, possibly due to other factors.
 
 [In]
 
