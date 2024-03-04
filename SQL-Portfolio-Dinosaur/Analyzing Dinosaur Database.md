@@ -131,7 +131,7 @@ LIMIT 10;
 ```
 [Out]
 
-**It seems that several of our expeditions resultied in locations with the same number, ```1```. If wanting to see all locations we can ```LIMIT``` by 10 and see our minutely successful expeditions!**
+**It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations we can ```LIMIT``` by 10 and see our minutely successful expeditions!**
 
 | Lived_in      | Fossil_Count |
 |---------------|--------------|
