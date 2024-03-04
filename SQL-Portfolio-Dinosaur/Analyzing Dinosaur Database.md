@@ -50,13 +50,13 @@ LIMIT 5;
 ```
 [Out]
 
-| Name           | Diet        | Length | Taxonomy                                                                                                                             | Species          | Type              | Period                                     | Lived_In       | Named_By                         |
-|----------------|-------------|--------|--------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------------|--------------------------------------------|----------------|----------------------------------|
-| Deinocheirus   | Omnivorous  | 10.0M  | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria | Mirificus        | Large Theropod    | Late Cretaceous 70-66 Million Years Ago    | Mongolia       | Osmolska And Roniewicz (1970)    |
-| Huayangosaurus | Herbivorous | 4.5M   | Dinosauria Ornithischia Genasauria Thyreophora Stegosauria Huayangosauridae                                                          | Taibaii          | Armoured Dinosaur | Mid Jurassic 170-160 Million Years Ago     | China          | Dong Tang And Zhou (1982)        |
-| Hylaeosaurus   | Herbivorous | 5.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria                                                        | Armatus          | Armoured Dinosaur | Early Cretaceous 150-135 Million Years Ago | United Kingdom | Mantell (1833)                   |
-| Sonidosaurus   | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria | Saihangaobiensis | Sauropod          | Late Cretaceous 89-65 Million Years Ago    | China          | Xu Zhang Tan Zhao And Tan (2006) |
-| Silvisaurus    | Herbivorous | 4.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                                           | Condrayi         | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago | USA            | Eaton (1960)                     |
+|      Name      |    Diet     | Length |                                                               Taxonomy                                                               |     Species      |       Type        |                   Period                   |    Lived_In    |             Named_By             |
+|:--------------:|:-----------:|:-------|:------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|:-----------------:|:------------------------------------------:|:--------------:|:--------------------------------:|
+|  Deinocheirus  | Omnivorous  | 10.0M  | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria |    Mirificus     |  Large Theropod   |  Late Cretaceous 70-66 Million Years Ago   |    Mongolia    |  Osmolska And Roniewicz (1970)   |
+| Huayangosaurus | Herbivorous | 4.5M   |                             Dinosauria Ornithischia Genasauria Thyreophora Stegosauria Huayangosauridae                              |     Taibaii      | Armoured Dinosaur |   Mid Jurassic 170-160 Million Years Ago   |     China      |    Dong Tang And Zhou (1982)     |
+|  Hylaeosaurus  | Herbivorous | 5.0M   |                            Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria                             |     Armatus      | Armoured Dinosaur | Early Cretaceous 150-135 Million Years Ago | United Kingdom |          Mantell (1833)          |
+|  Sonidosaurus  | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria | Saihangaobiensis |     Sauropod      |  Late Cretaceous 89-65 Million Years Ago   |     China      | Xu Zhang Tan Zhao And Tan (2006) |
+|  Silvisaurus   | Herbivorous | 4.0M   |                      Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                      |     Condrayi     | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago |      USA       |           Eaton (1960)           |
 
 ## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
 
@@ -82,13 +82,13 @@ LIMIT 5;
 ```
 [Out]
 
-| Lived_In        | Fossil_Count |
-|-----------------|--------------|
-| USA             | 75           |
-| China           | 43           |
-| Mongolia        | 41           |
-| Argentina       | 26           |
-| United Kingdom  | 20           |
+|    Lived_In     | Fossil_Count |
+|:---------------:|:------------:|
+|       USA       |      75      |
+|      China      |      43      |
+|    Mongolia     |      41      |
+|    Argentina    |      26      |
+| United Kingdom  |      20      |
 
 ## Which country has the most number of fossils? What is the fossil concentration?
 
@@ -109,8 +109,8 @@ LIMIT 1;
 [Out]
 
 | Lived_In | Fossil_Count |
-|----------|--------------|
-| USA      | 75           |
+|:--------:|:------------:|
+|   USA    |      75      |
 
 
 ## Which country has the least number of fossils? What is the fossil concentration?
@@ -134,16 +134,16 @@ ORDER BY
 
 **It seems that several of our expeditions resulted in locations with the same number, ```1```. If wanting to see all locations with this amount, we can include the ```HAVING``` function. With this inclusion we will now see our minutely successful expeditions, which have the lowest fossil count we encountered!**
 
-| Lived_in      | Fossil_Count |
-|---------------|--------------|
-| Antarctica    | 1            |
-| Malawi        | 1            |
-| North Africa  | 1            |
-| Russia        | 1            |
-| Switzerland   | 1            |
-| Tunisia       | 1            |
-| Uruguay       | 1            |
-| Wales         | 1            |
+|   Lived_in    | Fossil_Count |
+|:-------------:|:------------:|
+|  Antarctica   |      1       |
+|    Malawi     |      1       |
+| North Africa  |      1       |
+|    Russia     |      1       |
+|  Switzerland  |      1       |
+|    Tunisia    |      1       |
+|    Uruguay    |      1       |
+|     Wales     |      1       |
 
 ## What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?
 
@@ -168,11 +168,11 @@ ORDER BY
 ```
 [Out]
 
-| Diet         | Classification Amount |
-|--------------|-----------------------|
-| Herbivorous  | 171                   |
-| Carnivorous  | 93                    |
-| Omnivorous   | 26                    |
+|     Diet     | Classification Amount |
+|:------------:|:---------------------:|
+| Herbivorous  |          171          |
+| Carnivorous  |          93           |
+|  Omnivorous  |          26           |
 
 
 ## Based on location, what are the dietary patterns observed among the sampled dinosaurs?
@@ -197,13 +197,13 @@ LIMIT 5;
 ```
 [Out]
 
-| Lived_In     | Diet         | Classification_Amount |
-|--------------|--------------|-----------------------|
-| South Africa | Omnivorous   | 1                     |
-| Brazil       | Carnivorous  | 2                     |
-| Argentina    | Herbivorous  | 13                    |
-| Mongolia     | Carnivorous  | 12                    |
-| Canada       | Omnivorous   | 3                     |
+|   Lived_In   |     Diet     | Classification_Amount |
+|:------------:|:------------:|:---------------------:|
+| South Africa |  Omnivorous  |           1           |
+|    Brazil    | Carnivorous  |           2           |
+|  Argentina   | Herbivorous  |          13           |
+|   Mongolia   | Carnivorous  |          12           |
+|    Canada    |  Omnivorous  |           3           |
 
 
 
