@@ -90,6 +90,65 @@ LIMIT 5;
 | Argentina       | 26           |
 | United Kingdom  | 20           |
 
+## Which country has the most number of fossils? What is the fossil concentration?
+
+[In]
+
+``` sql //
+SELECT
+	Lived_In,
+	COUNT(Lived_In) AS Country_Count
+FROM
+	dino_database dd 
+GROUP BY
+	Lived_In 
+ORDER BY 
+	Fossil_Count DESC 
+LIMIT 1;
+```  
+[Out]
+
+| Lived_In | Fossil_Count |
+|----------|--------------|
+| USA      | 75           |
+
+
+## Which country has the least number of fossils? What is the fossil concentration?
+
+[In]
+
+``` sql //
+SELECT
+	Lived_In,
+	COUNT(Lived_In) AS Fossil_Count
+FROM
+	dino_database dd 
+GROUP BY
+	Lived_In 
+ORDER BY 
+	Fossil_Count ASC 
+LIMIT 10;
+```
+[Out]
+
+**It seems that several of our expeditions resultied in locations with the same number, ```1```. If wanting to see all locations we can ```LIMIT``` by 10 and see our minutely successful expeditions!**
+
+| Lived_in      | Fossil_Count |
+|---------------|--------------|
+| Antarctica    | 1            |
+| Malawi        | 1            |
+| North Africa  | 1            |
+| Russia        | 1            |
+| Switzerland   | 1            |
+| Tunisia       | 1            |
+| Uruguay       | 1            |
+| Wales         | 1            |
+| Egypt         | 2            |
+| Japan         | 2            |
+
+
+
+
 
 
 
