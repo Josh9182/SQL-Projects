@@ -168,11 +168,17 @@ insights related to paleontology. Understanding the diet diversity in certain re
 dominant species or classifications, and revealing evolutionary adaptations due to climate or dinosaur population 
 are just a few conclusions we can make based on this question.   
 
-In the section below, we will isolate dinosaur dietary classifications as well use the previous data to infer how climate, vegetation, and population might have caused rapid evolutionary adaptations. 
+In the section below, we will isolate dinosaur dietary classifications as well use the previous data to infer how 
+climate, vegetation, and population might have caused rapid evolutionary adaptations. 
 
 ## What are the classification amounts found in our research? Which is most common, moderately common, and least common?
 
-Now that we have organized data which informs us about which locations have the highest concentration of fossils, it would be extremely helpful to see which classification these fossils would fall into! This would be fantastic since it would allow us to see what the concentration of carnivores, herbivores, and omnivores populated the spaces long ago. With this information, we can infer what the climate as well as environment was like! 
+Now that we have organized data which informs us about which locations have the highest concentration of fossils, 
+it would be extremely helpful to see which classification these fossils would fall into!
+This would be fantastic since
+it would allow us to see what the concentration of carnivores, herbivores, and omnivores populated the spaces long 
+ago.
+With this information, we can infer what the climate as well as environment was like! 
 
 [In]
 
@@ -198,7 +204,8 @@ ORDER BY
 
 ## Based on location, what are the dietary patterns observed among the sampled dinosaurs?
 
-After finding the total number of fossils per classification, we can further our research by advancing our query to show the concentration of fossils per location and per classification! 
+After finding the total number of fossils per classification, we can further our research by 
+advancing our query to show the concentration of fossils per location and per classification! 
 
 [In]
 
@@ -230,7 +237,8 @@ LIMIT 5;
 
 ## Does diet contribute to size?
 
-Now that we have an overview of fossil concentration per location as well as diet, we can answer a question that will lead us to our main goal, we can ask does diet contribute to size?
+Now that we have an overview of fossil concentration per location as well as diet, we can answer a question that 
+will lead us to our main goal, we can ask does diet contribute to size?
 
 [In]
 
@@ -256,13 +264,26 @@ ORDER BY
 
 ## How does diet affect species? 
 
-As we can see above, interestingly, diet has a correlation to size! On average, the fossils that were found, cleaned, and examined showed that those of herbivorous dietary patterns were 42% larger than the fossils of carnivorous dinosaurs.
+As we can see above, interestingly, diet has a correlation to size!
+On average, the fossils that were found, 
+cleaned, and examined showed that those of herbivorous dietary patterns were 42% larger than the fossils of 
+carnivorous dinosaurs.
 
-Since we have a general overview on size, let's further our research and make it far more precise. Can we see how diet affects the size of our dinosaurs? Are all carnivores generally the same size or does it vary?
+Since we have a general overview on size, let's further our research and make it far more precise.
+Can we see how 
+diet affects the size of our dinosaurs?
+Are all carnivores generally the same size or does it vary?
 
-In the section below, we will explore how diet affects all of our dino's size based on species and understand if all classifications are usually the same size or if they differ greatly, possibly due to other factors.
+In the section below, we will explore how diet affects all of our dino's size based on species and understand 
+if all classifications are usually the same size or if they differ greatly, possibly due to other factors.
 
-**Normally this query would be simple to calculate as numerical values can easily be ordered by the ```ORDER BY``` function. However, the data we have gathered on our fossils was written as a text, or a ```VARCHAR``` because of the inclusion of "M" for meters. Since a text value was involved with our numerical value the ```CAST``` is used to change the column ```Length``` to go from a text value to an approximate numeric value or a "floating value" by the use of the ```FLOAT``` function.**
+**Normally this query would be simple to calculate as numerical values can easily be ordered by 
+the ```ORDER BY``` function.
+However, the data we have gathered on our fossils was written as a text,
+or a ```VARCHAR``` because of the inclusion of "M" for meters.
+Since a text value was involved with our numerical value the ```CAST``` is used
+to change the column ```Length``` to go from a text value to an approximate numeric value or a "floating value"
+by the use of the ```FLOAT``` function.**
 
 [In]
 
@@ -329,6 +350,31 @@ ORDER BY
 
 
 ## Does diet vary through region? 
+
+Wow!
+We can see the drastic difference in correlation between diet classification as well as dinosaur length. 
+
+When monogamous towards one diet, we can see that dinosaurs become quite large, especially if that loyalty is 
+stuck on vegetation.
+With an almost 50% size increase between carnivores and herbivores, it shows that
+when food is far more available, organisms tend to become larger. 
+
+Using the data we have gathered to deduce, 
+vegetation was far more prominent compared to organisms during the era of our fossilized friends.
+I can estimate this because herbivores were much larger than any other classification found in our research. 
+With such a massive size means an increased metabolism, which in turn means a gargantuan diet. 
+
+What an incredible find!
+Now we know that the Earth millions of years ago hosted lush vegetation, lush enough to feed 30.0M+ tall dinosaurs!
+
+While we now know how populated the earth was with vegetation,
+did all regions have this type of rich landscape
+or were some barron enough to just host life rather than house a luxuriant jungle?
+Finding out what climates existed could possibly teach us if some climates had a specific dietary classification. 
+
+In the section below, we will examine this question
+and find out what dinosaurs existed in certain climates
+and see if certain climates have a higher concentration of a specific classification? 
 
 ## Do certain climates have a higher concentration of a specific classification?
 
