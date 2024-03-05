@@ -198,7 +198,7 @@ ORDER BY
 ```
 [Out]
 
-|     Diet     | Classification Amount |
+|     Diet     | Classification_Amount |
 |:------------:|:---------------------:|
 | Herbivorous  |          171          |
 | Carnivorous  |          93           |
@@ -259,11 +259,11 @@ ORDER BY
 ```
 [Out]
 
-|    Diet     | Classification Amount | Average Length (meters) |
-|:-----------:|:---------------------:|:-----------------------:|
-| Herbivorous |          171          |          8.88           |
-| Carnivorous |          93           |          5.15           |
-| Omnivorous  |          26           |          3.68           |
+|    Diet     | Classification_Amount | Average_Length_By_Meters |
+|:-----------:|:---------------------:|:------------------------:|
+| Herbivorous |          171          |           8.88           |
+| Carnivorous |          93           |           5.15           |
+| Omnivorous  |          26           |           3.68           |
 
 ## How does diet affect species? 
 
@@ -305,13 +305,13 @@ LIMIT 5;
 
 [Out]
 
-| Diet        | Length | Species     |
-|-------------|--------|-------------|
+|    Diet     | Length |   Species   |
+|:-----------:|:------:|:-----------:|
 | Carnivorous | 18.0M  | Aegyptiacus |
-| Carnivorous | 15.0M  | Saharicus   |
-| Carnivorous | 13.0M  | Roseae      |
-| Carnivorous | 12.5M  | Carolinii   |
-| Carnivorous | 12.0M  | Atokensis   |
+| Carnivorous | 15.0M  |  Saharicus  |
+| Carnivorous | 13.0M  |   Roseae    |
+| Carnivorous | 12.5M  |  Carolinii  |
+| Carnivorous | 12.0M  |  Atokensis  |
 
 
 
@@ -345,11 +345,11 @@ ORDER BY
 
 [Out]
 
-| Diet         | Max_Length_Meters |
-|--------------|-------------------|
-| Herbivorous  | 35                |
-| Carnivorous  | 18                |
-| Omnivorous   | 12                |
+|     Diet     | Max_Length_Meters |
+|:------------:|:-----------------:|
+| Herbivorous  |        35         |
+| Carnivorous  |        18         |
+|  Omnivorous  |        12         |
 
 
 ## Does diet vary through region? 
@@ -400,13 +400,13 @@ LIMIT 5;
 
 [Out]
 
-| Lived_In   | Diet          | Classification_Total |
-|------------|---------------|----------------------|
-| Antarctica | Carnivorous   | 1                    |
-| Argentina  | Carnivorous   | 12                   |
-| Argentina  | Herbivorous   | 12                   |
-| Argentina  | Omnivorous    | 1                    |
-| Australia  | Herbivorous   | 6                    |
+|  Lived_In  |     Diet      | Classification_Total |
+|:----------:|:-------------:|:--------------------:|
+| Antarctica |  Carnivorous  |          1           |
+| Argentina  |  Carnivorous  |          12          |
+| Argentina  |  Herbivorous  |          12          |
+| Argentina  |  Omnivorous   |          1           |
+| Australia  |  Herbivorous  |          6           |
 
 
 ## Do certain climates have a higher concentration of a specific classification?
@@ -453,12 +453,27 @@ In the section below, we will explore the correlation between taxonomic groups a
 [In]
 
 ``` sql //
-
-
-
+SELECT
+    Taxonomy,
+    ROUND(AVG("Length"),2) AS Average_Length_Meters,
+    MIN(CAST("Length" AS FLOAT)) AS Minimum_Length_By_Meters,
+    MAX(CAST("Length" AS FLOAT)) AS Maximum_Length_By_Meters
+FROM
+    dino_database
+GROUP BY
+    Taxonomy
+LIMIT 5;
 ```
 
 [Out]
+
+|                                               Taxonomy                                                | Average Length (Meters) | Minimum_Length_By_Meters | Maximum_Length_By_Meters |
+|:-----------------------------------------------------------------------------------------------------:|:-----------------------:|:------------------------:|:------------------------:|
+|                                        Dinosauria Ornithischia                                        |          4.55           |           2.1            |            7             |
+|                    Dinosauria Ornithischia Genasauria Cerapoda Heterodontosauridae                    |           1.2           |           1.2            |           1.2            |
+|                Dinosauria Ornithischia Genasauria Cerapoda Marginocephalia Ceratopsia                 |           1.2           |           1.2            |           1.2            |
+|         Dinosauria Ornithischia Genasauria Cerapoda Marginocephalia Ceratopsia Neoceratopsia          |           1.2           |           1.1            |           1.3            |
+| Dinosauria Ornithischia Genasauria Cerapoda Marginocephalia Ceratopsia Neoceratopsia Bagaceratopsidae |            1            |            1             |            1             |
 
 
 
