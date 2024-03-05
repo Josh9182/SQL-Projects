@@ -15,7 +15,8 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Does diet contribute to size?](#Does-diet-contribute-to-size)
     - [How does diet affect species?](#how-does-diet-affect-species-)
     - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
-    - [Does diet vary through region? Do certain climates have a higher concentration of a specific classification?](#does-diet-vary-through-region-do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
+    - [Does diet vary through region?](#does-diet-vary-through-region-)
+    - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
 - #### [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
 - #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
 - #### [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
@@ -369,12 +370,22 @@ Now we know that the Earth millions of years ago hosted lush vegetation, lush en
 
 While we now know how populated the earth was with vegetation,
 did all regions have this type of rich landscape
-or were some barron enough to just host life rather than house a luxuriant jungle?
-Finding out what climates existed could possibly teach us if some climates had a specific dietary classification. 
+or were some barron enough to just host life rather than house a luxuriant jungle?  
 
-In the section below, we will examine this question
-and find out what dinosaurs existed in certain climates
-and see if certain climates have a higher concentration of a specific classification? 
+Finding out what climates existed could possibly teach us
+if climates had varying diet or if some climates had unique and specific classification. 
+
+In the section below, we will explore the different regions that we found housed fossilized remains, 
+and if diet truly is region-specific or if every region houses the three well-known classifications. 
+
+[In]
+
+``` sql //
+
+
+```
+
+[Out]
+
 
 ## Do certain climates have a higher concentration of a specific classification?
-
