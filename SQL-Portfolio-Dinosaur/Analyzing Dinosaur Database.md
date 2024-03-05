@@ -22,7 +22,9 @@ The dataset contains information about dinosaurs, ranging from biological inform
 
 
 ###                                                             .
-This dataset features two tables, ```dino_biological_info``` as well as ```dino_archaeological_info```. After importing said data, we can join these two datasets to make our data analysis journey just a little bit easier! We will combine these two tables with the ```JOIN``` function to create the ```dino_database``` table.  
+This dataset features two tables, ```dino_biological_info``` as well as ```dino_archaeological_info```. After importing
+said data, we can join these two datasets to make our data analysis journey just a little bit easier! We will combine
+these two tables with the ```JOIN``` function to create the ```dino_database``` table.  
 
 Below will be the query that will combine our tables:
 
@@ -45,7 +47,10 @@ JOIN
 	dino_archaeological_info arch ON bio.name = arch.name;
 ```
 
-After creating the ```dino_database``` table, we can now start our paleontology research! To start off I will ```SELECT``` all of the data from ```dino_database``` to answer the questions above and help my stakeholders uncover the mysteries of evolution from the Mezoziac Era. Due to this data being 291 rows, I will limit the output to five rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
+After creating the ```dino_database``` table, we can now start our paleontology research! To start off I will 
+```SELECT``` all of the data from ```dino_database``` to answer the questions above and help my stakeholders uncover 
+the mysteries of evolution from the Mezoziac Era. Due to this data being 291 rows, I will limit the output to five 
+rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
 
 [In]
 
@@ -69,9 +74,11 @@ LIMIT 5;
 
 ## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
 
-After using the function above, we can see the first five rows of ```dino_database```, which include the geographical regions in which the fossils were found.
+After using the function above, we can see the first five rows of ```dino_database```, which include the geographical 
+regions in which the fossils were found.
 
-In the section below, we will isolate the geographical regions the fossils were found in, count how many times fossils were found in each country, and order them by greatest to least.
+In the section below, we will isolate the geographical regions the fossils were found in, count how many times fossils 
+were found in each country, and order them by greatest to least.
 
 ## Count of fossils ordered from greatest to least per country
 
@@ -156,7 +163,10 @@ ORDER BY
 
 ## What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?
 
-With location varying just as much as fossil count, analyzing our dinosaurs' dietary patterns can provide valuable insights related to paleontology. Understanding the diet diversity in certain regions, uncovering the population of dominant species or classifications, and revealing evolutionary adaptations due to climate or dinosaur population are just a few conclusions we can make based on this question.   
+With location varying just as much as fossil count, analyzing our dinosaurs' dietary patterns can provide valuable 
+insights related to paleontology. Understanding the diet diversity in certain regions, uncovering the population of 
+dominant species or classifications, and revealing evolutionary adaptations due to climate or dinosaur population 
+are just a few conclusions we can make based on this question.   
 
 In the section below, we will isolate dinosaur dietary classifications as well use the previous data to infer how climate, vegetation, and population might have caused rapid evolutionary adaptations. 
 
@@ -271,16 +281,29 @@ LIMIT 5;
 
 [Out]
 
-| Diet        | Length | Species    |
-|-------------|--------|------------|
-| Carnivorous | 18.0M  | Aegyptiacus|
-| Carnivorous | 15.0M  | Saharicus  |
-| Carnivorous | 13.0M  | Roseae     |
-| Carnivorous | 12.5M  | Carolinii  |
-| Carnivorous | 12.0M  | Atokensis  |
+| Diet        | Length | Species     |
+|-------------|--------|-------------|
+| Carnivorous | 18.0M  | Aegyptiacus |
+| Carnivorous | 15.0M  | Saharicus   |
+| Carnivorous | 13.0M  | Roseae      |
+| Carnivorous | 12.5M  | Carolinii   |
+| Carnivorous | 12.0M  | Atokensis   |
+
 
 
 ## Are all diet classifications the same size?
+
+Although a ```LIMIT``` is employed, the query above shows every single species, their diet, and their length,
+organized in greatest to least to better understand how species can vary in size depending on diet classification. 
+
+Using this data, we can better understand how unique dinosaur species variation truly is.
+No matter if the dinosaur is omnivorous, carnivorous, or herbivorous,
+we can see the massive scale in which dinosaur length can measure.
+From 0.5M all the way to 30.0M, dinosaur size can vary drastically, but is there any easier way to visualize this range?
+How can we truly see how big our dinos can get?
+
+In the section below,
+we will isolate the largest dinosaurs found through fossil identification based on their diet classifications.
 
 ``` sql //
 SELECT
@@ -305,5 +328,7 @@ ORDER BY
 | Omnivorous   | 12                |
 
 
-## Does diet vary through region? Do certain climates have a higher concentration of a specific classification?
+## Does diet vary through region? 
+
+## Do certain climates have a higher concentration of a specific classification?
 
