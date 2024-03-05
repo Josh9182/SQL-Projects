@@ -17,7 +17,7 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region?](#does-diet-vary-through-region-)
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
-- #### [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
+- #### [How does the length of dinosaurs vary across different taxonomic groups?](#)
 - #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
 - #### [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
 
@@ -426,6 +426,13 @@ does this mean that the USA had a higher concentration of carnivores, herbivores
 Or did we just not find enough fossils to conclude? 
 
 I believe
-that certain climates do not have a higher concentration of a specific classification based off the fact
-that we now know that all types existed on mostly every single region,
-its safe to say that the Earth during the mezoziac era 
+that certain climates do not have a higher concentration of a specific classification.
+Based on the data, we now know that all classification types existed in almost every single region of Earth. 
+It's safe to say
+that the Earth during the mezoziac era while having different climate types still featured the necessary temperatures and resources
+for animals to thrive.
+Therefore, certain climates do NOT have a higher concentration of a specific classification.
+
+## How does the length of dinosaurs vary across different taxonomic groups?
+
+
