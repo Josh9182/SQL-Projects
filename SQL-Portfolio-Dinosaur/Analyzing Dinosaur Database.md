@@ -387,8 +387,6 @@ SELECT
 	COUNT(Diet) AS Classification_Total
 FROM
     dino_database
-WHERE
-    Diet IN ('Carnivorous', 'Omnivorous', 'Herbivorous')
 GROUP BY
     Diet,
     Lived_In 
@@ -410,3 +408,24 @@ LIMIT 5;
 
 
 ## Do certain climates have a higher concentration of a specific classification?
+
+Although we don't have too many fossils for each region,
+using an estimate,
+we can see that almost every single region covered features either a carnivore and herbivore or an omnivore. 
+
+This is groundbreaking!
+It shows that vegetation covered the planet,
+whether it be in the frigid lands of Antarctica or the humid deserts of Egypt. 
+
+We now know
+that the Earth allowed dinosaurs to evolutionarily adapt depending on the region by providing lush vegetation.
+
+To answer the question above, it might be hard to say.
+We have found more fossils in certain areas such as the USA,
+does this mean that the USA had a higher concentration of carnivores, herbivores, or omnivores than Egypt?
+Or did we just not find enough fossils to conclude? 
+
+I believe
+that certain climates do not have a higher concentration of a specific classification based off the fact
+that we now know that all types existed on mostly every single region,
+its safe to say that the Earth during the mezoziac era 
