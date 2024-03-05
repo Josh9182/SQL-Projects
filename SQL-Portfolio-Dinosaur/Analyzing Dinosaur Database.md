@@ -13,7 +13,8 @@ The dataset contains information about dinosaurs, ranging from biological inform
   - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
     - [Does diet contribute to size?](#Does-diet-contribute-to-size)
-    - [How does diet affect species? Are all classifications the same size?](#how-does-diet-affect-species-are-all-classifications-the-same-size)
+    - [How does diet affect species?](#how-does-diet-affect-species-)
+    - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region? Do certain climates have a higher concentration of a specific classification?](#does-diet-vary-through-region-do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
 - #### [How does the length of dinosaurs vary across different taxonomic groups, and is there a correlation between length and diet?]()
 - #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
@@ -243,7 +244,7 @@ ORDER BY
 | Carnivorous |          93           |          5.15           |
 | Omnivorous  |          26           |          3.68           |
 
-## How does diet affect species? Are all classifications the same size?
+## How does diet affect species? 
 
 As we can see above, interestingly, diet has a correlation to size! On average, the fossils that were found, cleaned, and examined showed that those of herbivorous dietary patterns were 42% larger than the fossils of carnivorous dinosaurs.
 
@@ -270,16 +271,39 @@ LIMIT 5;
 
 [Out]
 
-| Diet        | Length | Species     |
-|-------------|--------|-------------|
-| Carnivorous | 18.0M  | Aegyptiacus |
-| Carnivorous | 15.0M  | Saharicus   |
-| Carnivorous | 13.0M  | Roseae      |
-| Carnivorous | 12.5M  | Carolinii   |
-| Carnivorous | 12.0M  | Atokensis   |
+| Diet        | Length | Species    |
+|-------------|--------|------------|
+| Carnivorous | 18.0M  | Aegyptiacus|
+| Carnivorous | 15.0M  | Saharicus  |
+| Carnivorous | 13.0M  | Roseae     |
+| Carnivorous | 12.5M  | Carolinii  |
+| Carnivorous | 12.0M  | Atokensis  |
+
+
+## Are all diet classifications the same size?
+
+``` sql //
+SELECT
+    Diet,
+    MAX(CAST("Length" AS FLOAT)) AS Max_Length_Meters
+FROM
+    dino_database
+WHERE
+    Diet IN ('Carnivorous', 'Omnivorous', 'Herbivorous')
+GROUP BY
+    Diet
+ORDER BY 
+	max_length_meters DESC;
+```
+
+[Out]
+
+| Diet         | Max_Length_Meters |
+|--------------|-------------------|
+| Herbivorous  | 35                |
+| Carnivorous  | 18                |
+| Omnivorous   | 12                |
+
 
 ## Does diet vary through region? Do certain climates have a higher concentration of a specific classification?
-
-
-
 
