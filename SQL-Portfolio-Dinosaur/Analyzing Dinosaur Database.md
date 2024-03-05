@@ -251,15 +251,32 @@ Since we have a general overview on size, let's further our research and make it
 
 In the section below, we will explore how diet affects all of our dino's size based on species and understand if all classifications are usually the same size or if they differ greatly, possibly due to other factors.
 
+**Normally this query would be simple to calculate as numerical values can easily be ordered by the ```ORDER BY``` function. However, the data we have gathered on our fossils was written as a text, or a ```VARCHAR``` because of the inclusion of "M" for meters. Since a text value was involved with our numerical value the ```CAST``` is used to change the column ```Length``` to go from a text value to an approximate numeric value or a "floating value" by the use of the ```FLOAT``` function.**
+
 [In]
 
 ``` sql //
-
-
-
+SELECT
+    Diet,
+    "Length",
+    Species
+FROM
+    dino_database dd
+ORDER BY
+    Diet ASC,
+    CAST(Length AS FLOAT) DESC
+LIMIT 5;
 ```
 
 [Out]
+
+| Diet        | Length | Species     |
+|-------------|--------|-------------|
+| Carnivorous | 18.0M  | Aegyptiacus |
+| Carnivorous | 15.0M  | Saharicus   |
+| Carnivorous | 13.0M  | Roseae      |
+| Carnivorous | 12.5M  | Carolinii   |
+| Carnivorous | 12.0M  | Atokensis   |
 
 ## Does diet vary through region? Do certain climates have a higher concentration of a specific classification?
 
