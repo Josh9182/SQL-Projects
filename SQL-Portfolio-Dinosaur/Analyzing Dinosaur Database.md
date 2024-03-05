@@ -17,9 +17,11 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region?](#does-diet-vary-through-region-)
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
-- #### [How does the length of dinosaurs vary across different taxonomic groups?](#)
-- #### [Could you identify any correlation between the length of a dinosaur and its taxonomy, and how does this correlation differ between carnivorous and herbivorous dinosaurs?]()
-- #### [How does the distribution of dinosaur fossils vary across different continents, and what factors might have influenced these distribution patterns?]()
+- #### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
+  - [What are some identifications of any correlation between the length of a dinosaur and its taxonomy?]()
+    - [How does this correlation differ between carnivorous and herbivorous dinosaurs?]()
+- #### [How does the distribution of dinosaur fossils vary across different continents?]() 
+  - [What factors might have influenced the distribution patterns of these possible variations?]()
 
 
 ###                                                             .
@@ -433,6 +435,10 @@ that the Earth during the mezoziac era while having different climate types stil
 for animals to thrive.
 Therefore, certain climates do NOT have a higher concentration of a specific classification.
 
+Now that we have 
+
 ## How does the length of dinosaurs vary across different taxonomic groups?
+
+
 
 
