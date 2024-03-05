@@ -376,16 +376,37 @@ Finding out what climates existed could possibly teach us
 if climates had varying diet or if some climates had unique and specific classification. 
 
 In the section below, we will explore the different regions that we found housed fossilized remains, 
-and if diet truly is region-specific or if every region houses the three well-known classifications. 
+and if diet truly is region-specific or if every region generally has the three well-known classifications. 
 
 [In]
 
 ``` sql //
-
-
+SELECT
+    lived_in,
+	Diet,
+	COUNT(Diet) AS Classification_Total
+FROM
+    dino_database
+WHERE
+    Diet IN ('Carnivorous', 'Omnivorous', 'Herbivorous')
+GROUP BY
+    Diet,
+    Lived_In 
+ORDER BY
+	Lived_In ASC,
+	Classification_Total DESC
+LIMIT 5;
 ```
 
 [Out]
+
+| Lived_In   | Diet          | Classification_Total |
+|------------|---------------|----------------------|
+| Antarctica | Carnivorous   | 1                    |
+| Argentina  | Carnivorous   | 12                   |
+| Argentina  | Herbivorous   | 12                   |
+| Argentina  | Omnivorous    | 1                    |
+| Australia  | Herbivorous   | 6                    |
 
 
 ## Do certain climates have a higher concentration of a specific classification?
