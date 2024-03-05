@@ -433,11 +433,32 @@ Based on the data, we now know that all classification types existed in almost e
 It's safe to say
 that the Earth during the mezoziac era while having different climate types still featured the necessary temperatures and resources
 for animals to thrive.
+
 Therefore, certain climates do NOT have a higher concentration of a specific classification.
 
-Now that we have 
-
 ## How does the length of dinosaurs vary across different taxonomic groups?
+
+So much progress has been made!
+With dinosaur diet and climate estimations, we can create an approximate idea on what life was like so many years ago.
+Additionally,
+we can understand the vegetation population and possibly even the climate based on dietary evidence inside our fossils. 
+
+After obtaining so much dietary data,
+we can understand more about correlating factors regarding our dinosaurs, such as sizing.  
+While we understand that climate and diet influence the size of the dinosaurs found,
+do taxonomic groups correlate with dinosaur size? 
+
+In the section below, we will explore the correlation between taxonomic groups and dinosaur length. 
+
+[In]
+
+``` sql //
+
+
+
+```
+
+[Out]
 
 
 
