@@ -18,7 +18,7 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Does diet vary through region?](#does-diet-vary-through-region-)
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
 - #### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
-  - [What are some identifications of any correlation between the length of a dinosaur and its taxonomy?](#what-are-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
+  - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
     - [How does this correlation differ between carnivorous and herbivorous dinosaurs?]()
 - #### [How does the distribution of dinosaur fossils vary across different continents?]() 
   - [What factors might have influenced the distribution patterns of these possible variations?]()
@@ -475,7 +475,7 @@ LIMIT 5;
 |         Dinosauria Ornithischia Genasauria Cerapoda Marginocephalia Ceratopsia Neoceratopsia          |           1.2           |           1.1            |           1.3            |
 | Dinosauria Ornithischia Genasauria Cerapoda Marginocephalia Ceratopsia Neoceratopsia Bagaceratopsidae |            1            |            1             |            1             |
 
-## What are some identifications of any correlation between the length of a dinosaur and its taxonomy?
+## Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?
 
 What an interesting find!
 While taxonomic groups sound similar, they can completely vary in size!
@@ -483,7 +483,23 @@ Based on the data available,
 we can see
 that Dinosauria Ornithischia is 73% larger than the Dinosauria Ornithischia Genasauria Cerapoda Heterodontosauridae taxonomic group! 
 
-While differing species may fall into similiar sounding taxonomic groups,
-on the surface they might look or sound similiar, but analyzing our data we can see that dinosaur length 
+While differing species may fall into similar sounding taxonomic groups, the species themselves differ entirely. 
+After analyzing our data,
+we can see that dinosaur length varies extremely using taxonomic groups as the measured category. 
+
+Based on the data available,
+I would say
+that taxonomy is a less reliable way
+to understand size, however, it can help in the search to identify size. 
+
+I would say
+that species is a far better identifier
+when it comes to dinosaur length
+as species can provide us hints on understanding evolutionary patterns and lineages.
+However, with the help of taxonomy and the analysis of bone structure,
+we can calculate the predicted size and dimensions of our dinosaurs. 
+
+## How does this correlation differ between carnivorous and herbivorous dinosaurs?
+
 
 
