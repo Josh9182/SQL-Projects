@@ -609,5 +609,17 @@ LIMIT 5;
 
 ## Final Thoughts
 
-After extensive research regarding the data gathered from numerous 
+After extensive research regarding the data
+gathered from numerous queries, we have finally come to the end of our research project. 
+
+We have uncovered so much!
+We have seen the most populous landscapes that housed a range of dinosaurs. 
+We have seen the effect diet and region have on the size of dinosaurs.
+We have uncovered that no matter the diet, classification is more about bone structure than species itself. 
+We have uncovered the potential climate that lurked millions of years ago,
+and we have seen the brilliant accomplishments and dedication provided to us by history's paleontologists.
+
+From large to small, we have uncovered and answered such magnificent questions, all uncovered by the queries of SQL.
+
+Thank you!
 
