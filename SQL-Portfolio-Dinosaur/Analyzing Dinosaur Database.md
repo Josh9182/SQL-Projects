@@ -20,7 +20,7 @@ The dataset contains information about dinosaurs, ranging from biological inform
 - #### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
   - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
-- #### [How does the distribution of dinosaur fossils vary across different continents?]() 
+- #### [How does the distribution of dinosaur fossils vary across different continents?](#how-does-the-distribution-of-dinosaur-fossils-vary-across-different-continents) 
   - [What factors might have influenced the distribution patterns of these possible variations?]()
 
 
