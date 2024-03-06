@@ -463,7 +463,13 @@ Below will be our final query that will organize our consumers by how we can and
 [In]
 
 ``` sql //
-SELECT Age, Platform, Time_Spent_Hrs, Interests, Location, Demographics,
+SELECT 
+    Age, 
+    Platform, 
+    Time_Spent_Hrs, 
+    Interests, 
+    Location, 
+    Demographics,
         CASE
             WHEN age BETWEEN 18 AND 41
                 AND Platform IN ('YouTube', 'Instagram', 'Facebook') 

@@ -6,9 +6,9 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
 - ### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
-  - [Count of fossils ordered from greatest to least per country](#Count-of-fossils-ordered-from-greatest-to-least-per-country)
-    - [Which country has the most number of fossils? What is the fossil concentration?](#Which-country-has-the-most-number-of-fossils-What-is-the-fossil-concentration)
-    - [Which country has the least number of fossils? What is the fossil concentration?](#Which-country-has-the-least-number-of-fossils-What-is-the-fossil-concentration)
+  - [Count of fossils ordered from greatest to least per region](#Count-of-fossils-ordered-from-greatest-to-least-per-region)
+    - [Which region has the most number of fossils? What is the fossil concentration?](#Which-region-has-the-most-number-of-fossils-What-is-the-fossil-concentration)
+    - [Which region has the least number of fossils? What is the fossil concentration?](#Which-region-has-the-least-number-of-fossils-What-is-the-fossil-concentration)
 - ### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
   - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
@@ -20,8 +20,9 @@ The dataset contains information about dinosaurs, ranging from biological inform
 - ### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
   - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
-- ### [How does the distribution of dinosaur fossils vary across different continents?](#how-does-the-distribution-of-dinosaur-fossils-vary-across-different-continents) 
-  - [What factors might have influenced the distribution patterns of these possible variations?]()
+- ### [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
+  - [What is the count of dinosaur species ordered from greatest to least per paleontologist?](#what-is-the-count-of-dinosaur-species-ordered-from-greatest-to-least-per-paleontologist)
+- ### [Final Thoughts]()
 
 
 ###                                                             .
@@ -83,14 +84,14 @@ regions in which the fossils were found.
 In the section below, we will isolate the geographical regions the fossils were found in, count how many times fossils 
 were found in each country, and order them by greatest to least.
 
-## Count of fossils ordered from greatest to least per country
+## Count of fossils ordered from greatest to least per region
 
 [In]
 
 ``` sql //
 SELECT
 	Lived_In,
-	COUNT(Lived_In) AS Fossil_Count
+	COUNT(*) AS Fossil_Count
 FROM
 	dino_database dd 
 GROUP BY
@@ -109,14 +110,14 @@ LIMIT 5;
 |    Argentina    |      26      |
 | United Kingdom  |      20      |
 
-## Which country has the most number of fossils? What is the fossil concentration?
+## Which region has the most number of fossils? What is the fossil concentration?
 
 [In]
 
 ``` sql //
 SELECT
 	Lived_In,
-	COUNT(Lived_In) AS Country_Count
+	COUNT(*) AS Country_Count
 FROM
 	dino_database dd 
 GROUP BY
@@ -132,14 +133,14 @@ LIMIT 1;
 |   USA    |      75      |
 
 
-## Which country has the least number of fossils? What is the fossil concentration?
+## Which region has the least number of fossils? What is the fossil concentration?
 
 [In]
 
 ``` sql //
 SELECT
 	Lived_In,
-	COUNT(Lived_In) AS Fossil_Count
+	COUNT(*) AS Fossil_Count
 FROM
 	dino_database dd 
 GROUP BY
@@ -188,7 +189,7 @@ With this information, we can infer what the climate as well as environment was 
 ``` sql //
 SELECT 
 	Diet,
-	COUNT(Diet) AS Classification_Amount
+	COUNT(*) AS Classification_Amount
 FROM 	
 	dino_database dd 
 GROUP BY 
@@ -216,7 +217,7 @@ advancing our query to show the concentration of fossils per location and per cl
 SELECT 
 	Lived_In,
 	Diet,
-	COUNT(Diet) AS Classification_Amount
+	COUNT(*) AS Classification_Amount
 FROM 	
 	dino_database dd 
 GROUP BY 
@@ -248,7 +249,7 @@ will lead us to our main goal, we can ask does diet contribute to size?
 ``` sql //
 SELECT
     Diet,
-    COUNT(Diet) AS Classification_Amount,
+    COUNT(*) AS Classification_Amount,
     ROUND(AVG(Length),2) AS Average_Length_By_Meters
 FROM
     dino_database dd 
@@ -293,7 +294,7 @@ by the use of the ```FLOAT``` function.**
 ``` sql //
 SELECT
     Diet,
-    "Length",
+    Length,
     Species
 FROM
     dino_database dd
@@ -332,7 +333,7 @@ we will isolate the largest dinosaurs found through fossil identification based 
 ``` sql //
 SELECT
     Diet,
-    MAX(CAST("Length" AS FLOAT)) AS Max_Length_Meters
+    MAX(CAST(Length AS FLOAT)) AS Max_Length_Meters
 FROM
     dino_database
 WHERE
@@ -386,7 +387,7 @@ and if diet truly is region-specific or if every region generally has the three 
 SELECT
     lived_in,
 	Diet,
-	COUNT(Diet) AS Classification_Total
+	COUNT(*) AS Classification_Total
 FROM
     dino_database
 GROUP BY
@@ -455,9 +456,9 @@ In the section below, we will explore the correlation between taxonomic groups a
 ``` sql //
 SELECT
     Taxonomy,
-    ROUND(AVG("Length"),2) AS Average_Length_Meters,
-    MIN(CAST("Length" AS FLOAT)) AS Minimum_Length_By_Meters,
-    MAX(CAST("Length" AS FLOAT)) AS Maximum_Length_By_Meters
+    ROUND(AVG(Length),2) AS Average_Length_Meters,
+    MIN(CAST(Length AS FLOAT)) AS Minimum_Length_By_Meters,
+    MAX(CAST(Length AS FLOAT)) AS Maximum_Length_By_Meters
 FROM
     dino_database
 GROUP BY
@@ -533,4 +534,57 @@ ORDER BY
 | Carnivorous | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Spinosauroidea Spinosauridae Spinosaurinae                                    | 5.15                 | 0.25                 | 18                   |
 | Omnivorous  | Dinosauria Saurischia Sauropodomorpha Prosauropoda Anchisauria Melanorosauridae                                                      | 3.68                 | 0.6                  | 12                   |
 
-## How does the distribution of dinosaur fossils vary across different continents?
+## Who are the paleontologists credited with naming the most dinosaur species in the dataset?
+
+Considerable advancements have been made based on our expedition data!
+From diet and species correlation to taxonomy and size,
+we have gathered an understanding of what correlating factors can and might have influenced the Mesozoic era. 
+
+Knowing what size our animals were and what leading diet classification populated certain areas could easily let us
+know the estimated climate of certain regions.
+Especially with herbivores,
+knowing that they dwelled in the Antarctic shows us
+that even if there were frigid temperatures, vegetation was still able to grow and thrive! 
+
+Now that we have uncovered so much hidden knowledge regarding our fossils,
+let us venture into the discoverers of said dinos
+and use our paleontologist data to answer one of our stakeholder's questions!
+
+In the section below we will see the spread of paleontologist discoveries
+and understand if multiple paleontologists have discovered more than others.
+Additionally we will label the status of their frequency to show how efficient and successful they were at unveiling fossils. 
+
+## What is the count of dinosaur species ordered from greatest to least per paleontologist?
+
+[In]
+
+``` sql//
+SELECT
+    Named_By,
+    COUNT(Named_By) AS Total_Species_Named,
+    CASE 
+        WHEN COUNT(Named_By) = (SELECT MAX(Total_Species_Named) FROM (SELECT Named_By, COUNT(*) AS Total_Species_Named FROM dino_database GROUP BY Named_By) AS max_counts) THEN 'Breakthrough'
+        WHEN COUNT(Named_By) = (SELECT MIN(Total_Species_Named) FROM (SELECT Named_By, COUNT(*) AS Total_Species_Named FROM dino_database GROUP BY Named_By) AS min_counts) THEN 'Incremental'
+        ELSE "Steady"
+    END AS Naming_Status
+FROM 
+	dino_database
+GROUP BY 
+	Named_By
+ORDER BY 
+	Total_Species_Named DESC 
+LIMIT 5;
+```
+
+[Out]
+
+| Named_By | Total_Species_Named | Naming_Status |
+|----------|---------------------|---------------|
+| Marsh    | 16                  | Breakthrough  |
+| Brown    | 8                   | Steady        |
+| Osborn   | 7                   | Steady        |
+| Gilmore  | 6                   | Steady        |
+| Bonaparte| 6                   | Steady        |
+
+
+
