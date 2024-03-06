@@ -1,9 +1,28 @@
 # Paleontological Data
-Paleontological data is extremely important for the evolutionary history of the Earth, allowing scientists the ability to peer into the past and trace the journey of various species. By examining changes created by history through the use of fossils, paleontologists can analyze and comprehend how life has slowly yet intensely adapted and diversify through the course of millions of years.
+Paleontological data is extremely important for the evolutionary history of the Earth, allowing scientists the 
+ability to peer into the past and trace the journey of various species.
+By examining changes created by history through the use of fossils,
+paleontologists can analyze
+and comprehend how life has slowly yet intensely adapted and diversify through the course of millions of years.
 
-In this notebook, we are going to trim, clean, and analyze dinosaur data obtained from [Kaggle.com ](https://www.kaggle.com/datasets/kjanjua/jurassic-park-the-exhaustive-dinosaur-dataset) while simultaneously creating a simulated paleontological research project. After a recent expedition, several of our paleontologists came through with fantastic finds! Returning home from their fieldwork and expedition, they have gathered an abundance of valuable prehistoric data from around the globe. Along with the data gathered, our leadership of stakeholders, consisting of senior palaeontologists, archaeologists, and lab analysts will guide and challenge us to find life's most curious prehistoric mysteries! From trying to formulate the migration patterns to figuring out evolutionary traits influenced by diet, we will uncover the truth about so many formerly ambiguous dinosaurs.
+In this notebook, we are going to trim, clean,
+and analyze dinosaur data
+obtained from [Kaggle.com](https://www.kaggle.com/datasets/kjanjua/jurassic-park-the-exhaustive-dinosaur-dataset)
+while 
+simultaneously creating a simulated paleontological research project. 
 
-The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
+After a recent expedition, several of our paleontologists came through with fantastic finds!
+Returning home from their fieldwork and expeditions,
+they have gathered an abundance of valuable prehistoric data from around the globe.
+Along with the data gathered, our leadership of stakeholders,
+consisting of senior palaeontologists, archaeologists, and lab analysts,
+will guide and challenge us to find life's most curious prehistoric mysteries!
+From trying to formulate the idea of regional gigantism to figuring out evolutionary traits influenced by diet,
+we will uncover the truth about so many formerly ambiguous dinosaurs.
+
+The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, 
+taxonomy, and species) to archaeological information (period, habitual country, type, discoverer).
+Below I will find the answers to questions such as:
 
 - ### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
   - [Count of fossils ordered from greatest to least per region](#Count-of-fossils-ordered-from-greatest-to-least-per-region)
@@ -22,7 +41,7 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
 - ### [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
   - [What is the count of dinosaur species ordered from greatest to least per paleontologist?](#what-is-the-count-of-dinosaur-species-ordered-from-greatest-to-least-per-paleontologist)
-- ### [Final Thoughts]()
+- ### [Final Thoughts](#final-thoughts)
 
 
 ###                                                             .
@@ -68,13 +87,14 @@ LIMIT 5;
 ```
 [Out]
 
-|      Name      |    Diet     | Length |                                                               Taxonomy                                                               |     Species      |       Type        |                   Period                   |    Lived_In    |             Named_By             |
-|:--------------:|:-----------:|:-------|:------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|:-----------------:|:------------------------------------------:|:--------------:|:--------------------------------:|
-|  Deinocheirus  | Omnivorous  | 10.0M  | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria |    Mirificus     |  Large Theropod   |  Late Cretaceous 70-66 Million Years Ago   |    Mongolia    |  Osmolska And Roniewicz (1970)   |
-| Huayangosaurus | Herbivorous | 4.5M   |                             Dinosauria Ornithischia Genasauria Thyreophora Stegosauria Huayangosauridae                              |     Taibaii      | Armoured Dinosaur |   Mid Jurassic 170-160 Million Years Ago   |     China      |    Dong Tang And Zhou (1982)     |
-|  Hylaeosaurus  | Herbivorous | 5.0M   |                            Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria                             |     Armatus      | Armoured Dinosaur | Early Cretaceous 150-135 Million Years Ago | United Kingdom |          Mantell (1833)          |
-|  Sonidosaurus  | Herbivorous | 9.0M   | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria | Saihangaobiensis |     Sauropod      |  Late Cretaceous 89-65 Million Years Ago   |     China      | Xu Zhang Tan Zhao And Tan (2006) |
-|  Silvisaurus   | Herbivorous | 4.0M   |                      Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                      |     Condrayi     | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago |      USA       |           Eaton (1960)           |
+| Name             | Diet        | Length | Taxonomy                                                                                                                                                                                 | Species     | Type              | Period                                     | Lived_In | Named_By                                             | Year_Named |
+|------------------|-------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------|--------------------------------------------|----------|------------------------------------------------------|------------|
+| Ornithomimus     | Omnivorous  | 4.0M   | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Ornithomimosauria Ornithomimidae                                      | Velox       | Large Theropod    | Late Cretaceous 74-65 Million Years Ago    | Usa      | Marsh                                                | 1890       |
+| Khaan            | Omnivorous  | 1.8M   | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Maniraptora Oviraptorosauria Caenagnathoidea Oviraptoridae Ingeniinae | Mckennai    | Small Theropod    | Late Cretaceous 81-75 Million Years Ago    | Mongolia | Clark Norell And Barsbold                            | 2001       |
+| Nanshiungosaurus | Omnivorous  | 4.4M   | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Maniraptoriformes Maniraptora Therizinosauroidea Therizinosauridae                      | Brevispinus | Large Theropod    | Late Cretaceous 84-71 Million Years Ago    | China    | Dong                                                 | 1979       |
+| Silvisaurus      | Herbivorous | 4.0M   | Dinosauria Ornithischia Genasauria Thyreophora Ankylosauromorpha Ankylosauria Nodosauridae                                                                                               | Condrayi    | Armoured Dinosaur | Early Cretaceous 121-112 Million Years Ago | Usa      | Eaton                                                | 1960       |
+| Guanlong         | Carnivorous | 3.0M   | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Avetheropoda Coelurosauria Tyrannoraptora Tyrannosauroidea                                                                        | Wucaii      | Small Theropod    | Late Jurassic 159-154 Million Years Ago    | China    | Xu Clark Forster Norell Erickson Eberth Jia And Zhao | 2006       |
+
 
 ## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
 
@@ -550,9 +570,10 @@ Now that we have uncovered so much hidden knowledge regarding our fossils,
 let us venture into the discoverers of said dinos
 and use our paleontologist data to answer one of our stakeholder's questions!
 
-In the section below we will see the spread of paleontologist discoveries
+In the section below, we will see the spread of paleontologist discoveries
 and understand if multiple paleontologists have discovered more than others.
-Additionally we will label the status of their frequency to show how efficient and successful they were at unveiling fossils. 
+Additionally,
+we will label the status of their frequency to show how efficient and successful they were at unveiling fossils. 
 
 ## What is the count of dinosaur species ordered from greatest to least per paleontologist?
 
@@ -578,13 +599,15 @@ LIMIT 5;
 
 [Out]
 
-| Named_By | Total_Species_Named | Naming_Status |
-|----------|---------------------|---------------|
-| Marsh    | 16                  | Breakthrough  |
-| Brown    | 8                   | Steady        |
-| Osborn   | 7                   | Steady        |
-| Gilmore  | 6                   | Steady        |
-| Bonaparte| 6                   | Steady        |
+| Named_By  | Total_Species_Named | Naming_Status |
+|-----------|---------------------|---------------|
+| Marsh     | 16                  | Breakthrough  |
+| Brown     | 8                   | Steady        |
+| Osborn    | 7                   | Steady        |
+| Gilmore   | 6                   | Steady        |
+| Bonaparte | 6                   | Steady        |
 
+## Final Thoughts
 
+After extensive research regarding the data gathered from numerous 
 

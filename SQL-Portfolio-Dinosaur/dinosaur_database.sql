@@ -11,6 +11,7 @@ SELECT
 	arch.Period,
 	arch.Lived_in,
 	arch.Named_By
+	arch.Year_Named
 FROM
 	dino_biological_info bio
 JOIN
