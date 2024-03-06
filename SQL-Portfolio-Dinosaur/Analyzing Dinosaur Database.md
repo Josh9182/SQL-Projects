@@ -505,7 +505,7 @@ we can calculate the predicted size and dimensions of our dinosaurs.
 Since we now know that dinosaur size varies heavily regarding taxonomy,
 could there be a correlation between carnivorous and herbivorous dinosaurs? 
 
-In the section below we will try
+In the section below, we will try
 to locate any differences between carnivorous and herbivorous dinosaurs regarding taxonomy.
 
 [In]
@@ -527,10 +527,10 @@ ORDER BY
 
 [Out]
 
-| Diet        | Taxonomy                                                                       | Avg_Length_By_Meters | Min_Length_By_Meters | Max_Length_By_Meters |
-|-------------|--------------------------------------------------------------------------------|----------------------|----------------------|----------------------|
+| Diet        | Taxonomy                                                                                                                             | Avg_Length_By_Meters | Min_Length_By_Meters | Max_Length_By_Meters |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------|----------------------|----------------------|
 | Herbivorous | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria | 8.88                 | 0.5                  | 35                   |
-| Carnivorous | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Spinosauroidea Spinosauridae Spinosaurinae                   | 5.15                 | 0.25                 | 18                   |
-| Omnivorous  | Dinosauria Saurischia Sauropodomorpha Prosauropoda Anchisauria Melanorosauridae | 3.68                 | 0.6                  | 12                   |
+| Carnivorous | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Spinosauroidea Spinosauridae Spinosaurinae                                    | 5.15                 | 0.25                 | 18                   |
+| Omnivorous  | Dinosauria Saurischia Sauropodomorpha Prosauropoda Anchisauria Melanorosauridae                                                      | 3.68                 | 0.6                  | 12                   |
 
 ## How does the distribution of dinosaur fossils vary across different continents?
