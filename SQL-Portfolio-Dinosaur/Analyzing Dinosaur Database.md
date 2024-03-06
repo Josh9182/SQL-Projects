@@ -19,7 +19,7 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
 - #### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
   - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
-    - [How does this correlation differ between carnivorous and herbivorous dinosaurs?]()
+    - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
 - #### [How does the distribution of dinosaur fossils vary across different continents?]() 
   - [What factors might have influenced the distribution patterns of these possible variations?]()
 
@@ -496,10 +496,41 @@ I would say
 that species is a far better identifier
 when it comes to dinosaur length
 as species can provide us hints on understanding evolutionary patterns and lineages.
+
 However, with the help of taxonomy and the analysis of bone structure,
 we can calculate the predicted size and dimensions of our dinosaurs. 
 
-## How does this correlation differ between carnivorous and herbivorous dinosaurs?
+## Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?
 
+Since we now know that dinosaur size varies heavily regarding taxonomy,
+could there be a correlation between carnivorous and herbivorous dinosaurs? 
 
+In the section below we will try
+to locate any differences between carnivorous and herbivorous dinosaurs regarding taxonomy.
 
+[In]
+
+``` sql// 
+SELECT
+	diet,
+	Taxonomy, 
+       ROUND(AVG("Length"),2) AS Avg_Length_By_Meters, 
+       MIN(CAST(Length AS FLOAT)) AS Min_Length_By_Meters, 
+       MAX(CAST(Length AS FLOAT)) AS Max_Length_By_Meters
+FROM 
+	dino_database dd 
+GROUP BY 
+	Diet 
+ORDER BY 
+	Avg_Length_By_Meters DESC 
+```
+
+[Out]
+
+| Diet        | Taxonomy                                                                       | Avg_Length_By_Meters | Min_Length_By_Meters | Max_Length_By_Meters |
+|-------------|--------------------------------------------------------------------------------|----------------------|----------------------|----------------------|
+| Herbivorous | Dinosauria Saurischia Sauropodomorpha Sauropoda Eusauropoda Neosauropoda Macronaria Camarasauromorpha Titanosauriformes Titanosauria | 8.88                 | 0.5                  | 35                   |
+| Carnivorous | Dinosauria Saurischia Theropoda Neotheropoda Tetanurae Spinosauroidea Spinosauridae Spinosaurinae                   | 5.15                 | 0.25                 | 18                   |
+| Omnivorous  | Dinosauria Saurischia Sauropodomorpha Prosauropoda Anchisauria Melanorosauridae | 3.68                 | 0.6                  | 12                   |
+
+## How does the distribution of dinosaur fossils vary across different continents?
