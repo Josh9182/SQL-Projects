@@ -5,11 +5,11 @@ In this notebook, we are going to trim, clean, and analyze dinosaur data obtaine
 
 The dataset contains information about dinosaurs, ranging from biological information (name, diet, length, taxonomy, and species) to archaeological information (period, habitual country, type, discoverer). Below I will find the answers to questions such as:
 
-- #### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
+- ### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
   - [Count of fossils ordered from greatest to least per country](#Count-of-fossils-ordered-from-greatest-to-least-per-country)
     - [Which country has the most number of fossils? What is the fossil concentration?](#Which-country-has-the-most-number-of-fossils-What-is-the-fossil-concentration)
     - [Which country has the least number of fossils? What is the fossil concentration?](#Which-country-has-the-least-number-of-fossils-What-is-the-fossil-concentration)
-- #### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
+- ### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
   - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
     - [Does diet contribute to size?](#Does-diet-contribute-to-size)
@@ -17,10 +17,10 @@ The dataset contains information about dinosaurs, ranging from biological inform
     - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region?](#does-diet-vary-through-region-)
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
-- #### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
+- ### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
   - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
-- #### [How does the distribution of dinosaur fossils vary across different continents?](#how-does-the-distribution-of-dinosaur-fossils-vary-across-different-continents) 
+- ### [How does the distribution of dinosaur fossils vary across different continents?](#how-does-the-distribution-of-dinosaur-fossils-vary-across-different-continents) 
   - [What factors might have influenced the distribution patterns of these possible variations?]()
 
 
