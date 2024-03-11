@@ -469,20 +469,20 @@ we can understand more about correlating factors regarding our dinosaurs, such a
 While we understand that climate and diet influence the size of the dinosaurs found,
 do taxonomic groups correlate with dinosaur size? 
 
-In the section below, we will explore the correlation between taxonomic groups and dinosaur length. 
+In the section below,
+we will explore the correlation between taxonomic groups and dinosaur length
+by experimenting with window functions instead of the standard ```GROUP BY``` function. 
 
 [In]
 
 ``` sql //
-SELECT
+SELECT DISTINCT
     Taxonomy,
-    ROUND(AVG(Length),2) AS Average_Length_Meters,
-    MIN(CAST(Length AS FLOAT)) AS Minimum_Length_By_Meters,
-    MAX(CAST(Length AS FLOAT)) AS Maximum_Length_By_Meters
+    ROUND(AVG(Length) OVER (PARTITION BY Taxonomy), 2) AS Average_Length_Meters,
+    MIN(CAST(Length AS FLOAT)) OVER (PARTITION BY Taxonomy) AS Minimum_Length_By_Meters,
+    MAX(CAST(Length AS FLOAT)) OVER (PARTITION BY Taxonomy) AS Maximum_Length_By_Meters
 FROM
     dino_database
-GROUP BY
-    Taxonomy
 LIMIT 5;
 ```
 
