@@ -41,7 +41,7 @@ Below I will find the answers to questions such as:
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
 - ### [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
   - [What is the count of dinosaur species ordered from greatest to least per paleontologist?](#what-is-the-count-of-dinosaur-species-ordered-from-greatest-to-least-per-paleontologist)
-- [Final Thoughts](#Final-Thoughts)
+- ## [Final Thoughts](#Final-Thoughts)
 
 
 ###                                                             .
