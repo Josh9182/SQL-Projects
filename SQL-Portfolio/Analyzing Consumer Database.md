@@ -5,24 +5,24 @@ In this notebook, we are going to analyze consumer data from the fictional busin
 
 The dataset contains information about customers, ranging from personal information (age, gender, annual income, debt) to demographic information (demographics and country of residency). Below I will find the answers to questions such as:
 
-  - ### [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
-    - [What is the average age of our consumers by profession?](#what-is-the-average-age-of-our-consumers-by-profession)
-    - [What is the least common and the most common genders present?](#what-is-the-least-common-and-the-most-common-genders-present)
-      - [Least Common Gender](#least-common-gender)
-      - [Moderately Common Gender](#moderately-common-gender)
-      - [Most Common Gender](#most-common-gender)
-  - ### [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
-    - [Average Time Spent for Each Consumer Based off of Desired Platform](#average-time-spent-for-each-consumer-based-off-of-desired-platform-)
-      - [Average Time Spent on YouTube 18–64](#average-time-spent-on-youtube-1864)
-      - [Average Time Spent on Instagram 18–64](#average-time-spent-on-instagram-1864)
-      - [Average Time Spent on Facebook 18-64](#average-time-spent-on-youtube-1864)
-  - ### [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
-    - [What is the average income and debt of each individual based on their desired social media platform?](#what-is-the-average-income-and-debt-of-each-individual-based-on-their-desired-social-media-platform)
-  - ### [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
-    - [The average time spent on platforms by homeowners vs. non-homeowners](#the-average-time-spent-on-each-platform-by-homeowners-vs-non-homeowners)
-  - ### [How do location and demographics affect the choice of social media platform?](#How-do-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
-    - [How do location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user?](#how-do-location-and-demographics-affect-userbase-time-spent-on-platforms-and-average-time-spent-on-platforms-by-user-)
-  - ### [Marketing Plan](#Marketing-Plan)
+  -  [What is the average age of our consumers?](#What-is-the-average-age-of-our-consumers)
+        - [What is the average age of our consumers by profession?](#what-is-the-average-age-of-our-consumers-by-profession)
+          - [What is the least common and the most common genders present?](#what-is-the-least-common-and-the-most-common-genders-present)
+            - [Least Common Gender](#least-common-gender)
+            - [Moderately Common Gender](#moderately-common-gender)
+            - [Most Common Gender](#most-common-gender)
+  -  [What is the average time spent on each social media platform by age?](#What-is-the-average-time-spent-on-each-social-media-platform-by-age)
+        - [Average Time Spent for Each Consumer Based off of Desired Platform](#average-time-spent-for-each-consumer-based-off-of-desired-platform-)
+          - [Average Time Spent on YouTube 18–64](#average-time-spent-on-youtube-1864)
+          - [Average Time Spent on Instagram 18–64](#average-time-spent-on-instagram-1864)
+          - [Average Time Spent on Facebook 18-64](#average-time-spent-on-youtube-1864)
+  -  [What is the average income and debt based on the most used social media platforms?](#What-is-the-average-income-and-debt-based-on-the-most-used-social-media-platforms)
+      - [What is the average income and debt of each individual based on their desired social media platform?](#what-is-the-average-income-and-debt-of-each-individual-based-on-their-desired-social-media-platform)
+  -  [Do homeowners tend to spend more or less time on social media compared to non-homeowners?](#Do-homeowners-tend-to-spend-more-or-less-time-on-social-media-compared-to-non-homeowners)
+      - [The average time spent on platforms by homeowners vs. non-homeowners](#the-average-time-spent-on-each-platform-by-homeowners-vs-non-homeowners)
+  -  [How do location and demographics affect the choice of social media platform?](#How-do-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
+      - [How do location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user?](#how-do-location-and-demographics-affect-userbase-time-spent-on-platforms-and-average-time-spent-on-platforms-by-user-)
+  -  [Marketing Plan](#Marketing-Plan)
 
 ###                                                             .
 After importing the ```Customer_Database```, the table ```Customer_Database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```Customer_Database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to five rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
@@ -46,6 +46,8 @@ LIMIT 5;
 | 25  |  Male  |       6        | Instagram | Lifestyle |   Australia    |    Urban     | Graphic Designer  |     63303     | FALSE  |    52828    |     TRUE     |   TRUE   |
 
 ## What is the average age of our consumers?
+
+### [Home](#Aurora-Technologies-Consumer-Data)
 
 After using the function above, we can see the first five rows, which include the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
 
@@ -166,6 +168,8 @@ LIMIT 1;
 
 ## What is the average time spent on each social media platform by age?
 
+### [Home](#Aurora-Technologies-Consumer-Data)
+
 After implementing all of our queries, we can see a total of 486 Males, 398 Females, and 116 Non-Binary individuals, with the average age of our consumers being 41 years old. In ```customer_database``` the column ```Time_Spent_Hrs``` can be seen, this will be our next destination. This column shows the daily time spent in the past hours on the desired social media app. 
 
 The previous section provided tons of useful data for us to play around with! Obtaining the dominant as well as the least dominant sex and the average age will be extremely useful, but how will we market ourselves to our consumers? Will Facebook ads be most successful for 19-year-old women? Will Instagram ads in the form of short videos be most successful for 56-year-old men? 
@@ -277,6 +281,8 @@ WHERE
 
 ## What is the average income and debt based on the most used social media platforms?
 
+### [Home](#Aurora-Technologies-Consumer-Data)
+
 Now that we have our individuals' general information as well as their preferred platform and statistics, the most important information regarding a finance app is the customer's financial information. 
 
 Understanding a users' financial information will allow us to conduct a targeted marketing strategy which tailors to personal needs, such as saving for a property, managing investments, and creating financial goals. Studying both income amount and debt allows us to assess users' financial health, allowing us to track their risk assessment and spending habits. 
@@ -337,6 +343,8 @@ LIMIT 5;
 | 22  | YouTube  |    55615.00    |   15110.67   |
 
 ## Do homeowners tend to spend more or less time on social media compared to non-homeowners?
+
+### [Home](#Aurora-Technologies-Consumer-Data)
 
 As we keep going further into our consumer information, we can now develop a stronger understanding of how we can advertise our app most successfully based off of age, platform, income, and debt. Understanding this information will allow a more tailored experience that will reach the right audiences and create a more personalized bond with those who are witnessing said advertisement. 
 
@@ -399,6 +407,8 @@ ORDER BY
 
 ## How do location and demographics affect the choice of social media platform and time spent?
 
+### [Home](#Aurora-Technologies-Consumer-Data)
+
 Our previous sections have shown a momentous amount of helpful data that we, Aurora Technologies, can use to better understand our customers while simultaneously allowing us to market ourselves correctly and advertise specific features to those who require them.
 
 We have seen how our customers on average are about the age of 41 years old, and most are of the gender "Male." Our consumers use their technological devices on average about 4 hours a day, with Instagram being the most used social media platform at 4.1 hours. 
@@ -454,6 +464,8 @@ LIMIT 10;
 |     Canada      |    Rural    |  YouTube   |   3   |        18        |            6.0            |
 
 ## Marketing Plan
+
+### [Home](#Aurora-Technologies-Consumer-Data)
 
 Using all the data from our countless queries, we can now create a plan to better market to our costumers. Based off of age data as well as demographic statistics, we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
 
