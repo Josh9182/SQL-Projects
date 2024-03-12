@@ -24,11 +24,11 @@ The dataset contains information about dinosaurs, ranging from biological inform
 taxonomy, and species) to archaeological information (period, habitual country, type, discoverer).
 Below I will find the answers to questions such as:
 
-- ### [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
+- [Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?](#Which-geographical-regions-have-the-highest-concentration-of-dinosaur-fossils-based-on-the-dataset)
   - [Count of fossils ordered from greatest to least per region](#Count-of-fossils-ordered-from-greatest-to-least-per-region)
     - [Which region has the most number of fossils? What is the fossil concentration?](#Which-region-has-the-most-number-of-fossils-What-is-the-fossil-concentration)
     - [Which region has the least number of fossils? What is the fossil concentration?](#Which-region-has-the-least-number-of-fossils-What-is-the-fossil-concentration)
-- ### [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
+- [What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?](#What-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs-and-how-do-they-vary-across-different-species-and-regions)
   - [What are the classification amounts found in our research? Which is most common, moderately common, and least common?](#What-are-the-classification-amounts-found-in-our-research-Which-is-most-common-moderately-common-and-least-common)
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
     - [Does diet contribute to size?](#Does-diet-contribute-to-size)
@@ -36,10 +36,10 @@ Below I will find the answers to questions such as:
     - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region?](#does-diet-vary-through-region-)
     - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
-- ### [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
+  -  [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
   - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
     - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
-- ### [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
+- [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
   - [What is the count of dinosaur species ordered from greatest to least per paleontologist?](#what-is-the-count-of-dinosaur-species-ordered-from-greatest-to-least-per-paleontologist)
 - [Final Thoughts](#Final-Thoughts)
 
