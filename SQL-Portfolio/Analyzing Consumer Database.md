@@ -69,8 +69,6 @@ FROM
 
 ## What is the average age of our consumers by profession?
 
-### [Home](#Aurora-Technologies-Consumer-Data)
-
 Due to the table having 179 unique professions, we will limit the results to just five random rows to not cloud up the document.
 
 [In]
