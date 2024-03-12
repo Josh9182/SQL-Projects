@@ -464,7 +464,7 @@ LIMIT 10;
 |     Canada      |    Rural    |  YouTube   |   3   |        18        |            6.0            |
 
 ## Marketing Plan
-
+ 
 ### [Home](#Aurora-Technologies-Consumer-Data)
 
 Using all the data from our countless queries, we can now create a plan to better market to our costumers. Based off of age data as well as demographic statistics, we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
