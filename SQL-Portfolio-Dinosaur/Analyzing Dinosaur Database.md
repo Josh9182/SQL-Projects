@@ -33,12 +33,12 @@ Below I will find the answers to questions such as:
   - [Based on location, what are the dietary patterns observed among the sampled dinosaurs?](#Based-on-location-what-are-the-dietary-patterns-observed-among-the-sampled-dinosaurs)
     - [Does diet contribute to size?](#Does-diet-contribute-to-size)
     - [How does diet affect species?](#how-does-diet-affect-species-)
-    - [Are all classifications the same size?](#are-all-diet-classifications-the-same-size)
+    - [Are all diet classifications the same size?](#are-all-diet-classifications-the-same-size)
     - [Does diet vary through region?](#does-diet-vary-through-region-)
-    - [Do certain climates have a higher concentration of a specific classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
-  -  [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
-  - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
-    - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
+    - [Do certain climates have a higher concentration of a specific diet classification?](#do-certain-climates-have-a-higher-concentration-of-a-specific-classification)
+-  [How does the length of dinosaurs vary across different taxonomic groups?](#how-does-the-length-of-dinosaurs-vary-across-different-taxonomic-groups)
+    - [Are there some identifications of any correlation between the length of a dinosaur and its taxonomy?](#are-there-some-identifications-of-any-correlation-between-the-length-of-a-dinosaur-and-its-taxonomy)
+      - [Are there any differences between carnivorous and herbivorous dinosaurs regarding taxonomy?](#are-there-any-differences-between-carnivorous-and-herbivorous-dinosaurs-regarding-taxonomy)
 - [Who are the paleontologists credited with naming the most dinosaur species in the dataset?](#Who-are-the-paleontologists-credited-with-naming-the-most-dinosaur-species-in-the-dataset) 
   - [What is the count of dinosaur species ordered from greatest to least per paleontologist?](#what-is-the-count-of-dinosaur-species-ordered-from-greatest-to-least-per-paleontologist)
 - [Final Thoughts](#Final-Thoughts)
@@ -97,6 +97,8 @@ LIMIT 5;
 
 
 ## Which geographical regions have the highest concentration of dinosaur fossils based on the dataset?
+
+### [Home](#Paleontological-Data)
 
 After using the function above, we can see the first five rows of ```dino_database```, which include the geographical 
 regions in which the fossils were found.
@@ -186,6 +188,8 @@ ORDER BY
 |     Wales     |      1       |
 
 ## What are the dietary patterns observed among the sampled dinosaurs, and how do they vary across different species and regions?
+
+### [Home](#Paleontological-Data)
 
 With location varying just as much as fossil count, analyzing our dinosaurs' dietary patterns can provide valuable 
 insights related to paleontology. Understanding the diet diversity in certain regions, uncovering the population of 
@@ -459,6 +463,8 @@ Therefore, certain climates do NOT have a higher concentration of a specific cla
 
 ## How does the length of dinosaurs vary across different taxonomic groups?
 
+### [Home](#Paleontological-Data)
+
 So much progress has been made!
 With dinosaur diet and climate estimations, we can create an approximate idea on what life was like so many years ago.
 Additionally,
@@ -556,6 +562,8 @@ ORDER BY
 
 ## Who are the paleontologists credited with naming the most dinosaur species in the dataset?
 
+### [Home](#Paleontological-Data)
+
 Considerable advancements have been made based on our expedition data!
 From diet and species correlation to taxonomy and size,
 we have gathered an understanding of what correlating factors can and might have influenced the Mesozoic era. 
@@ -608,6 +616,8 @@ LIMIT 5;
 | Bonaparte | 6                   | Steady        |
 
 ## Final Thoughts
+
+### [Home](#Paleontological-Data)
 
 After extensive research regarding the data
 gathered from numerous queries, we have finally come to the end of our research project. 
