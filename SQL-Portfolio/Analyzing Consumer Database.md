@@ -46,7 +46,7 @@ LIMIT 5;
 | 25  |  Male  |       6        | Instagram | Lifestyle |   Australia    |    Urban     | Graphic Designer  |     63303     | FALSE  |    52828    |     TRUE     |   TRUE   |
 
 ## What is the average age of our consumers?
-[Home](#about)
+[Home](#Below-I-will-find-the-answers-to-questions-such-as)
 
 After using the function above, we can see the first five rows, which include the age of our consumers. With about 1000 rows, averaging the ```age``` column would not only take time but could lead to errors due to the massive amount of data available. 
 
