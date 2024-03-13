@@ -479,7 +479,7 @@ In the section below,
 we will explore the correlation between taxonomic groups and dinosaur length
 by experimenting with window functions instead of the standard ```GROUP BY``` function. 
 
-Using window functions will allow us to achieve a far more specific answer. However in the case of answering this question, the answer will be the exact same as if we did a ```GROUP BY``` function for the sake of versatility. However in general, window functins allow the user a more complex and powerful way to analyze data. From running calculations by the use of ```(ORDER BY x)``` to manageable aggregate partition clauses by the use of ```(PARTITION BY x)``` window functions allow SQL queries to be far more intricate and commanding. 
+Using window functions will allow us to achieve a far more specific answer. However in the case of answering this question, the answer will be the exact same as if we did a ```GROUP BY``` function for the sake of versatility and expression. However in general, window functions allow the user to deal with a more complex and powerful way to analyze data. From running calculations by the use of ```(ORDER BY x)``` to manageable aggregate partition clauses by the use of ```(PARTITION BY x)``` window functions allow SQL queries to be far more intricate and commanding. 
 
 [In]
 
