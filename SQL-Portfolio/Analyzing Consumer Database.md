@@ -23,6 +23,7 @@ The dataset contains information about customers, ranging from personal informat
   -  [How do location and demographics affect the choice of social media platform?](#How-do-location-and-demographics-affect-the-choice-of-social-media-platform-and-time-spent)
       - [How do location and demographics affect userbase, time spent on platforms, and average time spent on platforms by user?](#how-do-location-and-demographics-affect-userbase-time-spent-on-platforms-and-average-time-spent-on-platforms-by-user-)
   -  ### Marketing Plan
+      -  [Marketing Plan Query](#Marketing-Plan-Query)
 
 ###                                                             .
 After importing the ```Customer_Database```, the table ```Customer_Database``` is in our SQL Database. To start off I will ``` SELECT ``` all of the data from ```Customer_Database``` to answer the questions above and help my stakeholders develop a sharper marketing plan based off location and income data. Due to the data being 1000 rows, I will limit the output to five rows to better visualize the example. However, most of the queries will be executed without the ```LIMIT```.
@@ -470,6 +471,8 @@ LIMIT 10;
 Using all the data from our countless queries, we can now create a plan to better market to our costumers. Based off of age data as well as demographic statistics, we can associate advertisement types as well as topics. We can create one last query that will gather all data and associate those in each environment with their desired platform and interest and mark each unique advertisement by the use of a new column, ```Advertisement_Type```. 
 
 Below will be our final query that will organize our consumers by how we can and will market to them in the coming weeks. To simplify the data listed and not cloud up this document, a ```LIMIT``` of 10 will be assigned. 
+
+## Marketing Plan Query
 
 
 [In]
