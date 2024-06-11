@@ -1,4 +1,4 @@
--- Table: dino_database
+-- Create a new table, joined from the original table.
 
 CREATE TABLE dino_database AS
 SELECT
