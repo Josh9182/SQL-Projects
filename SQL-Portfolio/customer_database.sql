@@ -1,4 +1,4 @@
-﻿-- Table: customer_database
+﻿-- Create the table: customer_database
 
 CREATE TABLE customer_database
 (
@@ -18,5 +18,8 @@ CREATE TABLE customer_database
 );
 
 
--- Copy over data from CSV
-\copy customer_database FROM 'customer_database.csv' DELIMITER ',' CSV HEADER;
+-- set the seperator option to focus on commas, for CSV sake.
+.separator ','
+
+-- import the data from the file and convert into a table.
+.import customer_database.csv customer_database
